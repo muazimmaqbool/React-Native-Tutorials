@@ -1,6 +1,6 @@
 import { ImageBackground, View,Text } from "react-native";
 import Greet from "./Components/Greet";
-import G_Modal from "./Core Components/G_Modal"
+import J_Alert from "./Core Components/J_Alert"
 const myImage=require("./assets/pic.jpg")
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       {/* <Greet name="Muazim Maqbool"/>
       <Greet name="Basit Mushtaq"/> */}
 
-      <G_Modal/>
+      <J_Alert/>
 
 
       {/* background image
