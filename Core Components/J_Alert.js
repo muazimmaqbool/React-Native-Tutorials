@@ -40,6 +40,7 @@ const J_Alert = () => {
         }
       />
     </View>
+    //visit react-native docs for more API components like this Alert
   );
 };
 
