@@ -1,23 +1,27 @@
 import { ImageBackground, View,Text } from "react-native";
-import Greet from "./Components/Greet";
-import J_Alert from "./Core Components/J_Alert"
+import Greet from "./Components/A_Greet";
+import B_Styling from "./Components/B_Styling";
+import C_StyleSheet from "./Components/C_StyleSheet";
+import D_MultipleStyles from "./Components/D_MultipleStyles";
 const myImage=require("./assets/pic.jpg")
 const App = () => {
   return (
     <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
-      {/* <Greet name="Muazim Maqbool"/>
+
+      {/* first custom component
+      <Greet name="Muazim Maqbool"/>
       <Greet name="Basit Mushtaq"/> */}
 
-      <J_Alert/>
+      {/* <B_Styling/>*/}
+      {/* <C_StyleSheet/> */}
+      <D_MultipleStyles/>
 
-
-      {/* background image
-      <ImageBackground source={myImage} style={{flex:1}}>
-      <Text>Text on top of image</Text>
-     </ImageBackground> */} 
+      
     </View>
   );
 };
+//learning about it first in components folder
+
 
 export default App;
 /*Introduction of React Native :
@@ -30,3 +34,18 @@ Note: checkout more intro and basic topics on code book
 
 here i have done styling of view in App.js
 */
+
+/*
+  Added background image to the app
+ return (
+    <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
+      <Greet name="Muazim Maqbool"/>
+      <Greet name="Basit Mushtaq"/>
+
+      /*background image*
+      <ImageBackground source={myImage} style={{flex:1}}>
+      <Text>Text on top of image</Text>
+     </ImageBackground>  
+     </View>
+     );
+ */
