@@ -3,6 +3,9 @@ import Greet from "./Components/A_Greet";
 import B_Styling from "./Components/B_Styling";
 import C_StyleSheet from "./Components/C_StyleSheet";
 import D_MultipleStyles from "./Components/D_MultipleStyles";
+import E_BoxModel from "./Components/E_BoxModel";
+import F_Shadows from "./Components/F_Shadows";
+import G_StyleInheritance from "./Components/G_StyleInheritance";
 const myImage=require("./assets/pic.jpg")
 const App = () => {
   return (
@@ -14,8 +17,13 @@ const App = () => {
 
       {/* <B_Styling/>*/}
       {/* <C_StyleSheet/> */}
-      <D_MultipleStyles/>
+      {/* <D_MultipleStyles/> */}
 
+      {/* <E_BoxModel/> */}
+
+      {/* <F_Shadows/> */}
+
+      <G_StyleInheritance/>
       
     </View>
   );
