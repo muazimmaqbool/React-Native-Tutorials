@@ -28,7 +28,6 @@ const G_StyleInheritance = () => {
 export default G_StyleInheritance;
 
 const styles = StyleSheet.create({
-  //these styling is added in this code to explain style inheritance
   darkMode: {
     padding: 25,
     backgroundColor: "black",
