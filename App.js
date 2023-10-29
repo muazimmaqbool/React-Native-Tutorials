@@ -1,4 +1,4 @@
-import { ImageBackground, View,Text, StyleSheet } from "react-native";
+import { ImageBackground, View, Text, StyleSheet } from "react-native";
 import Greet from "./Components/A_Greet";
 import B_Styling from "./Components/B_Styling";
 import C_StyleSheet from "./Components/C_StyleSheet";
@@ -12,13 +12,14 @@ import C_JustifyContent from "./FlexBox and layout/C_JustifyContent";
 import D_Align_ITEMSandSELF from "./FlexBox and layout/D_Align_ITEMSandSELF";
 import E_FlexWrap from "./FlexBox and layout/E_FlexWrap";
 import F_FlexShrink from "./FlexBox and layout/F_FlexShrink";
-const myImage=require("./assets/pic.jpg")
+import G_FlexGrow from "./FlexBox and layout/G_FlexGrow";
+import H_Relative_Absolute_layout from "./FlexBox and layout/H_Relative_Absolute_layout";
+const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     // <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
     //view used only when working with flexbox
-      <View style={styles.container}>
-
+    <View style={styles.container}>
       {/* first custom component
       <Greet name="Muazim Maqbool"/>
       <Greet name="Basit Mushtaq"/> */}
@@ -61,29 +62,71 @@ const App = () => {
       {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelft
       is also flex start, if alignSelf is not mention in children they still take value from their parent
        */}
-       {/*if alignItems in parent is "center" then both box-5 and box-6 will be in center */}
+      {/*if alignItems in parent is "center" then both box-5 and box-6 will be in center */}
       {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
       <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF> */}
 
-
-       {/*flexWrap */}
-       {/* <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
+      {/*flexWrap */}
+      {/* <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"green"}}>Box2</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"blue"}}>Box3</E_FlexWrap> */}
-       {/*flexBasic makes the item more talls than other,Look at notes also to understand better */}
-       {/* <E_FlexWrap styleprop={{backgroundColor:"teal",flexBasis:140}}>Box4</E_FlexWrap>
+      {/*flexBasic makes the item more talls than other,Look at notes also to understand better */}
+      {/* <E_FlexWrap styleprop={{backgroundColor:"teal",flexBasis:140}}>Box4</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"pink"}}>Box5</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"skyblue"}}>Box6</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"gray"}}>Box7</E_FlexWrap> */}
 
-
-       {/*FlexShrink-> Note: make container flex-direction to row and alignItems to flexStart  and width to 300*/}
-       <F_FlexShrink styleprop={{backgroundColor:"teal",flexShrink:1}}>Box 1 Shrink</F_FlexShrink>
+      {/*FlexShrink-> Note: make container flex-direction to row and alignItems to flexStart  and width to 300*/}
+      {/* <F_FlexShrink styleprop={{backgroundColor:"teal",flexShrink:1}}>Box 1 Shrink</F_FlexShrink> */}
       {/*if box2 has flexShrink:1 then they both have same width if box2 has 2 flexShrink then it shrinks twice as box1 */}
-       <F_FlexShrink styleprop={{backgroundColor:"green",flexShrink:2}}>Box 2 Shrink</F_FlexShrink>
+      {/* <F_FlexShrink styleprop={{backgroundColor:"green",flexShrink:2}}>Box 2 Shrink</F_FlexShrink> */}
 
+      {/*Flex Grow */}
+      {/* <G_FlexGrow styleprop={{backgroundColor:"teal"}}>BOX-1</G_FlexGrow>
+       <G_FlexGrow styleprop={{backgroundColor:"green"}}>BOX-2</G_FlexGrow> */}
+      {/*no chnage as flexGrow:0 is default value */}
+      {/* <G_FlexGrow styleprop={{backgroundColor:"yellow",flexGrow:0}}>BOX-3</G_FlexGrow>  */}
+      {/*Box4 takes the all available space, if applied to multiple boxes then available space is divided equally , if flexGrow is 1 to all*/}
+      {/* <G_FlexGrow styleprop={{backgroundColor:"pink",flexGrow:1}}>BOX-4</G_FlexGrow>
+       <G_FlexGrow styleprop={{backgroundColor:"blue",flexGrow:1}}>BOX-5</G_FlexGrow> */}
+      {/*Box-6 takes 3twice the space as box4 and 5 because it has flexGrow of 3 */}
+      {/* <G_FlexGrow styleprop={{backgroundColor:"skyblue",flexGrow:3}}>BOX-6</G_FlexGrow> */}
+
+      {/*relative and absolute layout */}
+      {/*applied relative to Box1 and Box3, they are both relative by default */}
+      {/*Now box5 has position of absolute,now after box-4 we have box-6, where box-5 was initially present */}
+      {/* <H_Relative_Absolute_layout
+        styleprop={{ backgroundColor: "teal", top: 30, left: 50 }}
+      >
+        Box-1
+      </H_Relative_Absolute_layout>
+      <H_Relative_Absolute_layout styleprop={{ backgroundColor: "green" }}>
+        Box-2
+      </H_Relative_Absolute_layout> */}
+      {/*mentioning relative is optional */}
+      {/* <H_Relative_Absolute_layout
+        styleprop={{ backgroundColor: "pink",position:"relative",left: 80 }}
+      >
+        Box-3
+      </H_Relative_Absolute_layout>
+      <H_Relative_Absolute_layout styleprop={{ backgroundColor: "blue" }}>
+        Box-4
+      </H_Relative_Absolute_layout> */}
+      {/*now box5 is positioned using specific coordinated relative to its parent container */}
+      {/* <H_Relative_Absolute_layout
+        styleprop={{
+          backgroundColor: "orange",
+          position: "absolute",
+          top: 100,
+          left: 100,
+        }}
+      >
+        Box-5
+      </H_Relative_Absolute_layout>
+      <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
+        Box-6
+      </H_Relative_Absolute_layout> */}
     </View>
-
   );
 };
 //learning about it first in components folder
@@ -97,13 +140,13 @@ React-Native: the view is already a flex container and its comp. inside it are f
 -> we can also apply flex:1 to the children/flexitems as well, if we add flex:1 to first Box above it occupies all the available space
 ->if we also apply flex:1 to another flex item they both will take 50-50% of the availabe space each,.... similarly for all
 */
-const styles=StyleSheet.create({
-  container:{
-    marginTop:64,
-    borderWidth:5,
-    borderColor:"red",
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 64,
+    borderWidth: 5,
+    borderColor: "red",
     //for now the container takes only space which is required by its children, you can see red border wrapping the boxes
-    flex:1, //now red border will be wrapping whole screen
+    flex: 1, //now red border will be wrapping whole screen
 
     //flexDirection:
     //flexDirection:"column" //default value no change sets main axis from top to bottom
@@ -127,13 +170,12 @@ const styles=StyleSheet.create({
     //gap:20
 
     //flexShrink -> first set flexDirection to row and alignItems to flexStart and width to 300
-    width:300,
-    flexDirection:"row",
-    alignItems:"flex-start",
+    // width:300,
+    //flexDirection:"row",
+    //alignItems:"flex-start",
     //flexShrink is applied above while calling the component
-  }
-})
-
+  },
+});
 
 export default App;
 /*Introduction of React Native :
