@@ -14,12 +14,14 @@ import E_FlexWrap from "./FlexBox and layout/E_FlexWrap";
 import F_FlexShrink from "./FlexBox and layout/F_FlexShrink";
 import G_FlexGrow from "./FlexBox and layout/G_FlexGrow";
 import H_Relative_Absolute_layout from "./FlexBox and layout/H_Relative_Absolute_layout";
+import DimensionsAPI from "./Dynamic UI/DimensionsAPI";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
-    // <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
-    //view used only when working with flexbox
-    <View style={styles.container}>
+    <>
+     {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
+    {/* view used only when working with flexbox */}
+    {/* <View style={styles.container}> */}
       {/* first custom component
       <Greet name="Muazim Maqbool"/>
       <Greet name="Basit Mushtaq"/> */}
@@ -126,7 +128,11 @@ const App = () => {
       <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
         Box-6
       </H_Relative_Absolute_layout> */}
-    </View>
+    {/* </View> */}
+
+    {/*comment out Above code when working in Dynamic Ui folder */}
+    <DimensionsAPI/>
+    </>
   );
 };
 //learning about it first in components folder
