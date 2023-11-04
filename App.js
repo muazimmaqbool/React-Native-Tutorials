@@ -14,7 +14,11 @@ import E_FlexWrap from "./FlexBox and layout/E_FlexWrap";
 import F_FlexShrink from "./FlexBox and layout/F_FlexShrink";
 import G_FlexGrow from "./FlexBox and layout/G_FlexGrow";
 import H_Relative_Absolute_layout from "./FlexBox and layout/H_Relative_Absolute_layout";
-import DimensionsAPI from "./Dynamic UI/DimensionsAPI";
+import DimensionsAPI from "./Dynamic UI/A_DimensionsAPI";
+import B_DimAPIsolution from "./Dynamic UI/B_DimAPIsolution";
+import C_UseWindowDimensions from "./Dynamic UI/C_UseWindowDimensions";
+import D_SafeAreaView from "./Dynamic UI/D_SafeAreaView";
+import E_Platform_Specific_code from "./Dynamic UI/E_Platform_Specific_code";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
@@ -131,7 +135,11 @@ const App = () => {
     {/* </View> */}
 
     {/*comment out Above code when working in Dynamic Ui folder */}
-    <DimensionsAPI/>
+    {/* <DimensionsAPI/> */}
+    {/* <B_DimAPIsolution/> */}
+    {/* <C_UseWindowDimensions/> */}
+    {/* <D_SafeAreaView/> */}
+    <E_Platform_Specific_code/>
     </>
   );
 };

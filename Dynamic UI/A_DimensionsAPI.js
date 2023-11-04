@@ -32,6 +32,16 @@ const windowHeight=Dimensions.get("window").height
 //we can now use these device dimensions to dynamically adjust styles based on the device size
 
 //In summary: Dimensions API provides access to devices size and using devices width and height you can create responsive styles for your app
+/*
+Important: Although this method works but Dimensions API has a drawback (lec-41)
+    ->The dimensions API doesn't dynamically update when the screen size changes
+    Eample: change orientation of the device, rotate the device and you will see no changes
+    ->Go to app.json and change orientation to "default", then reload the app by pressing R , Now when device rotates the app also rotates
+    But styles doesn't apply as it should have changes text size, and to make stles apply you need to again Reload the app and thats not the right way
+    and thats the draw back of dimensions api the values doesn't dynamically updates when device orientation changes
+    and the solution to this problem is use "useState and and useEffect hooks" in next code
+*/
+console.log("width:",windowWidth," and height:",windowHeight)
 
 const styles = StyleSheet.create({
     container:{
