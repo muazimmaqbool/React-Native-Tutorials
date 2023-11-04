@@ -42,8 +42,11 @@ const E_Platform_Specific_code = () => {
       <View style={styles.container}>
         <View style={styles.box}>
           <Text style={styles.text}>Welcome!</Text>
-          {/*title and onPress are props accepts by CustomBtn's */}
-          <CustomBtn title="press me!" onPress={()=>alert("pressed")}/>
+          {/*title and clicked are props accepts by CustomBtn's */}
+          <CustomBtn title="press me!" clicked={()=>alert("pressed")}/>
+          {/*or try this :*/}
+          <CustomBtn title="try me!" clicked={()=>alert(Platform.OS==="ios"?"hello ios":"hello android")}/>
+
         </View>
       </View>
     </SafeAreaView>
