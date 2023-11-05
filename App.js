@@ -19,6 +19,7 @@ import B_DimAPIsolution from "./Dynamic UI/B_DimAPIsolution";
 import C_UseWindowDimensions from "./Dynamic UI/C_UseWindowDimensions";
 import D_SafeAreaView from "./Dynamic UI/D_SafeAreaView";
 import E_Platform_Specific_code from "./Dynamic UI/E_Platform_Specific_code";
+import Home from "./PockemonCard Example/Home";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
@@ -139,7 +140,10 @@ const App = () => {
     {/* <B_DimAPIsolution/> */}
     {/* <C_UseWindowDimensions/> */}
     {/* <D_SafeAreaView/> */}
-    <E_Platform_Specific_code/>
+    {/* <E_Platform_Specific_code/> */}
+
+    {/*pockemon example */}
+    <Home/>
     </>
   );
 };
