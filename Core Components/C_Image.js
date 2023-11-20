@@ -4,7 +4,7 @@ const C_Image = () => {
   return (
     <>
      <View>
-        <Image source={myImage} style={{width:250,height:250}}/>
+        <Image source={myImage} style={{width:300,height:250}}/>
         <Text>online image</Text>
         <Image source={{uri:"https://picsum.photos/200"}} style={{width:300,height:300}} />
      </View>

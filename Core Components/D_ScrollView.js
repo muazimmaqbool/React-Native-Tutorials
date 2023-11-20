@@ -23,7 +23,7 @@ const D_ScrollView = () => {
         gardens and worldwide today.
       </Text>
       <Image
-        source={{ uri: "https://picsum.photos/200" }}
+        source={{uri: "https://picsum.photos/200" }}
         style={{ width: 300, height: 300 }}
       />
       </ScrollView>
@@ -35,7 +35,7 @@ export default D_ScrollView;
 /*
  ScrollView:
     ->Enables us to scroll to the screen to see ful content when the content is too big
-    to be in inside the screen size by default we can't scroll
+    to be fit inside the screen size by default we can't scroll
     ->ScrollView comp. wraps the scroll functionality
     ->scrollView requires a bounded heigh to function properly
     ->Nest scrollView inside View by this way its bounded by the height of of its parent i.e view in this case

@@ -1,20 +1,29 @@
-import { Button, Text, View } from "react-native"
+import { Button, Text, View } from "react-native";
 
 const E_Button = () => {
   return (
     <View>
-        <Text>This is button</Text>
-        <Button title="Click Me" onPress={()=>console.log("You Clicked Me!")}/>
-        {/*change color */}
-        <Button title="I'm Different" color="green"/>
-        <Button title="I'm Not Working" onPress={()=>console.log("I dont work")} disabled/>
-        {/*disabled =false */}
-        <Button title="I'm Working" color="black" onPress={()=>console.log("You make me workling")} disabled={false}/>
+      <Text>This is button</Text>
+      <Button title="Click Me" onPress={() => console.log("You Clicked Me!")} />
+      {/*change color */}
+      <Button title="I'm Different" color="green" />
+      <Button
+        title="I'm Not Working"
+        onPress={() => console.log("I dont work")}
+        disabled
+      />
+      {/*disabled =false */}
+      <Button
+        title="I'm Working"
+        color="black"
+        onPress={() => console.log("You make me workling")}
+        disabled={false}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default E_Button
+export default E_Button;
 /*
 Button: used to trigger an action
 Note-> button layout is showing differently on ios and android (we can customize it later so it will be displayed same in both)

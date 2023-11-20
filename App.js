@@ -20,11 +20,15 @@ import C_UseWindowDimensions from "./Dynamic UI/C_UseWindowDimensions";
 import D_SafeAreaView from "./Dynamic UI/D_SafeAreaView";
 import E_Platform_Specific_code from "./Dynamic UI/E_Platform_Specific_code";
 import Home from "./PockemonCard Example/Home";
+import B_Text from "./Core Components/F_Pressable";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
-     {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
+     <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
+      <B_Text/>
+      
+      </View>
     {/* view used only when working with flexbox */}
     {/* <View style={styles.container}> */}
       {/* first custom component
@@ -143,7 +147,7 @@ const App = () => {
     {/* <E_Platform_Specific_code/> */}
 
     {/*pockemon example */}
-    <Home/>
+    {/* <Home/> */}
     </>
   );
 };
@@ -202,7 +206,7 @@ export default App;
    ios and android.
 ->React used react-dom for web apps and react-native for mobile apps
 
-Note: checkout more intro and basic topics on code book
+Note: checkout more intro and basic topics on note book
 
 here i have done styling of view in App.js
 */

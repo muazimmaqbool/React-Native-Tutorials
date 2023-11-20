@@ -3,8 +3,8 @@ import React from 'react'
 /*
 ->Dynamic User Interface:
     - All our app users won't be using same device, they will be using different devices with different sizes , some might be small and some
-    might be larger, and some use Ipad,tablets also and some use app in potrait and some in landscape mode.
-    ->Dynamic UI's goal is to ensure that our app's user interface remains responsive to the different device suzes while
+    might be larger, and some use Ipad,tablets also and some use app in portrait and some in landscape mode.
+    ->Dynamic UI's goal is to ensure that our app's user interface remains responsive to the different device sizes while
      maintaining an optional user experience.
      -> And to acheive this we have Dimensions API
 
