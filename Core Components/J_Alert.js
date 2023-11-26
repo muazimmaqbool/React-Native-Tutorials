@@ -7,7 +7,7 @@ const J_Alert = () => {
      ->by default Alert has only one button i.e "ok"
     */
   return (
-    <View>
+    <View style={{ gap: 10 }}>
       <Button title="Alert One" onPress={() => Alert.alert("Basic Allert")} />
       <Button
         title="Alert Two"
@@ -26,17 +26,43 @@ const J_Alert = () => {
               text: "Ok",
               onPress: () => console.log("You clicked Ok "),
             },
-            //this will be shown in android 
-            //{
+            //this will be shown in android
+            // {
             //     text:"New",
             //     onPress:()=>console.log("You clicked New ")
             // },
-            //this won't be shown in android
+            //this won't be shown in android but in IOS this will be shown
             // {
             //     text:"New2",
             //     onPress:()=>console.log("You clicked New ")
             // },
           ])
+        }
+      />
+      <Button
+        title="Alert Four"
+        onPress={() =>
+          Alert.alert(
+            "Your Enroll",
+            "Please make sure corrent Enroll is displayed",
+            [
+              
+              {
+                text: "Find Enroll",
+                onPress: () => console.log("You clicked on 'Find Enroll'"),
+              },
+              {
+                text:"No",
+                onPress:()=>console.log("You clicked on 'No'")
+              },
+              {
+                text:"Yes",
+                onPress:()=>console.log("You clicked on 'Yes'")
+              },
+              
+              
+            ]
+          )
         }
       />
     </View>

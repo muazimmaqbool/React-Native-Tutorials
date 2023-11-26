@@ -1,9 +1,10 @@
 import { View, Text } from "react-native";
 //this is our first custom component in react native
-const Greet = ({ name }) => {
+const Greet = ({ name ,enroll}) => {
   return (
     <View>
       <Text>Aslamualikum, {name}</Text>
+      <Text>Your Enroll is:{enroll}</Text>
     </View>
   );
 };
@@ -19,6 +20,6 @@ Lets first understand what is custom component
    TouchableOpacity now it has become a ‘custom component’
 
    call it like this in View after importing it :
-    <Greet name="Muazim Maqbool"/>
-    <Greet name="Basit Mushtaq"/>
+    <Greet name="Muazim Maqbool" enroll="6655"/>
+    <Greet name="Basit Mushtaq" enroll="6593/>
 */

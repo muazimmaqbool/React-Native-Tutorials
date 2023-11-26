@@ -30,12 +30,6 @@ const styles = StyleSheet.create({
     //takes 25% of the parents height and width respectively and together the conver 50% of its height and 25% of width
     width: 200,
     height: 200,
-    box: {
-      width: 100,
-      height: 100,
-      padding: 10,
-      backgroundColor: "red",
-    },
     padding: 10, //for all sides
     //paddingHorizontal:10,
     //paddingVertical:20,

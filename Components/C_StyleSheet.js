@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { Button } from "react-native";
 
 const C_StyleSheet = () => {
   //see previous code first
@@ -31,6 +32,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 15,
     margin: 10,
+    //alignItems:"center"
   },
 });
 
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
         styles file and export the styles object and used it any where
           example: export const styles=StyleSheet.create({....})
  
-  ->We can also use styles object without StyleSheet Api but then we don't access to auto complete suggestion
+  ->We can also use styles object without StyleSheet Api but then we don't get access to auto complete suggestion
     for styles properties
      example: const styles={
         nestedView:{

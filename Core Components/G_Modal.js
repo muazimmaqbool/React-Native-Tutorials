@@ -22,7 +22,7 @@ const G_Modal = () => {
         color={"midnightblue"}
       />
       {/*onRequestClose: is called when user clicks on the back button on device otherwise it won't close the modal when 
-      back button is closed, by adding this: onRequestClose={() => setIsModalOpen(false)} the modal is closed when back button is clicked
+      back button is called, by adding this: onRequestClose={() => setIsModalOpen(false)} the modal is closed when back button is clicked
       */}
       <Modal
         visible={isModalOpen}

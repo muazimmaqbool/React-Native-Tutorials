@@ -20,30 +20,25 @@ import C_UseWindowDimensions from "./Dynamic UI/C_UseWindowDimensions";
 import D_SafeAreaView from "./Dynamic UI/D_SafeAreaView";
 import E_Platform_Specific_code from "./Dynamic UI/E_Platform_Specific_code";
 import Home from "./PockemonCard Example/Home";
-import B_Text from "./Core Components/F_Pressable";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
      <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
-      <B_Text/>
-      
-      </View>
     {/* view used only when working with flexbox */}
     {/* <View style={styles.container}> */}
-      {/* first custom component
-      <Greet name="Muazim Maqbool"/>
-      <Greet name="Basit Mushtaq"/> */}
 
-      {/* <B_Styling/>*/}
-      {/* <C_StyleSheet/> */}
-      {/* <D_MultipleStyles/> */}
+      {/*custom components*/}
+        {/* <Greet name="Muazim Maqbool" enroll="6655"/>
+        <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
 
-      {/* <E_BoxModel/> */}
-
-      {/* <F_Shadows/> */}
-
-      {/* <G_StyleInheritance/> */}
+        {/* <B_Styling/> */}
+        {/* <C_StyleSheet/> */}
+        {/* <D_MultipleStyles/> */}
+        {/* <E_BoxModel/> */}
+        {/* <F_Shadows/> */}
+        {/* <G_StyleInheritance/> */}
+      </View>
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) */}

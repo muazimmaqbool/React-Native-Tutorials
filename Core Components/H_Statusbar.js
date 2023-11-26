@@ -14,7 +14,7 @@ const H_Statusbar = () => {
   return (
     <View>
       <StatusBar
-        backgroundColor={"midnightblue"} //only works on Android
+        backgroundColor={"green"} //only works on Android
         barStyle={"light-content"} // try: defult, dark-content also
         /*Note: default is white in android and black in ios
                 dark-content: dark color in both
