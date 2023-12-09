@@ -20,11 +20,16 @@ import C_UseWindowDimensions from "./Dynamic UI/C_UseWindowDimensions";
 import D_SafeAreaView from "./Dynamic UI/D_SafeAreaView";
 import E_Platform_Specific_code from "./Dynamic UI/E_Platform_Specific_code";
 import Home from "./PockemonCard Example/Home";
+import A_Lists_RN from "./Lists/A_Lists_RN";
+import B_Flat_List from "./Lists/B_Flat_List";
+import C_FlatList_2 from "./Lists/C_FlatList_2";
+import D_Flat_List_3 from "./Lists/D_FlatList_3";
+import E_SectionList from "./Lists/E_SectionList";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
-     <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
+     {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
     {/* view used only when working with flexbox */}
     {/* <View style={styles.container}> */}
 
@@ -38,7 +43,7 @@ const App = () => {
         {/* <E_BoxModel/> */}
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
-      </View>
+        {/* </View> */}
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) */}
@@ -134,7 +139,7 @@ const App = () => {
       </H_Relative_Absolute_layout> */}
     {/* </View> */}
 
-    {/*comment out Above code when working in Dynamic Ui folder */}
+    {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
     {/* <DimensionsAPI/> */}
     {/* <B_DimAPIsolution/> */}
     {/* <C_UseWindowDimensions/> */}
@@ -143,6 +148,13 @@ const App = () => {
 
     {/*pockemon example */}
     {/* <Home/> */}
+
+    {/*Lists in React Native */}
+     {/* <A_Lists_RN/> */}
+    {/* <B_Flat_List/> */}
+    {/* <C_FlatList_2/> */}
+    {/* <D_Flat_List_3/> */}
+    <E_SectionList/>
     </>
   );
 };
