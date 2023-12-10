@@ -1,0 +1,15 @@
+Inputs in React Native:
+
+  ->In web development, we have loots of html elements at our disposal to capture user input
+    example: input fields, text areas, dropdown menus, checkboxes, radio groups and many more
+
+  ->In React Native, the core RN library only provides TextInput and Switch (main topics to discuss in this   section)
+  ->What about the other inputs components ?
+    ANS: EXPO expands our toolkit, offering additional components like checkboxes, and date pickers etc through the EXPO SDK.
+
+Forms in React Native:
+    ->Here we focus on :
+    1) Managing Form State: controlling the dynamic data within our forms
+    2) Handling Form validation: integrity and validity of the user's input
+    3) Displaing Validation Messages: results of validation to the user
+    4) Submitting Form Data: sending the collected information where it need to go

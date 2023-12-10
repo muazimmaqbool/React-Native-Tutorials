@@ -25,6 +25,10 @@ import B_Flat_List from "./Lists/B_Flat_List";
 import C_FlatList_2 from "./Lists/C_FlatList_2";
 import D_Flat_List_3 from "./Lists/D_FlatList_3";
 import E_SectionList from "./Lists/E_SectionList";
+import B_TextInput from "./Inputs and Forms/B_TextInput";
+import C_TextInput_props from "./Inputs and Forms/C_TextInput_props";
+import D_MultiLine_TextInput from "./Inputs and Forms/D_MultiLine_TextInput";
+import E_Switch from "./Inputs and Forms/E_Switch";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
@@ -154,7 +158,13 @@ const App = () => {
     {/* <B_Flat_List/> */}
     {/* <C_FlatList_2/> */}
     {/* <D_Flat_List_3/> */}
-    <E_SectionList/>
+    {/* <E_SectionList/> */}
+
+    {/*Inputs and Forms in React Native */}
+    {/* <B_TextInput/> */}
+    {/* <C_TextInput_props/> */}
+    {/* <D_MultiLine_TextInput/> */}
+    <E_Switch/>
     </>
   );
 };
