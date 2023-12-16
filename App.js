@@ -29,6 +29,13 @@ import B_TextInput from "./Inputs and Forms/B_TextInput";
 import C_TextInput_props from "./Inputs and Forms/C_TextInput_props";
 import D_MultiLine_TextInput from "./Inputs and Forms/D_MultiLine_TextInput";
 import E_Switch from "./Inputs and Forms/E_Switch";
+import F_LoginForm from "./Inputs and Forms/F_LoginForm";
+import G_KeyboardAvoidingView from "./Inputs and Forms/G_KeyboardAvoidingView";
+import H_FormValidation from "./Inputs and Forms/H_FormValidation";
+import I_FormSubmission from "./Inputs and Forms/I_FormSubmission";
+import A_GetRequest from "./Network Calls/A_GetRequest";
+import Aa_LoadingState from "./Network Calls/Aa_LoadingState";
+import B_Pull_to_Refresh from "./Network Calls/B_Pull_to_Refresh";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
@@ -164,7 +171,16 @@ const App = () => {
     {/* <B_TextInput/> */}
     {/* <C_TextInput_props/> */}
     {/* <D_MultiLine_TextInput/> */}
-    <E_Switch/>
+    {/* <E_Switch/> */}
+    {/* <F_LoginForm/> */}
+    {/* <G_KeyboardAvoidingView/> */}
+    {/* <H_FormValidation/> */}
+    {/* <I_FormSubmission/> */}
+
+    {/*API calls /network calls */}
+    {/* <A_GetRequest/> */}
+    {/* <Aa_LoadingState/> */}
+    <B_Pull_to_Refresh/>
     </>
   );
 };
