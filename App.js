@@ -36,6 +36,8 @@ import I_FormSubmission from "./Inputs and Forms/I_FormSubmission";
 import A_GetRequest from "./Network Calls/A_GetRequest";
 import Aa_LoadingState from "./Network Calls/Aa_LoadingState";
 import B_Pull_to_Refresh from "./Network Calls/B_Pull_to_Refresh";
+import C_Post_Request from "./Network Calls/C_Post_Request";
+import D_ErrorHandling from "./Network Calls/D_ErrorHandling";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
@@ -180,7 +182,9 @@ const App = () => {
     {/*API calls /network calls */}
     {/* <A_GetRequest/> */}
     {/* <Aa_LoadingState/> */}
-    <B_Pull_to_Refresh/>
+    {/* <B_Pull_to_Refresh/> */}
+    {/* <C_Post_Request/> */}
+    <D_ErrorHandling/>
     </>
   );
 };
