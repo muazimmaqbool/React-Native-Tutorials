@@ -23,7 +23,7 @@ const D_ScrollView = () => {
         gardens and worldwide today.
       </Text>
       <Image
-        source={{uri: "https://picsum.photos/200" }}
+        source={{uri:"https://picsum.photos/200"}}
         style={{ width: 300, height: 300 }}
       />
       </ScrollView>

@@ -41,7 +41,7 @@ Important: Although this method works but Dimensions API has a drawback (lec-41)
     and thats the draw back of dimensions api the values doesn't dynamically updates when device orientation changes
     and the solution to this problem is use "useState and and useEffect hooks" in next code
 */
-console.log("width:",windowWidth," and height:",windowHeight)
+//console.log("width:",windowWidth," and height:",windowHeight)
 
 const styles = StyleSheet.create({
     container:{

@@ -1,13 +1,13 @@
 import { View,Text } from "react-native";
 const B_Text = () => {
   return (
-    <>
+    
      <View>
         <Text>This is Text Component</Text>
         {/*Nesting Text component */}
         <Text><Text style={{color:"white",fontSize:25}}>React</Text>Native</Text>
      </View>
-    </>
+    
   )
 };
 

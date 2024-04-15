@@ -38,14 +38,27 @@ import Aa_LoadingState from "./Network Calls/Aa_LoadingState";
 import B_Pull_to_Refresh from "./Network Calls/B_Pull_to_Refresh";
 import C_Post_Request from "./Network Calls/C_Post_Request";
 import D_ErrorHandling from "./Network Calls/D_ErrorHandling";
+
+//core components
+import A_View from "./Core Components/A_View";
+import B_Text from "./Core Components/B_Text";
+import C_Image from "./Core Components/C_Image";
+import D_ScrollView from "./Core Components/D_ScrollView";
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
-     {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
+      {/*also used for core components */}
+     <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> 
+      {/*Core Components */}
+      {/* <A_View/> */}
+      {/* <B_Text/> */}
+      {/* <C_Image/> */}
+      <D_ScrollView/>
+     
     {/* view used only when working with flexbox */}
     {/* <View style={styles.container}> */}
-
+       
       {/*custom components*/}
         {/* <Greet name="Muazim Maqbool" enroll="6655"/>
         <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
@@ -56,7 +69,7 @@ const App = () => {
         {/* <E_BoxModel/> */}
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
-        {/* </View> */}
+      </View>
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) */}
@@ -184,7 +197,10 @@ const App = () => {
     {/* <Aa_LoadingState/> */}
     {/* <B_Pull_to_Refresh/> */}
     {/* <C_Post_Request/> */}
-    <D_ErrorHandling/>
+    {/* <D_ErrorHandling/> */}
+
+    {/*Navigation */}
+    {/*Navigation is different project/branch RN_Navigation */}
     </>
   );
 };

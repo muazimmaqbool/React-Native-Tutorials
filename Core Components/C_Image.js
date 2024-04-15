@@ -5,7 +5,7 @@ const C_Image = () => {
     <>
      <View>
         <Image source={myImage} style={{width:300,height:250}}/>
-        <Text>online image</Text>
+        <Text>below image is fetched from online</Text>
         <Image source={{uri:"https://picsum.photos/200"}} style={{width:300,height:300}} />
      </View>
     </>
