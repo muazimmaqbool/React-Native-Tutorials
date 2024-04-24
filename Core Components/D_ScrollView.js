@@ -37,6 +37,6 @@ export default D_ScrollView;
     ->Enables us to scroll to the screen to see ful content when the content is too big
     to be fit inside the screen size by default we can't scroll
     ->ScrollView comp. wraps the scroll functionality
-    ->scrollView requires a bounded heigh to function properly
+    ->scrollView requires a bounded height to function properly
     ->Nest scrollView inside View by this way its bounded by the height of of its parent i.e view in this case
 */

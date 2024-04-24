@@ -44,6 +44,12 @@ import A_View from "./Core Components/A_View";
 import B_Text from "./Core Components/B_Text";
 import C_Image from "./Core Components/C_Image";
 import D_ScrollView from "./Core Components/D_ScrollView";
+import E_Button from "./Core Components/E_Button";
+import F_Pressable from "./Core Components/F_Pressable";
+import G_Modal from "./Core Components/G_Modal";
+import H_Statusbar from "./Core Components/H_Statusbar";
+
+
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
@@ -54,7 +60,11 @@ const App = () => {
       {/* <A_View/> */}
       {/* <B_Text/> */}
       {/* <C_Image/> */}
-      <D_ScrollView/>
+      {/* <D_ScrollView/> */}
+      {/* <E_Button/> */}
+      {/* <F_Pressable/> */}
+      {/* <G_Modal/> */}
+      <H_Statusbar/>
      
     {/* view used only when working with flexbox */}
     {/* <View style={styles.container}> */}
