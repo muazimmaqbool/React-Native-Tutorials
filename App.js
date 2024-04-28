@@ -48,42 +48,45 @@ import E_Button from "./Core Components/E_Button";
 import F_Pressable from "./Core Components/F_Pressable";
 import G_Modal from "./Core Components/G_Modal";
 import H_Statusbar from "./Core Components/H_Statusbar";
-import I_ActivityIndicator from "./Core Components/I_ActivityIndicator"
+import I_ActivityIndicator from "./Core Components/I_ActivityIndicator";
 import J_Alert from "./Core Components/J_Alert";
-
+import Cc_styleSheet2 from "./Components/Cc_styleSheet2";
 
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
       {/*also used for core components */}
-     <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> 
-      {/*Core Components */}
-      {/* <A_View/> */}
-      {/* <B_Text/> */}
-      {/* <C_Image/> */}
-      {/* <D_ScrollView/> */}
-      {/* <E_Button/> */}
-      {/* <F_Pressable/> */}
-      {/* <G_Modal/> */}
-      {/* <H_Statusbar/> */}
-      {/* <I_ActivityIndicator/> */}
-      <J_Alert/>
-     
-    {/* view used only when working with flexbox */}
-    {/* <View style={styles.container}> */}
-       
-      {/*custom components*/}
+      <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
+
+        {/*Core Components */}
+        {/* <A_View/> */}
+        {/* <B_Text/> */}
+        {/* <C_Image/> */}
+        {/* <D_ScrollView/> */}
+        {/* <E_Button/> */}
+        {/* <F_Pressable/> */}
+        {/* <G_Modal/> */}
+        {/* <H_Statusbar/> */}
+        {/* <I_ActivityIndicator/> */}
+        {/* <J_Alert/> */}
+
+
+        {/*custom components*/}
         {/* <Greet name="Muazim Maqbool" enroll="6655"/>
         <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
-
-        {/* <B_Styling/> */}
+        {/* <B_Styling /> */}
         {/* <C_StyleSheet/> */}
+        <Cc_styleSheet2/>
         {/* <D_MultipleStyles/> */}
         {/* <E_BoxModel/> */}
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
+
       </View>
+
+      {/* this view used only when working with flexbox */}
+      {/* <View style={styles.container}> */}
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) */}
@@ -177,44 +180,44 @@ const App = () => {
       <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
         Box-6
       </H_Relative_Absolute_layout> */}
-    {/* </View> */}
+      {/* </View> */}
 
-    {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
-    {/* <DimensionsAPI/> */}
-    {/* <B_DimAPIsolution/> */}
-    {/* <C_UseWindowDimensions/> */}
-    {/* <D_SafeAreaView/> */}
-    {/* <E_Platform_Specific_code/> */}
+      {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
+      {/* <DimensionsAPI/> */}
+      {/* <B_DimAPIsolution/> */}
+      {/* <C_UseWindowDimensions/> */}
+      {/* <D_SafeAreaView/> */}
+      {/* <E_Platform_Specific_code/> */}
 
-    {/*pockemon example */}
-    {/* <Home/> */}
+      {/*pockemon example */}
+      {/* <Home/> */}
 
-    {/*Lists in React Native */}
-     {/* <A_Lists_RN/> */}
-    {/* <B_Flat_List/> */}
-    {/* <C_FlatList_2/> */}
-    {/* <D_Flat_List_3/> */}
-    {/* <E_SectionList/> */}
+      {/*Lists in React Native */}
+      {/* <A_Lists_RN/> */}
+      {/* <B_Flat_List/> */}
+      {/* <C_FlatList_2/> */}
+      {/* <D_Flat_List_3/> */}
+      {/* <E_SectionList/> */}
 
-    {/*Inputs and Forms in React Native */}
-    {/* <B_TextInput/> */}
-    {/* <C_TextInput_props/> */}
-    {/* <D_MultiLine_TextInput/> */}
-    {/* <E_Switch/> */}
-    {/* <F_LoginForm/> */}
-    {/* <G_KeyboardAvoidingView/> */}
-    {/* <H_FormValidation/> */}
-    {/* <I_FormSubmission/> */}
+      {/*Inputs and Forms in React Native */}
+      {/* <B_TextInput/> */}
+      {/* <C_TextInput_props/> */}
+      {/* <D_MultiLine_TextInput/> */}
+      {/* <E_Switch/> */}
+      {/* <F_LoginForm/> */}
+      {/* <G_KeyboardAvoidingView/> */}
+      {/* <H_FormValidation/> */}
+      {/* <I_FormSubmission/> */}
 
-    {/*API calls /network calls */}
-    {/* <A_GetRequest/> */}
-    {/* <Aa_LoadingState/> */}
-    {/* <B_Pull_to_Refresh/> */}
-    {/* <C_Post_Request/> */}
-    {/* <D_ErrorHandling/> */}
+      {/*API calls /network calls */}
+      {/* <A_GetRequest/> */}
+      {/* <Aa_LoadingState/> */}
+      {/* <B_Pull_to_Refresh/> */}
+      {/* <C_Post_Request/> */}
+      {/* <D_ErrorHandling/> */}
 
-    {/*Navigation */}
-    {/*Navigation is different project/branch RN_Navigation */}
+      {/*Navigation */}
+      {/*Navigation is different project/branch RN_Navigation */}
     </>
   );
 };

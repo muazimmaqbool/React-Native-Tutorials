@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
 /*Note: these styles can only be used within the same component, although we do have option to make the gloabl
         styles file and export the styles object and used it any where
           example: export const styles=StyleSheet.create({....})
+          and import like this: import {styles} from "./stylesheet.js"
  
   ->We can also use styles object without StyleSheet Api but then we don't get access to auto complete suggestion
     for styles properties
