@@ -48,6 +48,8 @@ import E_Button from "./Core Components/E_Button";
 import F_Pressable from "./Core Components/F_Pressable";
 import G_Modal from "./Core Components/G_Modal";
 import H_Statusbar from "./Core Components/H_Statusbar";
+import I_ActivityIndicator from "./Core Components/I_ActivityIndicator"
+import J_Alert from "./Core Components/J_Alert";
 
 
 const myImage = require("./assets/pic.jpg");
@@ -64,7 +66,9 @@ const App = () => {
       {/* <E_Button/> */}
       {/* <F_Pressable/> */}
       {/* <G_Modal/> */}
-      <H_Statusbar/>
+      {/* <H_Statusbar/> */}
+      {/* <I_ActivityIndicator/> */}
+      <J_Alert/>
      
     {/* view used only when working with flexbox */}
     {/* <View style={styles.container}> */}

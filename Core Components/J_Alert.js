@@ -3,17 +3,23 @@ import { Alert, Button, Text, View } from "react-native";
 
 const J_Alert = () => {
   /*Alert: shows/launches an alert dialog with specified title and message
-     -> we can also add buttons to it: only 3 allowed in Android and in ios any number of button can be added
+     -> we can also add buttons to it: only 3 allowed in Android and in ios any number of buttons can be added
      ->by default Alert has only one button i.e "ok"
+
+     styntax:
+     Alert.alert("title of alert","message of alert",["buttons of alert"])
+     Note:
+      -> if you don't add any button it will show by default the ok button 
+      -> if you don't pass any paramter to it i.e: Alert.alert() it will still work
     */
   return (
-    <View style={{ gap: 10 }}>
+    <View style={{ gap: 20 }}>
       <Button title="Alert One" onPress={() => Alert.alert("Basic Allert")} />
       <Button
         title="Alert Two"
-        onPress={() => Alert.alert("Allert Title", "This is Alert Body")}
+        onPress={() => Alert.alert("Alert Title", "This is Alert Body")}
       />
-      {/*Alert with buttons, in android only 3 buttons are allowed in Alert and ios any number of button are allowed inside allert */}
+      {/*Alert with buttons, in android only 3 buttons are allowed inside Alert and ios any number of button are allowed inside alert */}
       <Button
         title="Alert Three"
         onPress={() =>
@@ -66,7 +72,7 @@ const J_Alert = () => {
         }
       />
     </View>
-    //visit react-native docs for more API components like this Alert
+    //visit react-native docs for more API components like this Alert : https://reactnative.dev/docs/accessibilityinfo
   );
 };
 
