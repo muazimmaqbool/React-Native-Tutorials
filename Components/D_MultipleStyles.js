@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     at one place rather than defining them again and again and we can use them on both the Keys
 
 ->Note: in multiple styling the last style takes precendence:
-                      i.e the value from last style element in the array takes precendence"
+      i.e the value from last style element in the array takes precendence"
       i.e   in: style={[styles.box, styles.lightblueBg]} and then we add backgroundColor in box, it won't effect as backgroundColor is also added in 
                  lightblueBg and it will take precendence and if box is added after lightblueBg then color is changed(red) then it will effect
 */
