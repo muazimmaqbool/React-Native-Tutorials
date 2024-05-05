@@ -1,14 +1,16 @@
 import { View,Image, Text} from "react-native";
 const myImage=require("../assets/pic.jpg")
+//or import myImage from "../assets/pic.jpg";
+
 const C_Image = () => {
   return (
-    <>
+    
      <View>
         <Image source={myImage} style={{width:300,height:250}}/>
         <Text>below image is fetched from online</Text>
         <Image source={{uri:"https://picsum.photos/200"}} style={{width:300,height:300}} />
      </View>
-    </>
+    
   )
 };
 

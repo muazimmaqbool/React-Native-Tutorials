@@ -2,8 +2,10 @@ import { Image, ScrollView, Text, View } from "react-native";
 const myImage = require("../assets/pic.jpg");
 const D_ScrollView = () => {
   return (
-    <View>
-        <ScrollView>
+    <View> 
+      {/*above View here is optional as we have View also in app.js*/}
+        <ScrollView >
+        {/* <ScrollView showsVerticalScrollIndicator={false}: removes scroll line which appears on right side */}
       <Image source={myImage} style={{ width: 250, height: 250 }} />
       <Text style={{ padding: 5 }}>
         Marigolds are famed ornamentals known for their vibrant daisy-like
@@ -34,9 +36,9 @@ const D_ScrollView = () => {
 export default D_ScrollView;
 /*
  ScrollView:
-    ->Enables us to scroll to the screen to see ful content when the content is too big
+    ->Enables us to scroll to the screen to see full content when the content is too big
     to be fit inside the screen size by default we can't scroll
-    ->ScrollView comp. wraps the scroll functionality
+    ->ScrollView component wraps the scroll functionality
     ->scrollView requires a bounded height to function properly
-    ->Nest scrollView inside View by this way its bounded by the height of of its parent i.e view in this case
+    ->Nest scrollView inside View by this way its bounded by the height of its parent i.e view in this case
 */

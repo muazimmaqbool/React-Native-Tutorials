@@ -19,7 +19,7 @@ const F_Shadows = () => {
     the shadowColor is the only property that work both on android and ios
     */
   return (
-    <View>
+    <View >
     <View style={[styles.box, styles.lightblueBg, styles.boxShadow]}>
       <Text style={{ borderRadius: 5, backgroundColor: "purple" }}>
         Lightblue Box
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     },
     //this will make box-shadow to work on android as well
     androidShadow:{
-        elevation:15,
+        elevation:35,
     }
   });
 export default F_Shadows

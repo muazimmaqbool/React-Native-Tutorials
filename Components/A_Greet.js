@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 const Greet = ({ name ,enroll}) => {
   return (
     <View>
-      <Text>Aslamualikum, {name}</Text>
+      <Text>Aslamualikum: {name}</Text>
       <Text>Your Enroll is:{enroll}</Text>
     </View>
   );

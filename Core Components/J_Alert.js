@@ -19,7 +19,7 @@ const J_Alert = () => {
         title="Alert Two"
         onPress={() => Alert.alert("Alert Title", "This is Alert Body")}
       />
-      {/*Alert with buttons, in android only 3 buttons are allowed inside Alert and ios any number of button are allowed inside alert */}
+      {/*Alert with buttons, in android only 3 buttons are allowed inside Alert and in ios any number of button are allowed inside alert */}
       <Button
         title="Alert Three"
         onPress={() =>
@@ -32,12 +32,12 @@ const J_Alert = () => {
               text: "Ok",
               onPress: () => console.log("You clicked Ok "),
             },
-            //this will be shown in android
+            // this will be shown in android
             // {
             //     text:"New",
             //     onPress:()=>console.log("You clicked New ")
             // },
-            //this won't be shown in android but in IOS this will be shown
+            // this won't be shown in android but in IOS this will be shown
             // {
             //     text:"New2",
             //     onPress:()=>console.log("You clicked New ")

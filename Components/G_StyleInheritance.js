@@ -5,7 +5,7 @@ const G_StyleInheritance = () => {
   /*
     ->Style Inheritance: React Native Styling Inheritance is limited as compared to styling Inheritance in CSS
     
-    NOTE: Styling Inheritance from View to Text/other didn't work 
+    NOTE: Styling Inheritance from View to Text/others didn't work 
     NOTE: Styling Inheritance from Text to Text works
     (see notebook for proper concept)
 
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     padding: 25,
     backgroundColor: "black",
     //color: "white",
-    //color:"white" will not apply on text which is inside view on which darkMode style object is used
+    //color:"white" will not apply on text which is inside view on which darkModeText style object is used
     //so to change color of text apply seperate styling to it
   },
   //applied to text which is inside View, works fine

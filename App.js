@@ -52,12 +52,13 @@ import I_ActivityIndicator from "./Core Components/I_ActivityIndicator";
 import J_Alert from "./Core Components/J_Alert";
 import Cc_styleSheet2 from "./Components/Cc_styleSheet2";
 
+
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
-      {/*also used for core components */}
-      <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
+      {/*also used for core components and components */}
+      {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
 
         {/*Core Components */}
         {/* <A_View/> */}
@@ -71,7 +72,6 @@ const App = () => {
         {/* <I_ActivityIndicator/> */}
         {/* <J_Alert/> */}
 
-
         {/*custom components*/}
         {/* <Greet name="Muazim Maqbool" enroll="6655"/>
         <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
@@ -79,19 +79,20 @@ const App = () => {
         {/* <C_StyleSheet/> */}
         {/* <Cc_styleSheet2/> */}
         {/* <D_MultipleStyles/> */}
-        <E_BoxModel/>
+        {/* <E_BoxModel/> */}
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
 
-      </View>
+      {/*closing view of core components and components */}
+      {/* </View> */}
 
       {/* this view used only when working with flexbox */}
-      {/* <View style={styles.container}> */}
+      <View style={styles.container}>
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) */}
-      {/* <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
-      <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
+       <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
+     {/* <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
@@ -180,7 +181,9 @@ const App = () => {
       <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
         Box-6
       </H_Relative_Absolute_layout> */}
-      {/* </View> */}
+       
+       {/*closing View of flexbox */}
+      </View>
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}

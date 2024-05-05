@@ -43,6 +43,7 @@ const G_Modal = () => {
           />
         </View>
       </Modal>
+
     </View>
   );
 };

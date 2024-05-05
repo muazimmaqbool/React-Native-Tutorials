@@ -16,7 +16,7 @@ const E_Button = () => {
       <Button
         title="I'm Working"
         color="black"
-        onPress={() => console.log("You make me workling")}
+        onPress={() => console.log("You make me working")}
         disabled={false}
       />
     </View>
@@ -26,7 +26,7 @@ const E_Button = () => {
 export default E_Button;
 /*
 Button: used to trigger an action
-Note-> button layout is showing differently on ios and android (we can customize it later so it will be displayed same in both)
+Note-> button layout is showing differently on ios and android (we can customize it later so that it will be displayed same in both)
 Important:
 ->Button props:
   1) title="" : title prop is used to display button text
