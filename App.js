@@ -90,11 +90,13 @@ const App = () => {
       <View style={styles.container}>
 
       {/*flexbox and flex property */}
-      {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) */}
-       <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
-     {/* <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
+      {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
+      ->uncomment them all together A_FlexBox
+      */}
+       {/* <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
+      <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
+       <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> */}
 
@@ -104,9 +106,9 @@ const App = () => {
       <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
 
       {/*justify content */}
-      {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
+      <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
       <C_JustifyContent styleprop={{backgroundColor:"green"}} >Box2</C_JustifyContent>
-      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent> */}
+      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent>
 
       {/*alignItems and alignSelf (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
       {/*applying alignSelf to each item here */}
@@ -246,11 +248,11 @@ const styles = StyleSheet.create({
     //flexDirection:
     //flexDirection:"column" //default value no change sets main axis from top to bottom
     //flexDirection:"column-reverse", //sets flex items in reverse order i.e bottom to top
-    // flexDirection:"row" //sets items form left to right
+    //flexDirection:"row", //sets items form left to right
     //flexDirection:"row-reverse", //sets items from right to left in reverse order
 
     //justifycontent:
-    //justifyContent:"space-around" //values:flex-start, flex-end, center,space-between,space-evenly,space-around
+    //justifyContent:"space-around", //values:flex-start, flex-end, center,space-between,space-evenly,space-around
 
     //alignItems: default value is "stretch" i.e the items will take entire width of cross axis
     //alignItems:"center" //values:stretch,flex-start,flex-end,center

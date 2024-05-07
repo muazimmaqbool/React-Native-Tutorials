@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 /*
-->First see previour code and notes
+->First see previous code and notes
 
 ->Flex directon:establishes the main axis, which determines how the flex items are placed in container
   ->by default main axis is top to bottom but we can change its direction by changing flex-direction

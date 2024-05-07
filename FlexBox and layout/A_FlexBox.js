@@ -17,7 +17,8 @@ import React from "react";
 /*Flex property: deinfes how much of a view will fill the screen along the main axis(top to bottom)
 ->it accepts an integer value "0" or more, indicating the fraction(percentage) of available space the component should take
 ->Note in web dev, we write display:"flex" to make a container/div a flex container, but in 
-React-Native: the view is already a flex container and its comp. inside it are flex items  
+React-Native: the view is already a flex container and its comp. inside it are flex items
+-> and view is has by default: flex-direction:column  
 */
 //Flex property is applied in APP.js
 const A_FlexBox = ({ children, styleprop }) => {
