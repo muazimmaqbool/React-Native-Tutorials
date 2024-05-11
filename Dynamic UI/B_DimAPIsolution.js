@@ -26,7 +26,7 @@ const B_DimAPIsolution = () => {
   //Now add inline styles that dynamically changes based on the device dimensions, so comment condition styles in stylesheet
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container,{backgroundColor:windowWidth>500?"teal":"plum",}]}>
       <View style={[styles.box,{
         width:windowWidth>500?"70%":"90%",
         height:windowHeight>600?"60%":"90%"

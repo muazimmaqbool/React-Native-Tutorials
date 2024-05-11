@@ -87,7 +87,7 @@ const App = () => {
       {/* </View> */}
 
       {/* this view used only when working with flexbox */}
-      <View style={styles.container}>
+      {/* <View style={styles.container}> */}
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
@@ -106,9 +106,9 @@ const App = () => {
       <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
 
       {/*justify content */}
-      <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
+      {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
       <C_JustifyContent styleprop={{backgroundColor:"green"}} >Box2</C_JustifyContent>
-      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent>
+      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent> */}
 
       {/*alignItems and alignSelf (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
       {/*applying alignSelf to each item here */}
@@ -116,6 +116,7 @@ const App = () => {
       <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",alignSelf:"flex-end"}}>Box-2</D_Align_ITEMSandSELF>
       <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange",alignSelf:"center"}}>Box-3</D_Align_ITEMSandSELF>
       <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF> */}
+
       {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelft
       is also flex start, if alignSelf is not mention in children they still take value from their parent
        */}
@@ -127,7 +128,7 @@ const App = () => {
       {/* <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"green"}}>Box2</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"blue"}}>Box3</E_FlexWrap> */}
-      {/*flexBasic makes the item more talls than other,Look at notes also to understand better */}
+      {/*flexBasic makes the item more taller than other,Look at notes also to understand better */}
       {/* <E_FlexWrap styleprop={{backgroundColor:"teal",flexBasis:140}}>Box4</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"pink"}}>Box5</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"skyblue"}}>Box6</E_FlexWrap>
@@ -139,7 +140,7 @@ const App = () => {
       {/* <F_FlexShrink styleprop={{backgroundColor:"green",flexShrink:2}}>Box 2 Shrink</F_FlexShrink> */}
 
       {/*Flex Grow */}
-      {/* <G_FlexGrow styleprop={{backgroundColor:"teal"}}>BOX-1</G_FlexGrow>
+      {/* <G_FlexGrow styleprop={{backgroundColor:"teal",}}>BOX-1</G_FlexGrow>
        <G_FlexGrow styleprop={{backgroundColor:"green"}}>BOX-2</G_FlexGrow> */}
       {/*no chnage as flexGrow:0 is default value */}
       {/* <G_FlexGrow styleprop={{backgroundColor:"yellow",flexGrow:0}}>BOX-3</G_FlexGrow>  */}
@@ -160,6 +161,7 @@ const App = () => {
       <H_Relative_Absolute_layout styleprop={{ backgroundColor: "green" }}>
         Box-2
       </H_Relative_Absolute_layout> */}
+      
       {/*mentioning relative is optional */}
       {/* <H_Relative_Absolute_layout
         styleprop={{ backgroundColor: "pink",position:"relative",left: 80 }}
@@ -185,14 +187,14 @@ const App = () => {
       </H_Relative_Absolute_layout> */}
        
        {/*closing View of flexbox */}
-      </View>
+      {/* </View> */}
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}
       {/* <B_DimAPIsolution/> */}
       {/* <C_UseWindowDimensions/> */}
       {/* <D_SafeAreaView/> */}
-      {/* <E_Platform_Specific_code/> */}
+      <E_Platform_Specific_code/>
 
       {/*pockemon example */}
       {/* <Home/> */}
@@ -260,16 +262,16 @@ const styles = StyleSheet.create({
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
     //height:300, //box will come out of red container
     //flexWrap:"nowrap" //default value no change
-    //flexWrap:"wrap", //content within the container-> works only when needed if you set height to 500 then they will not wrap to next column, they come in single liine
+   // flexWrap:"wrap", //content within the container-> works only when needed if you set height to 500 then they will not wrap to next column, they come in single liine
     //flexWrap:"wrap-reverse", //opposite of wrap
-    // rowGap:20,
+    //  rowGap:20,
     // columnGap:30,
-    //gap:20
+    //gap:20 //for both row and column gap
 
     //flexShrink -> first set flexDirection to row and alignItems to flexStart and width to 300
     // width:300,
-    //flexDirection:"row",
-    //alignItems:"flex-start",
+    // flexDirection:"row",
+    // alignItems:"flex-start",
     //flexShrink is applied above while calling the component
   },
 });
