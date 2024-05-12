@@ -5,7 +5,7 @@ import CustomBtn from "./PSFE Example/CustomButton/CustomBtn";
 PLATFORM SPECIFIC CODE:
     ->When developing a cross-platform app maximizing code reuse is a priority, but sometimes there are 
        situation when it becomes necessary to tailor your code to specific platform
-    ->React-Native offers to approaches for organizing and seperating the platform specific code:
+    ->React-Native offers two approaches for organizing and seperating the platform specific code:
         1)-> Platform module   2)-> platform specific file extensions
 
     
@@ -25,10 +25,11 @@ PLATFORM SPECIFIC CODE:
         this is used for more complex scenerios, this splits the code in sepereate files for "ios" and  "android"
         with .ios and .android extensions before the main extension.
         ->React Nativ detects the extension and loads the relevant platform file when required by other components
-        Example: creating a button comp. that varies across the twp platforms 
+        Example: creating a button comp. that varies across the two platforms 
         ->create new folder inside Dynamic Ui folder for this example
         >folder "PSFE example" and inside it a subfolder >custom button (inside it create two files: customBtn.ios.js and customBtn.android.js)
-            importing them : import CustomBtn from "./PSFE Example/CustomButton/CustomBtn"; //here we didn't write customBtn.ios.js or .android.js extension React Native will figure it out
+            importing them : import CustomBtn from "./PSFE Example/CustomButton/CustomBtn"; 
+          ?Note: here we didn't write customBtn.ios.js or .android.js extension React Native will figure it out while importing
             now In UI you can see the same button is rendered in different ways on IOS and Android, React Native automatically selects the component based on the executing platform
 
 -> In summary: React Native makes it possible to run platform specific code using "Platform" module and "Platform specific extensions"
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "plum",
     //setting paddingTop in android platform only
-    paddingTop: Platform.OS === "android" ? 25 : 0,
+    paddingTop: Platform.OS === "android" ? 30 : 0,
   },
   box: {
     padding: 20,
