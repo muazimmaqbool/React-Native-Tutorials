@@ -19,7 +19,7 @@ const A_Lists_RN = () => {
         pokemonList.map(pokemon => {
             console.log("id:",pokemon.id);  //upto 100
             //here you can see that all items are rendered even if they are not in the viewport i.e visibile
-            //this can lead to performance issues so, to overcome this React Native as "FlatList" (see in next code)
+            //this can lead to performance issues so, to overcome this React Native has a "FlatList" (see in next code)
             return(
                 <View key={pokemon.id} style={styles.itemStyle}>
                 <Text style={styles.itemText}>{pokemon.type}</Text>

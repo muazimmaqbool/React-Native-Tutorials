@@ -13,7 +13,7 @@ import pokemonList from "./TestData.json";
 //first see previous code
 /*
 In this code we will see: item Seperator prop of FlatList
--> itemSeperatorComponent : this prop eccepts a reat component and renders it between each item in the list
+-> itemSeperatorComponent : this prop accepts a react component and renders it between each item in the list
         but exculding the top and bottom,
         (here we can now replace the bottom margin we have in our card component)
  
