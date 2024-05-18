@@ -15,7 +15,7 @@ import {
   In this code we will see: two more props of FlatList -> Header , Footer, ListEmptyComponent
     ->List Header: accepts react component and renders it at the top of the list
     ->List Footer: accepts react component and renders it at the bottom of the list
-    -> ListEmptyComponent : used no item in the list is present
+    -> ListEmptyComponent : used when no item in the list is present
 
     -> ListHeaderComponent={} , ListFooterComponent={} , ListEmptyComponent={}
     */

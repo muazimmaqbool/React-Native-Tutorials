@@ -19,7 +19,7 @@ const B_TextInput = () => {
   return (
     <SafeAreaView style={styles.container}>
       <TextInput style={styles.input} value={name} onChangeText={setName}/>
-      <Text style={styles.text}>My Name Is {name}</Text>
+      <Text style={styles.text}>My Name is {name}</Text>
     </SafeAreaView>
   );
 };

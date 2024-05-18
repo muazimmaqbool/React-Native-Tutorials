@@ -202,7 +202,7 @@ const App = () => {
       {/*Lists in React Native */}
       {/* <A_Lists_RN/> */}
       {/* <B_Flat_List/> */}
-      <C_FlatList_2/>
+      {/* <C_FlatList_2/> */}
       {/* <D_Flat_List_3/> */}
       {/* <E_SectionList/> */}
 
@@ -210,7 +210,7 @@ const App = () => {
       {/* <B_TextInput/> */}
       {/* <C_TextInput_props/> */}
       {/* <D_MultiLine_TextInput/> */}
-      {/* <E_Switch/> */}
+      <E_Switch/>
       {/* <F_LoginForm/> */}
       {/* <G_KeyboardAvoidingView/> */}
       {/* <H_FormValidation/> */}
