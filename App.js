@@ -51,6 +51,7 @@ import H_Statusbar from "./Core Components/H_Statusbar";
 import I_ActivityIndicator from "./Core Components/I_ActivityIndicator";
 import J_Alert from "./Core Components/J_Alert";
 import Cc_styleSheet2 from "./Components/Cc_styleSheet2";
+import H_RefereshControl from "./Components/H_RefereshControl";
 
 
 const myImage = require("./assets/pic.jpg");
@@ -82,6 +83,7 @@ const App = () => {
         {/* <E_BoxModel/> */}
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
+        <H_RefereshControl/>
 
       {/*closing view of core components and components */}
       {/* </View> */}
@@ -210,7 +212,8 @@ const App = () => {
       {/* <B_TextInput/> */}
       {/* <C_TextInput_props/> */}
       {/* <D_MultiLine_TextInput/> */}
-      <E_Switch/>
+
+      {/* <E_Switch/> */}
       {/* <F_LoginForm/> */}
       {/* <G_KeyboardAvoidingView/> */}
       {/* <H_FormValidation/> */}
