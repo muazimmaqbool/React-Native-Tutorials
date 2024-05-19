@@ -30,6 +30,7 @@ const E_Switch = () => {
         { backgroundColor: isDarkMode ? "black" : "white" },
       ]}
     >
+      <StatusBar backgroundColor={isDarkMode ? "teal" : "black" }/>
       <TextInput
         style={[
           styles.input,
@@ -84,7 +85,6 @@ export default E_Switch;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#fff",
     paddingTop: StatusBar.currentHeight,
   },
   input: {

@@ -58,7 +58,7 @@ const H_FormValidation = () => {
           {
             errors.password ? <Text style={styles.errorText}>{errors.password}</Text> : null
           }
-          <Button title="Login" onPress={() => {}} />
+          <Button title="Login" onPress={validateForm} />
         </KeyboardAvoidingView>
       </View>
     );
@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
     errorText:{
         color:"red",
         marginBottom:10,
+        marginTop:-20,
     }
   });
   

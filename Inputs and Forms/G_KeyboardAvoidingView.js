@@ -12,11 +12,10 @@ import React, { useState } from "react";
 
 /*
 the problem is that when we add the image inside View with styles form and then in IOS device when we 
-click on the input fields to enter text the keyboard ovelays the input field and making text inout behind
+click on the input fields to enter text the keyboard ovelays the input field and making text input behind
  the keyboard and this behavior is not seen android
  and to avoid this in IOS: we have KeyboardAvoidingView
- replace the outer most view/coomponent with this component
-
+ replace the outer most view/coomponent of the content with this component
 */
 
 const G_KeyboardAvoidingView = () => {
@@ -67,14 +66,14 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 25,
     borderRadius: 10,
-    shadowColor: "black",
+    shadowColor: "purple",
     shadowOffset: {
       width: 5,
       height: 10,
     },
     shadowOpacity: 0.9,
     shadowRadius: 4,
-    elevation: 10, //this is specifically for android
+    elevation: 100, //this is specifically for android
   },
   label: {
     fontSize: 20,
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 200,
-    height: 400,
+    height: 350,
     alignSelf: "center",
     marginBottom: 50,
   },

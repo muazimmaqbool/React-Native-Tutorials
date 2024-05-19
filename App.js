@@ -83,7 +83,7 @@ const App = () => {
         {/* <E_BoxModel/> */}
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
-        <H_RefereshControl/>
+        {/* <H_RefereshControl/> */}
 
       {/*closing view of core components and components */}
       {/* </View> */}
@@ -212,7 +212,6 @@ const App = () => {
       {/* <B_TextInput/> */}
       {/* <C_TextInput_props/> */}
       {/* <D_MultiLine_TextInput/> */}
-
       {/* <E_Switch/> */}
       {/* <F_LoginForm/> */}
       {/* <G_KeyboardAvoidingView/> */}
@@ -220,7 +219,7 @@ const App = () => {
       {/* <I_FormSubmission/> */}
 
       {/*API calls /network calls */}
-      {/* <A_GetRequest/> */}
+      <A_GetRequest/>
       {/* <Aa_LoadingState/> */}
       {/* <B_Pull_to_Refresh/> */}
       {/* <C_Post_Request/> */}

@@ -18,11 +18,17 @@ const F_LoginForm = () => {
         <TextInput
           style={styles.input}
           placeholder="Enter your password"
-          secureTextEntry
+          secureTextEntry //now it becomes input field for password
           value={password}
           onChangeText={setPassword}
         />
-        <Button title="Login" onPress={() => {}} />
+        <Button
+          title="Login"
+          onPress={() => {
+            console.log("username:", username);
+            console.log("password:", password);
+          }}
+        />
       </View>
     </View>
   );
@@ -41,14 +47,14 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 25,
     borderRadius: 10,
-    shadowColor: "black",
+    shadowColor: "blue",
     shadowOffset: {
       width: 5,
       height: 10,
     },
     shadowOpacity: 0.9,
     shadowRadius: 4,
-    elevation: 10, //this is specifically for android
+    elevation: 50, //this is specifically for android
   },
   label: {
     fontSize: 20,
