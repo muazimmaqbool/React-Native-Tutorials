@@ -5,6 +5,7 @@ import {
   View,
   FlatList,
   Text,
+  Button,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 
@@ -24,13 +25,11 @@ const A_GetRequest = () => {
     const data = await response.json();
     setPosts(data);
   };
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   //now lets display data inside posts in ui using flatList
   return (
     <SafeAreaView style={styles.container}>
+      <Button title="Get Posts" onPress={()=>fetchData()}/>
       <View style={styles.listContainer}>
         <FlatList
           data={posts}
@@ -42,7 +41,7 @@ const A_GetRequest = () => {
               </View>
             );
           }}
-          ItemSeparatorComponent={() => <View style={{ height: 15 }} />}
+          ItemSeparatorComponent={<View style={{ height: 15 }} />}
           ListEmptyComponent={<Text>No Posts Found</Text>}
           ListHeaderComponent={<Text style={styles.headerText}>List Of Posts</Text>}
           ListFooterComponent={<Text style={styles.footerText}>End of Posts List</Text>}

@@ -112,7 +112,7 @@ const C_Post_Request = () => {
                 </View>
               );
             }}
-            ItemSeparatorComponent={() => <View style={{ height: 15 }} />}
+            ItemSeparatorComponent={ <View style={{ height: 15 }} />}
             ListEmptyComponent={<Text>No Posts Found</Text>}
             ListHeaderComponent={
               <Text style={styles.headerText}>List Of Posts</Text>
