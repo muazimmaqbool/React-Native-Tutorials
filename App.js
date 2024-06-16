@@ -52,13 +52,15 @@ import I_ActivityIndicator from "./Core Components/I_ActivityIndicator";
 import J_Alert from "./Core Components/J_Alert";
 import Cc_styleSheet2 from "./Components/Cc_styleSheet2";
 import H_RefereshControl from "./Components/H_RefereshControl";
+import A_responsive from "./Responsive design/A_responsive";
+import B_respUsingFlex from "./Responsive design/B_respUsingFlex";
 
 
 const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
-      {/*also used for core components and components */}
+      {/*also used for core components and custom components */}
       {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
 
         {/*Core Components */}
@@ -85,8 +87,12 @@ const App = () => {
         {/* <G_StyleInheritance/> */}
         {/* <H_RefereshControl/> */}
 
-      {/*closing view of core components and components */}
+      {/*closing view of core components and custom components */}
       {/* </View> */}
+        
+      {/*responsive layout/design */}
+        {/* <A_responsive/> */}
+        <B_respUsingFlex/>
 
       {/* this view used only when working with flexbox */}
       {/* <View style={styles.container}> */}
@@ -227,6 +233,7 @@ const App = () => {
 
       {/*Navigation */}
       {/*Navigation is different project/branch RN_Navigation */}
+     
     </>
   );
 };
