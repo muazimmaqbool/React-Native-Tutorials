@@ -54,6 +54,8 @@ import Cc_styleSheet2 from "./Components/Cc_styleSheet2";
 import H_RefereshControl from "./Components/H_RefereshControl";
 import A_responsive from "./Responsive design/A_responsive";
 import B_respUsingFlex from "./Responsive design/B_respUsingFlex";
+import I_UseWindowDimensions from "./Components/I_UseWindowDimensions";
+import J_Vibration from "./Components/J_Vibration";
 
 
 const myImage = require("./assets/pic.jpg");
@@ -61,7 +63,7 @@ const App = () => {
   return (
     <>
       {/*also used for core components and custom components */}
-      {/* <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}> */}
+      <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
 
         {/*Core Components */}
         {/* <A_View/> */}
@@ -86,13 +88,15 @@ const App = () => {
         {/* <F_Shadows/> */}
         {/* <G_StyleInheritance/> */}
         {/* <H_RefereshControl/> */}
+        {/* <I_UseWindowDimensions/> */}
+        <J_Vibration/>
 
       {/*closing view of core components and custom components */}
-      {/* </View> */}
+      </View>
         
       {/*responsive layout/design */}
         {/* <A_responsive/> */}
-        <B_respUsingFlex/>
+        {/* <B_respUsingFlex/> */}
 
       {/* this view used only when working with flexbox */}
       {/* <View style={styles.container}> */}
