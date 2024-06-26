@@ -56,6 +56,7 @@ import A_responsive from "./Responsive design/A_responsive";
 import B_respUsingFlex from "./Responsive design/B_respUsingFlex";
 import I_UseWindowDimensions from "./Components/I_UseWindowDimensions";
 import J_Vibration from "./Components/J_Vibration";
+import K_Dimensions from "./Components/K_Dimensions";
 
 
 const myImage = require("./assets/pic.jpg");
@@ -89,7 +90,8 @@ const App = () => {
         {/* <G_StyleInheritance/> */}
         {/* <H_RefereshControl/> */}
         {/* <I_UseWindowDimensions/> */}
-        <J_Vibration/>
+        {/* <J_Vibration/> */}
+        <K_Dimensions/>
 
       {/*closing view of core components and custom components */}
       </View>
