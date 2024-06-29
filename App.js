@@ -57,6 +57,7 @@ import B_respUsingFlex from "./Responsive design/B_respUsingFlex";
 import I_UseWindowDimensions from "./Components/I_UseWindowDimensions";
 import J_Vibration from "./Components/J_Vibration";
 import K_Dimensions from "./Components/K_Dimensions";
+import L_BackHandler from "./Components/L_BackHandler";
 
 
 const myImage = require("./assets/pic.jpg");
@@ -91,7 +92,8 @@ const App = () => {
         {/* <H_RefereshControl/> */}
         {/* <I_UseWindowDimensions/> */}
         {/* <J_Vibration/> */}
-        <K_Dimensions/>
+        {/* <K_Dimensions/> */}
+        <L_BackHandler/>
 
       {/*closing view of core components and custom components */}
       </View>
