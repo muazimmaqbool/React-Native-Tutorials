@@ -58,6 +58,7 @@ import I_UseWindowDimensions from "./Components/I_UseWindowDimensions";
 import J_Vibration from "./Components/J_Vibration";
 import K_Dimensions from "./Components/K_Dimensions";
 import L_BackHandler from "./Components/L_BackHandler";
+import M_ToastAndroid from "./Components/M_ToastAndroid";
 
 
 const myImage = require("./assets/pic.jpg");
@@ -93,7 +94,8 @@ const App = () => {
         {/* <I_UseWindowDimensions/> */}
         {/* <J_Vibration/> */}
         {/* <K_Dimensions/> */}
-        <L_BackHandler/>
+        {/* <L_BackHandler/> */}
+        <M_ToastAndroid/>
 
       {/*closing view of core components and custom components */}
       </View>
