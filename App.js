@@ -97,7 +97,7 @@ const App = () => {
         {/* <K_Dimensions/> */}
         {/* <L_BackHandler/> */}
         {/* <M_ToastAndroid/> */}
-        <N_Permissions/>
+        {/* <N_Permissions/> */}
 
       {/*closing view of core components and custom components */}
       </View>
