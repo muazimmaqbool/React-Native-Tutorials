@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 /*
 -> AsyncStorage is an unencrypted, asynchronous, persistent, key-value storage system that is global to the app.
@@ -21,12 +22,38 @@ import React from 'react'
 
 const O_AsyncStorage = () => {
   return (
-    <View>
-      <Text>O_AsyncStorage</Text>
+    <View style={styles.container}>
+      <ExampleOne/>
     </View>
+  )
+}
+
+
+function ExampleOne(){
+  const setData=async()=>{
+    await AsyncStorage.setItem("name","React Native")
+  }
+  const getData=async()=>{
+    const value=await AsyncStorage.getItem("name")
+    console.warn(value)
+  }
+  return(
+    <View style={{gap:10}}>
+       <Button title="Set Data" onPress={setData}/>
+       <Button title="Get Data" onPress={getData}/>
+       <Button title="Remove Data"/>
+    </View>
+   
   )
 }
 
 export default O_AsyncStorage
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    
+  },
+})
