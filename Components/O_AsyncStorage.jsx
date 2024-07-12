@@ -23,7 +23,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 const O_AsyncStorage = () => {
   return (
     <View style={styles.container}>
-      <ExampleOne/>
+      {/* <ExampleOne/> */}
+      <ExampleTwo/>
     </View>
   )
 }
@@ -44,13 +45,21 @@ function ExampleOne(){
   }
   return(
     <View style={{gap:10}}>
-      <Text>Basic Example of Asycn Storage</Text>
+      <Text style={styles.title}>Basic Example of Asycn Storage</Text>
       <Text>{name}</Text>
        <Button title="Set Data" onPress={setData}/>
        <Button title="Get Data" onPress={getData}/>
        <Button title="Remove Data" onPress={removeData}/>
     </View>
    
+  )
+}
+
+function ExampleTwo(){
+  return(
+    <View style={{gap:10}}>
+      <Text style={styles.title}>Example of Asycn Storage</Text>
+    </View>
   )
 }
 
@@ -61,6 +70,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    
   },
+  title:{
+    fontSize:18,
+    fontWeight:"500",
+    color:"white",
+
+  }
 })
