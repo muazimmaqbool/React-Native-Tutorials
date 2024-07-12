@@ -37,11 +37,14 @@ function ExampleOne(){
     const value=await AsyncStorage.getItem("name")
     console.warn(value)
   }
+  const removeData=async()=>{
+    await AsyncStorage.removeItem("name")
+  }
   return(
     <View style={{gap:10}}>
        <Button title="Set Data" onPress={setData}/>
        <Button title="Get Data" onPress={getData}/>
-       <Button title="Remove Data"/>
+       <Button title="Remove Data" onPress={removeData}/>
     </View>
    
   )
