@@ -1,5 +1,5 @@
 import { Button, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 /*
@@ -30,18 +30,22 @@ const O_AsyncStorage = () => {
 
 
 function ExampleOne(){
+  const [name, setname] = useState('');
   const setData=async()=>{
-    await AsyncStorage.setItem("name","React Native")
+    await AsyncStorage.setItem("name","Test Name")
   }
   const getData=async()=>{
     const value=await AsyncStorage.getItem("name")
-    console.warn(value)
+    setname(value)
+    //console.warn(value)
   }
   const removeData=async()=>{
     await AsyncStorage.removeItem("name")
   }
   return(
     <View style={{gap:10}}>
+      <Text>Basic Example of Asycn Storage</Text>
+      <Text>{name}</Text>
        <Button title="Set Data" onPress={setData}/>
        <Button title="Get Data" onPress={getData}/>
        <Button title="Remove Data" onPress={removeData}/>
