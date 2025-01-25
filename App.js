@@ -99,7 +99,7 @@ const App = () => {
         {/* <L_BackHandler/> */}
         {/* <M_ToastAndroid/> */}
         {/* <N_Permissions/> */}
-        <O_AsyncStorage/>
+        {/* <O_AsyncStorage/> */}
 
       {/*closing view of core components and custom components */}
       </View>
