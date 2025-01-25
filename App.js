@@ -67,7 +67,7 @@ const myImage = require("./assets/pic.jpg");
 const App = () => {
   return (
     <>
-      {/*also used for core components and custom components */}
+      {/*used for core components and custom components */}
       <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
 
         {/*Core Components */}

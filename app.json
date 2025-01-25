@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "basic",
-    "slug": "basic",
+    "name": "React Native Basic",
+    "slug": "React_Native_Basic",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
