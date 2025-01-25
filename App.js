@@ -73,8 +73,8 @@ const App = () => {
         {/* Core Components: */}
           {/* <A_View/> */}
           {/* <B_Text/> */}
-          <C_Image/>
-          {/* <D_ScrollView/> */}
+          {/* <C_Image/> */}
+          <D_ScrollView/>
           {/* <E_Button/> */}
           {/* <F_Pressable/> */}
           {/* <G_Modal/> */}
