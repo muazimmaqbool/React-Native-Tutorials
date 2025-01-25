@@ -1,7 +1,6 @@
 import { View,Text } from "react-native";
 const B_Text = () => {
   return (
-    
      <View>
         <Text>This is Text Component</Text>
         {/*Nesting Text component */}
@@ -15,7 +14,7 @@ export default B_Text;
 /*
 Text component:
   ->Used for displaying text
-  ->it also supports styling, nesting, touch handling
-  ->depending on the targeted platform R.N will translate the Text and other component to targetting platform
+  ->It also supports styling, nesting, touch handling
+  ->Depending on the targeted platform R.N will translate the Text and other component to targetted platform
     example: UITextView(ios), TextView(android) and <p>(web)
 */
