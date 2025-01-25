@@ -70,36 +70,36 @@ const App = () => {
       {/*used for core components and custom components */}
       <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
 
-        {/*Core Components */}
-        {/* <A_View/> */}
-        {/* <B_Text/> */}
-        {/* <C_Image/> */}
-        {/* <D_ScrollView/> */}
-        {/* <E_Button/> */}
-        {/* <F_Pressable/> */}
-        {/* <G_Modal/> */}
-        {/* <H_Statusbar/> */}
-        {/* <I_ActivityIndicator/> */}
-        {/* <J_Alert/> */}
+        {/* Core Components: */}
+          {/* <A_View/> */}
+          {/* <B_Text/> */}
+          {/* <C_Image/> */}
+          {/* <D_ScrollView/> */}
+          {/* <E_Button/> */}
+          {/* <F_Pressable/> */}
+          {/* <G_Modal/> */}
+          {/* <H_Statusbar/> */}
+          {/* <I_ActivityIndicator/> */}
+          {/* <J_Alert/> */}
 
-        {/*custom components*/}
-        {/* <Greet name="Muazim Maqbool" enroll="6655"/>
-        <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
-        {/* <B_Styling /> */}
-        {/* <C_StyleSheet/> */}
-        {/* <Cc_styleSheet2/> */}
-        {/* <D_MultipleStyles/> */}
-        {/* <E_BoxModel/> */}
-        {/* <F_Shadows/> */}
-        {/* <G_StyleInheritance/> */}
-        {/* <H_RefereshControl/> */}
-        {/* <I_UseWindowDimensions/> */}
-        {/* <J_Vibration/> */}
-        {/* <K_Dimensions/> */}
-        {/* <L_BackHandler/> */}
-        {/* <M_ToastAndroid/> */}
-        {/* <N_Permissions/> */}
-        {/* <O_AsyncStorage/> */}
+        {/* Custom Components :*/}
+          {/* <Greet name="Muazim Maqbool" enroll="6655"/>
+          <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
+          {/* <B_Styling /> */}
+          {/* <C_StyleSheet/> */}
+          {/* <Cc_styleSheet2/> */}
+          {/* <D_MultipleStyles/> */}
+          {/* <E_BoxModel/> */}
+          {/* <F_Shadows/> */}
+          {/* <G_StyleInheritance/> */}
+          {/* <H_RefereshControl/> */}
+          {/* <I_UseWindowDimensions/> */}
+          {/* <J_Vibration/> */}
+          {/* <K_Dimensions/> */}
+          {/* <L_BackHandler/> */}
+          {/* <M_ToastAndroid/> */}
+          {/* <N_Permissions/> */}
+          {/* <O_AsyncStorage/> */}
 
       {/*closing view of core components and custom components */}
       </View>
@@ -307,10 +307,9 @@ export default App;
 ->React used react-dom for web apps and react-native for mobile apps
 
 Note: checkout more intro and basic topics on note book
-
-here i have done styling of view in App.js
 */
 
+//here i have done styling of view in App.js
 /*
   Added background image to the app
  return (
