@@ -1,7 +1,7 @@
 import { Button, Image, Pressable, Text, View } from "react-native";
 const myImage = require("../assets/pic.jpg");
 const F_Pressable = () => {
-  //pressable: its a wrapper component that detects various stages of press interactions on its children
+  //pressable: it is a wrapper component that detects various stages of press interactions on its children
   //any thing inside pressable becomes clickable or pressable
   /*
   ->Pressable supports:
@@ -13,7 +13,7 @@ const F_Pressable = () => {
   return (
     <View>
       <Pressable onPress={() => console.log("Clicked via pressable")}>
-        <Text style={{ padding: 10, backgroundColor: "green" }}>
+        <Text style={{ padding: 10, backgroundColor: "green",color:"white" }}>
           This is clickable as its inside pressable
         </Text>
       </Pressable>
