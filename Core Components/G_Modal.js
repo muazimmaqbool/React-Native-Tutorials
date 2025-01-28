@@ -10,7 +10,7 @@ const G_Modal = () => {
   return (
     <View>
       {/* //Basic modal component, will open when app is opened */}
-         {/* <Modal visible={true}>
+      {/* <Modal visible={true}>
           <View style={{flex:1,backgroundColor:"pink",padding:80}}>
           </View>
         </Modal> */}
@@ -22,7 +22,8 @@ const G_Modal = () => {
         color={"midnightblue"}
       />
       {/*onRequestClose: is called when user clicks on the back button on device otherwise it won't close the modal when 
-      back button is called, by adding this: onRequestClose={() => setIsModalOpen(false)} the modal is closed when back button is clicked
+      back button is called, 
+      by adding this: onRequestClose={() => setIsModalOpen(false)} the modal is closed when back button is clicked
       */}
       <Modal
         visible={isModalOpen}
@@ -32,11 +33,20 @@ const G_Modal = () => {
         animationType="slide" // or use ="fade"
 
         //presentation style works only on ios
-        //presentationStyle="fullscreen" //default value ="fullscreen", also can use ="formsheet",="pagesheet"
+        //presentationStyle="fullscreen" //default value ="fullscreen", also can use ="formsheet","pagesheet"
         //Note using presentationStyle in android crashes the app
       >
-        <View style={{ flex: 0.5, margin:20,backgroundColor: "pink", padding: 60 }}>
-          <Text>This is Modal Component</Text>
+        <View
+          style={{
+            flex: 0.5,
+            margin: 20,
+            backgroundColor: "#0000006E",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 10,
+          }}
+        >
+          <Text style={{ color: "white",fontSize:20 }}>This is Modal Component</Text>
           <Button
             title="Close Modal"
             onPress={() => setIsModalOpen(false)}
@@ -44,7 +54,6 @@ const G_Modal = () => {
           />
         </View>
       </Modal>
-
     </View>
   );
 };
