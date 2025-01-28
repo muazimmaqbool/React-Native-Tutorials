@@ -9,7 +9,7 @@ const G_Modal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <View>
-      {/* //Basic modal component */}
+      {/* //Basic modal component, will open when app is opened */}
          {/* <Modal visible={true}>
           <View style={{flex:1,backgroundColor:"pink",padding:80}}>
           </View>
@@ -32,7 +32,8 @@ const G_Modal = () => {
         animationType="slide" // or use ="fade"
 
         //presentation style works only on ios
-        presentationStyle="fullscreen" //default value ="fullscreen", also can use ="formsheet",="pagesheet"
+        //presentationStyle="fullscreen" //default value ="fullscreen", also can use ="formsheet",="pagesheet"
+        //Note using presentationStyle in android crashes the app
       >
         <View style={{ flex: 0.5, margin:20,backgroundColor: "pink", padding: 60 }}>
           <Text>This is Modal Component</Text>
