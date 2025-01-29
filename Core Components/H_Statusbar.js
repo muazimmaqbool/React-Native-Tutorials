@@ -3,10 +3,11 @@ import { Button, StatusBar, Text, View } from "react-native";
 
 const H_Statusbar = () => {
   //StatusBar: allows you to control the applications status bar (area at the top of the screen)
-  //->statusbar: displays various information such as : time, wifi, sim, battery info, etc
+  //Statusbar: displays various information such as : time, wifi, sim, battery info, etc
   //Statusbar component is used to modify the status bar
 
   const [isHidden, setIsHidden] = useState(false);
+  
   //function to toggle the visibility of statusbar
   const toggleStatusBar=()=>{
     setIsHidden((prevValue)=>!prevValue);
