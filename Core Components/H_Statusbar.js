@@ -19,9 +19,10 @@ const H_Statusbar = () => {
         barStyle={"light-content"} // try: defult, dark-content also
         /*Note: default is white in android and black in ios
                 dark-content: dark color in both
-                ligh-content: white color in both*/
+                ligh-content: white color in both
+        */
 
-        //hidden //default is true, but we can control it using state variable
+        //hidden default is true, but we can control it using state variable
         hidden={isHidden}
       />
       {/*button to show and hide status bar */}
