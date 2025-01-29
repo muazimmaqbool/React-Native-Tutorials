@@ -4,7 +4,7 @@ import { ActivityIndicator, Button, Text, View } from 'react-native'
 const I_ActivityIndicator = () => {
     /*
     Activity Indicator: used to inform the users about the status of ongoing process. 
-    such as loading an app, submitting form or saving updates etc
+      such as loading an app, submitting form or saving updates etc
      ->basically its an loader
      ->It takes three props: size, color and animating(used to hide and show loader by default its true)
      */
