@@ -80,11 +80,11 @@ const App = () => {
           {/* <G_Modal/> */}
           {/* <H_Statusbar/> */}
           {/* <I_ActivityIndicator/> */}
-          <J_Alert/>
+          {/* <J_Alert/> */}
 
         {/* Custom Components :*/}
-          {/* <Greet name="Muazim Maqbool" enroll="6655"/>
-          <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
+          <Greet name="Muazim Maqbool" enroll="6655"/>
+          <Greet name="Basit Mushtaq" enroll={"6593"}/> 
           {/* <B_Styling /> */}
           {/* <C_StyleSheet/> */}
           {/* <Cc_styleSheet2/> */}
