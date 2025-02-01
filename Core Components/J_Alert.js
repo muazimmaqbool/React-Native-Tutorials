@@ -1,24 +1,27 @@
 import React from "react";
 import { Alert, Button, Text, View } from "react-native";
 
-const J_Alert = () => {
-  /*Alert: shows/launches an alert dialog with specified title and message
-     -> we can also add buttons to it: only 3 allowed in Android and in ios any number of buttons can be added
+/*Alert: shows/launches an alert dialog with specified title and message
+     ->we can also add buttons to it: only 3 allowed in Android and in ios any number of buttons can be added
      ->by default Alert has only one button i.e "ok"
 
      styntax:
      Alert.alert("title of alert","message of alert",["buttons of alert"])
      Note:
       -> if you don't add any button it will show by default the ok button 
-      -> if you don't pass any paramter to it i.e: Alert.alert() it will still work
-    */
+      -> if you don't pass any paramter to it i.e: Alert.alert() it will still work and will contain only ok button
+*/
+const J_Alert = () => {
   return (
     <View style={{ gap: 20 }}>
+
       <Button title="Alert One" onPress={() => Alert.alert("Basic Allert")} />
+
       <Button
         title="Alert Two"
         onPress={() => Alert.alert("Alert Title", "This is Alert Body")}
       />
+      
       {/*Alert with buttons, in android only 3 buttons are allowed inside Alert and in ios any number of button are allowed inside alert */}
       <Button
         title="Alert Three"
@@ -65,8 +68,6 @@ const J_Alert = () => {
                 text:"Yes",
                 onPress:()=>console.log("You clicked on 'Yes'")
               },
-              
-              
             ]
           )
         }
