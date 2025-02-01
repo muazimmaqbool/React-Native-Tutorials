@@ -12,7 +12,7 @@ const I_ActivityIndicator = () => {
      const [isHidden, setIsHidden] = useState(false)
   return (
     <View>
-        <ActivityIndicator/>
+        <ActivityIndicator />
         <ActivityIndicator size={"large"}/>
         {/*default size is small */}
         <ActivityIndicator size={"large"} color="white"/>
@@ -22,14 +22,11 @@ const I_ActivityIndicator = () => {
         {/*animating={true} : visible, animating={false} : hidden */}
 
         {/*controlling show and hide of loader using state variable */}
-        <ActivityIndicator size={"large"} color={"orange"} animating={isHidden}/>
+        <ActivityIndicator size={"large"} color={"green"} animating={isHidden}/>
         <Button title={isHidden?"Hide":"Show"} color={"black"} onPress={()=>setIsHidden((prev)=>!prev)}/>
 
-        {
-          /*
-          NOTE: size={number} i.e size={200} only works in android
-          */
-        }
+        {/*NOTE: size={number} i.e size={200} only works in android*/}
+         <ActivityIndicator size={"100"} color="black"/>
     </View>
   )
 }

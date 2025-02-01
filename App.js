@@ -68,7 +68,7 @@ const App = () => {
   return (
     <>
       {/*used for core components and custom components */}
-      <View style={{ flex: 1, backgroundColor: "teal", padding: 60 }}>
+      <View style={{ flex: 1, backgroundColor: "skyblue", padding: 60 }}>
 
         {/* Core Components: */}
           {/* <A_View/> */}
