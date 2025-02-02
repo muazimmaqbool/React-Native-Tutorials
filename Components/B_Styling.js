@@ -20,7 +20,7 @@ const B_Styling = () => {
   return (
     <View>
         {/*styled using inline styling/css */}
-        <Text style={{color:"white",fontSize:30}}>Stylied using Inlince Styles/css</Text>
+        <Text style={{color:"#00000099",fontSize:30}}>Stylied using Inlince Styles/css</Text>
     </View>
   )
 }
