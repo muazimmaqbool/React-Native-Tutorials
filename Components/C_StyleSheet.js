@@ -2,10 +2,10 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native";
 
+//see previous code first
+/*StyleSheet API : it allows the user to define multiple styles at one place using "create" method
+  its mostly used and preferred method*/
 const C_StyleSheet = () => {
-  //see previous code first
-  /*StyleSheet API : it allows the user to define multiple styles at one place using "create" method
-    its mostly used and preferred method*/
   return (
     //view is styled in App.js using inline Styling
     <View>
@@ -22,7 +22,7 @@ export default C_StyleSheet;
 const styles = StyleSheet.create({
   titleText: {
     fontSize: 20,
-    color: "midnightblue",
+    color: "blue",
     borderWidth: 1,
     borderColor: "white",
     padding: 10,
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 15,
     margin: 10,
-    //alignItems:"center"
+    alignItems:"center",
+    borderRadius:10,
   },
 });
 
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
           example: export const styles=StyleSheet.create({....})
           and import like this: import {styles} from "./stylesheet.js"
  
-  ->We can also use styles object without StyleSheet Api but then we don't get access to auto complete suggestion
+  ->We can also use styles object without StyleSheet Api but then we don't get access to auto complete suggestions
     for styles properties
      example: const styles={
         nestedView:{

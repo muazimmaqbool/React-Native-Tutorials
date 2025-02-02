@@ -85,8 +85,8 @@ const App = () => {
         {/* Custom Components :*/}
           {/* <Greet name="Muazim Maqbool" enroll="6655"/>
           <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
-          <B_Styling />
-          {/* <C_StyleSheet/> */}
+          {/* <B_Styling /> */}
+          <C_StyleSheet/>
           {/* <Cc_styleSheet2/> */}
           {/* <D_MultipleStyles/> */}
           {/* <E_BoxModel/> */}
