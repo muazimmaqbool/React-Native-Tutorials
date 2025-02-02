@@ -87,8 +87,8 @@ const App = () => {
           <Greet name="Basit Mushtaq" enroll={"6593"}/>  */}
           {/* <B_Styling /> */}
           {/* <C_StyleSheet/> */}
-          <Cc_styleSheet2/>
-          {/* <D_MultipleStyles/> */}
+          {/* <Cc_styleSheet2/> */}
+          <D_MultipleStyles/>
           {/* <E_BoxModel/> */}
           {/* <F_Shadows/> */}
           {/* <G_StyleInheritance/> */}

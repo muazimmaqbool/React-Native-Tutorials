@@ -4,16 +4,16 @@ import { StyleSheet, Text, View } from "react-native";
 const D_MultipleStyles = () => {
   //First go through previous codes
   return (
-    //if we remove this outer View it will still work as Outer View is Styled and metioned in APP.js its here just for to add many components inside it
+    //if we remove this outer View it will still work as Outer View is Styled and metioned in App.js its here just for to add many components inside it
     <View>
     {/*
      style={styles.lightblueBg} : this way we add one style and to add multiple styles we put styles inside an array:
-            i.e style={[styles.box, styles.lightblueBg]}
+          i.e style={[styles.box, styles.lightblueBg]}
     */}
       <View style={[styles.box, styles.lightblueBg]}>
         <Text>Lightblue Box</Text>
       </View>
-      <View style={[styles.box, styles.lightgreenBg]}>
+      <View style={[styles.box, styles.lightgreenBg,{justifyContent:"center"}]}>
         <Text>Lightgreen Box</Text>
       </View>
       <View style={styles.box}>
@@ -37,11 +37,12 @@ const styles = StyleSheet.create({
     // padding: 10,
   },
   box: {
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 150,
     padding: 10,
     margin:10,
     backgroundColor:"red",
+    alignItems:"center",
   },
 });
 /*
