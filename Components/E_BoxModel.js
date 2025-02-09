@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-//Box Model: represents a box that includes every Html element consisting of Margin, Border, Padding, and the actual content
+//Box Model: it represents a box that includes every Html element consisting of Margin, Border, Padding, and the actual content
 /*
 In R.N all dimensions are unit less and represent density independent pixels no specific unit like rem/px is used
 ->But if parents dimensions are defined child components can have percentage dimensions/values
 Example: in our case Outer "View" is set to flex:1 in App.js that is it takes entire available space and its children
-is box etc which can have percentage value
+is box etc which can have percentage values
 */
 
-const E_BoxModel = () => {
+const  E_BoxModel = () => {
   return (
     <View>
       <View style={[styles.box, styles.lightblueBg]}>
