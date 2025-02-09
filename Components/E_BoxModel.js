@@ -13,7 +13,7 @@ const  E_BoxModel = () => {
     <View>
       <View style={[styles.box, styles.lightblueBg]}>
         {/*here borderRadius on text will only work on android not on ios */}
-        <Text style={{ borderRadius: 5, backgroundColor: "purple" }}>
+        <Text style={{ borderRadius: 5, backgroundColor: "purple",color:"white" }}>
           Lightblue Box
         </Text>
       </View>
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   box: {
     //width: '25%',
     //height: '25%',
-    //takes 25% of the parents height and width respectively and together the conver 50% of its height and 25% of width
+    //takes 25% of the parents height and width respectively and together the cover 50% of its height and 25% of width
     width: 200,
     height: 200,
     padding: 10, //for all sides
