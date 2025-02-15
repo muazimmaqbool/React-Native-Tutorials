@@ -17,14 +17,17 @@ const J_Vibration = () => {
       {Platform.OS === 'android'
         ? <Button title='Vibrate For 5 Seconds' onPress={()=>Vibration.vibrate(5 * ONE_SECOND_IN_MS)}/>
         : null}
+        {/* of Vibration.vibrate(5000)  to vibrate for 5 seconds*/}
       
       <Button title='Vibrate In Pattern' onPress={()=>Vibration.vibrate(pattern)}/>
+
       <Button
         title="Vibrate with pattern until cancelled"
         onPress={() => Vibration.vibrate(pattern, true)}
       />
+      {/* or Vibration.vibrate(5000,true):will vibrate for 5 seconds and if cancelled it stops before 5 seconds */}
       <Button
-        title="Stop vibration pattern"
+        title="Cancel vibration pattern"
         onPress={() => Vibration.cancel()}
         color="#FF0000"
       />
