@@ -7,9 +7,9 @@ const G_StyleInheritance = () => {
     
     NOTE: Styling Inheritance from View to Text/others didn't work 
     NOTE: Styling Inheritance from Text to Text works
-    (see notebook for proper concept)
+    (see notebook for proper understanding)
 
-    */
+  */
   return (
     <View>
       <View style={styles.darkMode}>
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     padding: 25,
     backgroundColor: "black",
     //color: "white",
-    //color:"white" will not apply on text which is inside view on which darkModeText style object is used
+    //-> color:"white" will not apply on text which is inside view on which darkModeText style object is used
     //so to change color of text apply seperate styling to it
   },
   //applied to text which is inside View, works fine
@@ -44,5 +44,6 @@ const styles = StyleSheet.create({
   //darkModeText and boldText styling objects
   boldText: {
     fontWeight: "bold",
+    //this will have color of white as its parent text has color white
   },
 });
