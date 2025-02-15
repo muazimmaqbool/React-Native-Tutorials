@@ -6,7 +6,7 @@ const F_Shadows = () => {
     Box Shadow and Elevation
     ->To add box-shadow in android as well we have to use Elevation property which internally
        utilizes the Android Elevation API
-    ->this is how we define box-shadow: 
+    ->This is how we define box-shadow: 
      boxShadow:{
         shadowColor:"#333333",
         shadowOffset:{
