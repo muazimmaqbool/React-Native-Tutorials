@@ -13,7 +13,7 @@ const I_UseWindowDimensions = () => {
     const{height,width,scale,fontScale}=useWindowDimensions()
   return (
     <View>
-      <Text style={styles.header}>Window Dimension Data</Text>
+      <Text style={styles.header}>Window Dimension Data:</Text>
       <Text style={styles.text}>Height: {height}</Text>
       <Text style={styles.text}>Width: {width}</Text>
       <Text style={styles.text}>Font scale: {fontScale}</Text>
@@ -28,10 +28,10 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 20,
     marginBottom: 12,
-    color: "white",
+    color: "green",
   },
   text:{
-    color:"white",
+    color:"black",
     fontFamily:"sans-serif",
     fontStyle:"italic",
     fontSize:15
