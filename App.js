@@ -94,8 +94,8 @@ const App = () => {
           {/* <G_StyleInheritance/> */}
           {/* <H_RefereshControl/> */}
           {/* <I_UseWindowDimensions/> */}
-          <J_Vibration/>
-          {/* <K_Dimensions/> */}
+          {/* <J_Vibration/> */}
+          <K_Dimensions/>
           {/* <L_BackHandler/> */}
           {/* <M_ToastAndroid/> */}
           {/* <N_Permissions/> */}
