@@ -2,19 +2,20 @@ import { StyleSheet, Text, View ,BackHandler,Alert} from 'react-native'
 import React, { useEffect } from 'react'
 
 /*
--> The Backhandler API detects hardware button presses for back navigation, lets you register event listeners for the system's back action,
- and lets you control how your application responds. It is Android-only.
+-> The Backhandler API detects hardware button presses for back navigation, 
+   lets you register event listeners for the system's back action,
+   and lets you control how your application responds. 
+   It works only in android.
 */
 
 const L_BackHandler = () => {
 
     useEffect(() => {
         const backAction = () => {
-          Alert.alert('Hold on!', 'Are you sure you want to go back?', [
+          Alert.alert('Hold on!', 'Are you sure you want to close the app?', [
             {
               text: 'Cancel',
               onPress: () => null,
-              style: 'cancel',
             },
             {text: 'YES', onPress: () => BackHandler.exitApp()},
             
@@ -23,8 +24,7 @@ const L_BackHandler = () => {
         };
     
         const backHandler = BackHandler.addEventListener(
-          'hardwareBackPress',
-          backAction,
+          'hardwareBackPress', backAction,
         );
     
         return () => backHandler.remove();
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
       text: {
         fontSize: 18,
         fontWeight: '500',
-        color:"white",
+        color:"black",
         textAlign:"center"
       },
 })
