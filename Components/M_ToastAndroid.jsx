@@ -6,7 +6,7 @@ import React from 'react'
   It provides the method show(message, duration) which takes the following parameters:
         - message A string with the text to toast
         - duration The duration of the toast—either ToastAndroid.SHORT or ToastAndroid.LONG
-        
+
 -> You can alternatively use showWithGravity(message, duration, gravity) to specify where the toast appears in the 
   screen's layout. May be ToastAndroid.TOP, ToastAndroid.BOTTOM or ToastAndroid.CENTER.
 
@@ -22,9 +22,9 @@ const M_ToastAndroid = () => {
 
     const showToastWithGravity = () => {
         ToastAndroid.showWithGravity(
-          'All Your Base Are Belong To Us',
+          'This is toast with gravity',
           ToastAndroid.SHORT,
-          ToastAndroid.CENTER,
+          ToastAndroid.TOP,
         );
       };
 
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
       },
       text:{
         fontSize:18,
-        color:"white",
+        color:"black",
         fontWeight:"500"
       }
 })
