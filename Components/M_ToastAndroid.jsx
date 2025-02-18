@@ -6,8 +6,7 @@ import React from 'react'
   It provides the method show(message, duration) which takes the following parameters:
         - message A string with the text to toast
         - duration The duration of the toast—either ToastAndroid.SHORT or ToastAndroid.LONG
-
-
+        
 -> You can alternatively use showWithGravity(message, duration, gravity) to specify where the toast appears in the 
   screen's layout. May be ToastAndroid.TOP, ToastAndroid.BOTTOM or ToastAndroid.CENTER.
 
