@@ -4,13 +4,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 
 /*
 -> AsyncStorage is an unencrypted, asynchronous, persistent, key-value storage system that is global to the app.
-    It should be used instead of LocalStorage.
+   It should be used instead of LocalStorage.
 
 -> It is recommended that you use an abstraction on top of AsyncStorage instead of AsyncStorage directly for anything more than light usage
-     since it operates globally.
+   since it operates globally.
 
 -> Async Storage can only store string data. In order to store object data, you need to serialize it first. For data that can be serialized
-     to JSON, you can use JSON.stringify() when saving the data and JSON.parse() when loading the data.
+   to JSON, you can use JSON.stringify() when saving the data and JSON.parse() when loading the data.
 
 -> On iOS, AsyncStorage is backed by native code that stores small values in a serialized dictionary and larger values in separate files.
    On Android, AsyncStorage will use either RocksDB or SQLite based on what is available.
@@ -23,8 +23,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 const O_AsyncStorage = () => {
   return (
     <View style={styles.container}>
-      {/* <ExampleOne/> */}
-      <ExampleTwo/>
+      <ExampleOne/>
+      {/* <ExampleTwo/> */}
     </View>
   )
 }
