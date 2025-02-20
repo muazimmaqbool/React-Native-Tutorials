@@ -23,8 +23,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 const O_AsyncStorage = () => {
   return (
     <View style={styles.container}>
-      <ExampleOne/>
-      {/* <ExampleTwo/> */}
+      {/* <ExampleOne/> */}
+      <ExampleTwo/>
     </View>
   )
 }
