@@ -2,12 +2,14 @@ import { Dimensions, StatusBar, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
-/*
--> to make the app responsive across all the devices of different screen sizes to you will using a library called:
-   "react-native-responsive-screen" download: -> npm i react-native-responsive-screen
+/* [react-native-responsive-screen] important
+
+-> To make the app responsive across all the devices of different screen sizes to you will using a library called:
+   "react-native-responsive-screen" 
+   command to install: -> npm i react-native-responsive-screen
    link: https://www.npmjs.com/package/react-native-responsive-screen
 
-   ->this library uses dimensions object of react native which is also used to make our app responsive
+   ->This library uses dimensions object of react native which is also used to make our app responsive
       like this: 
           const {height,width}=Dimensions.get('window');
           console.log("height: ",height," and width: ",width)

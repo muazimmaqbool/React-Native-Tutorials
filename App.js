@@ -68,7 +68,7 @@ const App = () => {
   return (
     <>
       {/*used for core components and custom components */}
-      <View style={{ flex: 1, backgroundColor: "skyblue", padding: 60 }}>
+      {/* <View style={{ flex: 1, backgroundColor: "skyblue", padding: 60 }}> */}
 
         {/* Core Components: */}
           {/* <A_View/> */}
@@ -99,17 +99,17 @@ const App = () => {
           {/* <L_BackHandler/> */}
           {/* <M_ToastAndroid/> */}
           {/* <N_Permissions/> */}
-          <O_AsyncStorage/>
+          {/* <O_AsyncStorage/> */}
 
       {/*closing view of core components and custom components */}
-      </View>
+      {/* </View> */}
         
       {/*responsive layout/design */}
-        {/* <A_responsive/> */}
+        <A_responsive/>
         {/* <B_respUsingFlex/> */}
 
-      {/* this view used only when working with flexbox */}
-      {/* <View style={styles.container}> */}
+    {/* this view used only when working with flexbox */}
+    {/* <View style={styles.container}> */}
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
@@ -209,7 +209,7 @@ const App = () => {
       </H_Relative_Absolute_layout> */}
        
        {/*closing View of flexbox */}
-      {/* </View> */}
+    {/* </View> */}
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}
