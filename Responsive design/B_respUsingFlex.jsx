@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   main: {
     flex: 4,
-    //flexDirection: "row",
+    // flexDirection: "row",
     gap: 5,
   },
   section1: {
