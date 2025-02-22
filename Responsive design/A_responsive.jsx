@@ -41,7 +41,7 @@ export default A_responsive;
 
 const styles = StyleSheet.create({
   container: {
-    height:hp(100), //hp: height percentage, hp(100) means 100% height of the current device screen
+    height:hp(10), //hp: height percentage, hp(100) means 100% height of the current device screen
   },
   header:{
     height:hp(15), //15% height of the current device screen
