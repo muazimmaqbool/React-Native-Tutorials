@@ -106,21 +106,21 @@ const App = () => {
         
       {/*responsive layout/design */}
         {/* <A_responsive/> */}
-        <B_respUsingFlex/>
+        {/* <B_respUsingFlex/> */}
 
     {/* this view used only when working with flexbox */}
-    {/* <View style={styles.container}> */}
+    <View style={styles.container}>
 
       {/*flexbox and flex property */}
       {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
       ->uncomment them all together A_FlexBox
       */}
-       {/* <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
+       <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
       <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
        <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> */}
+      <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox>
 
       {/*used for flex-direction */}
       {/* <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
@@ -209,7 +209,7 @@ const App = () => {
       </H_Relative_Absolute_layout> */}
        
        {/*closing View of flexbox */}
-    {/* </View> */}
+    </View>
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}
