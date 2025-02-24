@@ -112,7 +112,7 @@ const App = () => {
     <View style={styles.container}>
 
       {/*flexbox and flex property */}
-      {/*we call this A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
+      {/*we used this component: A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
       ->uncomment them all together A_FlexBox
       */}
        <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
