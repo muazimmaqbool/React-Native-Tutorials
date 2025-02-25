@@ -131,16 +131,16 @@ const App = () => {
       <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
 
       {/*justify content */}
-      <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
+      {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
       <C_JustifyContent styleprop={{backgroundColor:"green"}} >Box2</C_JustifyContent>
-      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent>
+      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent> */}
 
       {/*alignItems and alignSelf (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
       {/*applying alignSelf to each item here */}
-      {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",alignSelf:"flex-start"}}>Box-1</D_Align_ITEMSandSELF>
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",alignSelf:"flex-start"}}>Box-1</D_Align_ITEMSandSELF>
       <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",alignSelf:"flex-end"}}>Box-2</D_Align_ITEMSandSELF>
       <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange",alignSelf:"center"}}>Box-3</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF> */}
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF> 
 
       {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelft
       is also flex start, if alignSelf is not mention in children they still take value from their parent
