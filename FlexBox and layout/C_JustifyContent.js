@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 /*
-->justify content: defines the alignment along main axis
+->justify content: defines the alignment along main axis i.e top to bottom
 ->its applied in the container to control of the alignment of its content
+->Note if we set flex-direction to row, then justify content defines the alignment along cross axis i.e left to right
 ->applied in app.js
 */
 const C_JustifyContent = ({ children, styleprop }) => {
