@@ -125,15 +125,15 @@ const App = () => {
       <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> */}
 
       {/*used for flex-direction*/}
-      {/* the text BOX-1,2,3 will be received in component via children props */}
+      {/* Note: the texts BOX-1,2,3 will be received in component via children props */}
       {/* <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
       <B_FlexDirection styleprop={{backgroundColor:"green"}}>BOX-2</B_FlexDirection>
       <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
 
       {/*justify content */}
-      {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
+      <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
       <C_JustifyContent styleprop={{backgroundColor:"green"}} >Box2</C_JustifyContent>
-      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent> */}
+      <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent>
 
       {/*alignItems and alignSelf (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
       {/*applying alignSelf to each item here */}
