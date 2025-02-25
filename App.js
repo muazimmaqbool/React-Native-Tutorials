@@ -126,9 +126,9 @@ const App = () => {
 
       {/*used for flex-direction*/}
       {/* the text BOX-1,2,3 will be received in component via children props */}
-      <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
+      {/* <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
       <B_FlexDirection styleprop={{backgroundColor:"green"}}>BOX-2</B_FlexDirection>
-      <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection>
+      <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
 
       {/*justify content */}
       {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
