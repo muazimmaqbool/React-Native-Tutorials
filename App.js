@@ -117,17 +117,18 @@ const App = () => {
       */}
       
       {/* used for flex */}
-      <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
+      {/* <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
       <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
-       <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
+      <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
       <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox>
+      <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> */}
 
-      {/*used for flex-direction */}
-      {/* <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
+      {/*used for flex-direction*/}
+      {/* the text BOX-1,2,3 will be received in component via children props */}
+      <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
       <B_FlexDirection styleprop={{backgroundColor:"green"}}>BOX-2</B_FlexDirection>
-      <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
+      <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection>
 
       {/*justify content */}
       {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
