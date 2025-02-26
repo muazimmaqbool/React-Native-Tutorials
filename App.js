@@ -148,13 +148,13 @@ const App = () => {
       {/*if alignItems in parent is "center" then both box-5 and box-6 will be in center
       now change value of alignItems inside container i.e on line number 288
       */}
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF>
+      {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF> */}
 
       {/*flexWrap */}
-      {/* <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
-       <E_FlexWrap styleprop={{backgroundColor:"green"}}>Box2</E_FlexWrap>
-       <E_FlexWrap styleprop={{backgroundColor:"blue"}}>Box3</E_FlexWrap> */}
+      <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
+      <E_FlexWrap styleprop={{backgroundColor:"green"}}>Box2</E_FlexWrap>
+      <E_FlexWrap styleprop={{backgroundColor:"blue"}}>Box3</E_FlexWrap>
       {/*flexBasic makes the item more taller than other,Look at notes also to understand better */}
       {/* <E_FlexWrap styleprop={{backgroundColor:"teal",flexBasis:140}}>Box4</E_FlexWrap>
        <E_FlexWrap styleprop={{backgroundColor:"pink"}}>Box5</E_FlexWrap>
