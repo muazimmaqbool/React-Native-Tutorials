@@ -138,10 +138,10 @@ const App = () => {
       {/*alignItems and alignSelf 
       (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
       {/*applying alignSelf to each item here */}
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",}}>Box-1</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",}}>Box-2</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange"}}>Box-3</D_Align_ITEMSandSELF>
-      {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF>  */}
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",alignSelf:"flex-start"}}>Box-1</D_Align_ITEMSandSELF>
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",alignSelf:"center"}}>Box-2</D_Align_ITEMSandSELF>
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange",alignSelf:"flex-end"}}>Box-3</D_Align_ITEMSandSELF>
+      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF> 
 
       {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelft
       is also flex start, if alignSelf is not mention in children they still take value from their parent
@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
     //justifyContent:"space-around", //values:flex-start, flex-end, center,space-between,space-evenly,space-around
 
     //alignItems: default value is "stretch" i.e the items will take entire width of cross axis
-    alignItems:"center" //values:stretch,flex-start,flex-end,center
+    //alignItems:"center" //values:stretch,flex-start,flex-end,center
 
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
     //height:300, //box will come out of red container
