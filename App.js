@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
     borderColor: "red",
     //for now the container takes only space which is required by its children, you can see red border wrapping the boxes
     flex: 1, //now red border will be wrapping whole screen
-
+   
     //flexDirection:
     //flexDirection:"column" //default value no change sets main axis from top to bottom
     //flexDirection:"column-reverse", //sets flex items in reverse order i.e bottom to top
@@ -285,15 +285,15 @@ const styles = StyleSheet.create({
     //justifyContent:"space-around", //values:flex-start, flex-end, center,space-between,space-evenly,space-around
 
     //alignItems: default value is "stretch" i.e the items will take entire width of cross axis
-    // alignItems:"center" //values:stretch,flex-start,flex-end,center
+     //alignItems:"center", //values:stretch,flex-start,flex-end,center
 
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
     //height:300, //box will come out of red container
-    //flexWrap:"nowrap" //default value no change
-   // flexWrap:"wrap", //content within the container-> works only when needed if you set height to 500 then they will not wrap to next column, they come in single liine
+    // flexWrap:"nowrap" //default value no change
+    //flexWrap:"wrap", //content within the container-> works only when needed if you set height to 200 then they will not wrap to next column, they come in single line
     //flexWrap:"wrap-reverse", //opposite of wrap
-    //  rowGap:20,
-    // columnGap:30,
+    //rowGap:20,
+   // columnGap:30,
     //gap:20 //for both row and column gap
 
     //flexShrink -> first set flexDirection to row and alignItems to flexStart and width to 300
