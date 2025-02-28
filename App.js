@@ -163,9 +163,9 @@ const App = () => {
       <E_FlexWrap styleprop={{backgroundColor:"gray"}}>Box7</E_FlexWrap> */}
 
       {/*FlexShrink-> Note: make container flex-direction to row and alignItems to flexStart  and width to 300*/}
-      {/* <F_FlexShrink styleprop={{backgroundColor:"teal",flexShrink:1}}>Box 1 Shrink</F_FlexShrink> */}
+      <F_FlexShrink styleprop={{backgroundColor:"teal",flexShrink:1}}>Box 1 Shrink</F_FlexShrink>
       {/*if box2 has flexShrink:1 then they both have same width if box2 has 2 flexShrink then it shrinks twice as box1 */}
-      {/* <F_FlexShrink styleprop={{backgroundColor:"green",flexShrink:2}}>Box 2 Shrink</F_FlexShrink> */}
+      <F_FlexShrink styleprop={{backgroundColor:"green",flexShrink:2}}>Box 2 Shrink</F_FlexShrink>
 
       {/*Flex Grow */}
       {/* <G_FlexGrow styleprop={{backgroundColor:"teal",}}>BOX-1</G_FlexGrow>
