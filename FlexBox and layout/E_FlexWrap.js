@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-/**
+
+/*
  ->FlexWrap: allows us to control how flex items behave when there is limited space within the container
 */
 const E_FlexWrap = ({ children, styleprop }) => {
