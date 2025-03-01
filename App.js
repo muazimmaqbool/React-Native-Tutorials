@@ -108,7 +108,8 @@ const App = () => {
       {/* <B_respUsingFlex/> */}
 
       {/* this view used only when working with flexbox */}
-      <View style={styles.container}>
+      {/* <View style={styles.container}> */}
+      
         {/*flexbox and flex property */}
         {/*we used this component: A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
         ->uncomment them all together A_FlexBox
@@ -197,20 +198,20 @@ const App = () => {
         </H_Relative_Absolute_layout> */}
         {/*now box5 is positioned using specific coordinated relative to its parent container */}
         {/* <H_Relative_Absolute_layout
-        styleprop={{
-          backgroundColor: "orange",
-          position: "absolute",
-          top: 100,
-          left: 100,
-        }}>
-        Box-5
-      </H_Relative_Absolute_layout>
-      <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
-        Box-6
-      </H_Relative_Absolute_layout> */}
+          styleprop={{
+            backgroundColor: "orange",
+            position: "absolute",
+            top: 100,
+            left: 100,
+          }}>
+          Box-5
+        </H_Relative_Absolute_layout>
+        <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
+          Box-6
+        </H_Relative_Absolute_layout> */}
 
-        {/*closing View of flexbox */}
-      </View>
+      {/*closing View of flexbox */}
+      {/* </View> */}
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}
