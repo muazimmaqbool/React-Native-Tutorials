@@ -109,7 +109,7 @@ const App = () => {
 
       {/* this view used only when working with flexbox */}
       {/* <View style={styles.container}> */}
-      
+
         {/*flexbox and flex property */}
         {/*we used this component: A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
         ->uncomment them all together A_FlexBox
@@ -214,7 +214,7 @@ const App = () => {
       {/* </View> */}
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
-      {/* <DimensionsAPI/> */}
+      <DimensionsAPI/>
       {/* <B_DimAPIsolution/> */}
       {/* <C_UseWindowDimensions/> */}
       {/* <D_SafeAreaView/> */}
