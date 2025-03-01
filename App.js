@@ -162,10 +162,11 @@ const App = () => {
       <E_FlexWrap styleprop={{backgroundColor:"skyblue"}}>Box6</E_FlexWrap>
       <E_FlexWrap styleprop={{backgroundColor:"gray"}}>Box7</E_FlexWrap> */}
 
-      {/*FlexShrink-> Note: make container flex-direction to row and alignItems to flexStart  and width to 300*/}
+      {/*FlexShrink:
+        ->Note: make container flex-direction to row and alignItems to flexStart and width to 300*/}
       <F_FlexShrink styleprop={{backgroundColor:"teal",flexShrink:1}}>Box 1 Shrink</F_FlexShrink>
       {/*if box2 has flexShrink:1 then they both have same width if box2 has 2 flexShrink then it shrinks twice as box1 */}
-      <F_FlexShrink styleprop={{backgroundColor:"green",flexShrink:2}}>Box 2 Shrink</F_FlexShrink>
+      <F_FlexShrink styleprop={{backgroundColor:"orange",flexShrink:2}}>Box 2 Shrink</F_FlexShrink>
 
       {/*Flex Grow */}
       {/* <G_FlexGrow styleprop={{backgroundColor:"teal",}}>BOX-1</G_FlexGrow>
@@ -274,7 +275,7 @@ const styles = StyleSheet.create({
     borderWidth: 5,
     borderColor: "red",
     //for now the container takes only space which is required by its children, you can see red border wrapping the boxes
-    //flex: 1, //now red border will be wrapping whole screen
+    flex: 1, //now red border will be wrapping whole screen
    
     //flexDirection:
     //flexDirection:"column" //default value no change sets main axis from top to bottom
@@ -289,9 +290,9 @@ const styles = StyleSheet.create({
      //alignItems:"center", //values:stretch,flex-start,flex-end,center
 
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
-    height:500, //box will come out of red container
+    //height:500, //box will come out of red container
     // flexWrap:"nowrap" //default value no change
-    flexWrap:"wrap", //content within the container-> works only when needed if you set height to 500 then they will not wrap to next column, they come in single line
+    //flexWrap:"wrap", //content within the container-> works only when needed if you set height to 500 then they will not wrap to next column, they come in single line
     //flexWrap:"wrap-reverse", //opposite of wrap
     //rowGap:20,
    // columnGap:30,
