@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 /*
-FlexShrink: determines how children within a container shrink along the main/cross axis when the combined size
-exceeds the conatiner size
+FlexShrink: it determines how children within a container shrink along the main/cross axis when the combined size
+            exceeds the conatiner size
 
 values: flexShrink: 0 //default value
-                  :any positive value to control the shrink behaviour
+                   :any positive value to control the shrink behaviour
 */
 const F_FlexShrink = ({ children, styleprop }) => {
   return (
