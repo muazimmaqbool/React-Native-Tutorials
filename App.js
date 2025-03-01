@@ -170,14 +170,15 @@ const App = () => {
 
       {/*Flex Grow :*/}
       <G_FlexGrow styleprop={{backgroundColor:"teal"}}>BOX-1</G_FlexGrow>
-       <G_FlexGrow styleprop={{backgroundColor:"orange"}}>BOX-2</G_FlexGrow>
+      <G_FlexGrow styleprop={{backgroundColor:"orange"}}>BOX-2</G_FlexGrow>
       {/*no chnage as flexGrow:0 is default value */}
       <G_FlexGrow styleprop={{backgroundColor:"yellow",flexGrow:0}}>BOX-3</G_FlexGrow> 
-      {/*Box4 takes the all available space, if applied to multiple boxes then available space is divided equally , if flexGrow is 1 to all*/}
-      {/* <G_FlexGrow styleprop={{backgroundColor:"pink",flexGrow:1}}>BOX-4</G_FlexGrow>
-       <G_FlexGrow styleprop={{backgroundColor:"blue",flexGrow:1}}>BOX-5</G_FlexGrow> */}
-      {/*Box-6 takes 3twice the space as box4 and 5 because it has flexGrow of 3 */}
-      {/* <G_FlexGrow styleprop={{backgroundColor:"skyblue",flexGrow:3}}>BOX-6</G_FlexGrow> */}
+      {/*Box4 takes the all available space as its flexGrow is 1*/}
+      <G_FlexGrow styleprop={{backgroundColor:"pink",flexGrow:1}}>BOX-4</G_FlexGrow>
+      {/*if flexGrow is 1 is applied to multiple boxes then available space is divided equally*/}
+       <G_FlexGrow styleprop={{backgroundColor:"blue",flexGrow:1}}>BOX-5</G_FlexGrow>
+      {/*Box-6 takes 3times the space as box4 and 5 because it has flexGrow of 3 */}
+      <G_FlexGrow styleprop={{backgroundColor:"skyblue",flexGrow:3}}>BOX-6</G_FlexGrow>
 
       {/*relative and absolute layout */}
       {/*applied relative to Box1 and Box3, they are both relative by default */}
