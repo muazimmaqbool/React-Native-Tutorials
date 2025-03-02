@@ -34,11 +34,11 @@ const windowHeight=Dimensions.get("window").height
 /*
 Important: Although this method works but Dimensions API has a drawback (lec-41)
     ->The dimensions API doesn't dynamically update when the screen size changes
-    Eample: change orientation of the device, rotate the device and you will see no changes
+      Eample: change orientation of the device, rotate the device and you will see no changes
     ->Go to app.json and change orientation to "default", then reload the app by pressing R , Now when device rotates the app also rotates
-    But styles doesn't apply as it should have changes text size, and to make stles apply you need to again Reload the app and thats not the right way
-    and thats the draw back of dimensions api the values doesn't dynamically updates when device orientation changes
-    and the solution to this problem is use "useState and and useEffect hooks" in next code
+      But styles doesn't apply as it should have changes text size, and to make styles apply you need to again Reload the app and that's not the right way
+      and that's the draw back of dimensions api the values doesn't dynamically updates when device orientation changes
+      and the solution to this problem is to use "useState and and useEffect hooks" in next code
 */
 //console.log("width:",windowWidth," and height:",windowHeight)
 
