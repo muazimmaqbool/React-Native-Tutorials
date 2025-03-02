@@ -30,7 +30,7 @@ const windowWidth=Dimensions.get("window").width
 const windowHeight=Dimensions.get("window").height
 //we can now use these device dimensions to dynamically adjust styles based on the device size
 
-//In summary: Dimensions API provides access to devices size and using devices width and height you can create responsive styles for your app
+//In summary: Dimensions API provides access to devices size and using devices width and height and then you can create responsive styles for your app
 /*
 Important: Although this method works but Dimensions API has a drawback (lec-41)
     ->The dimensions API doesn't dynamically update when the screen size changes
