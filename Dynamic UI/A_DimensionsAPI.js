@@ -20,11 +20,11 @@ const DimensionsAPI = () => {
 
 
 //getting devices width and height
-/*important -> Dimensions accepts two arguments screen and window
-screen: refers to the entire physical display of the device including areas that might be outside of visible viewport
-due to notches, statusbars,system nav bar's
-window: refers to the visible area of the screen occupied by your app's ui(for tasks involving ui elements within your applicantions
-    visible area you will want to use window)
+/*important : Dimensions accepts two arguments screen and window
+->screen: refers to the entire physical display of the device including areas that might be outside of visible viewport
+          due to notches, statusbars, system nav bar's
+->window: refers to the visible area of the screen occupied by your app's ui (for tasks involving ui elements within your applicantions
+          visible area you will want to use window)
 */
 const windowWidth=Dimensions.get("window").width
 const windowHeight=Dimensions.get("window").height
