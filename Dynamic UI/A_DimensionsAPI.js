@@ -18,7 +18,6 @@ const DimensionsAPI = () => {
   )
 }
 
-
 //getting devices width and height
 /*important : Dimensions accepts two arguments screen and window
 ->screen: refers to the entire physical display of the device including areas that might be outside of visible viewport
