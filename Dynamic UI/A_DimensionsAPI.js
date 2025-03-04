@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View ,Dimensions} from 'react-native'
 import React from 'react'
+
 /*
 ->Dynamic User Interface:
     ->All our app users won't be using same device, they will be using different devices with different sizes, some might be small and some
@@ -8,6 +9,7 @@ import React from 'react'
       maintaining an optional user experience.
     ->And to acheive this we have Dimensions API
 */
+
 const DimensionsAPI = () => {
   return (
     <View style={styles.container}>
