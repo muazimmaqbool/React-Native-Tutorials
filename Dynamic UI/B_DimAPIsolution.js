@@ -1,11 +1,10 @@
 import { StyleSheet, Text, View, Dimensions } from "react-native";
 import React, { useEffect, useState } from "react";
-/*
-->First see previous code and this is solution to drawback of dimensions API
-*/
+
+//->First see previous code and this is solution to the drawback of dimensions API
 const B_DimAPIsolution = () => {
 
- //stores devices dimensions when screen loads
+  //stores devices dimensions when screen loads
   const [dimensions, setDimensions] = useState({
     window: Dimensions.get("window"),
   });
@@ -32,6 +31,7 @@ const B_DimAPIsolution = () => {
         height:windowHeight>600?"60%":"90%"
       }]}>
         <Text style={{fontSize:windowWidth>500?50:24,color:windowWidth>500?"white":"black"}}>Welcome!</Text>
+        {windowWidth>500 && <Text style={styles.text}>You are in landscape mode</Text>}
       </View>
     </View>
   );
@@ -55,10 +55,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-//   text: {
-//     fontSize: windowWidth > 500 ? 50 : 24,
-//     color: windowWidth > 500 ? "white" : "black",
-//   },
+  text: {
+    fontSize: 20,
+    color: "black",
+  },
 });
 
 export default B_DimAPIsolution;
