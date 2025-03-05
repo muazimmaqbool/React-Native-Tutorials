@@ -15,6 +15,8 @@ const DimensionsAPI = () => {
     <View style={styles.container}>
       <View style={styles.box}>
       <Text style={styles.text}>Welcome!</Text>
+      {/* will be visible in landscape mode but need to reload app first */}
+      {windowWidth > 500 && <Text>You are view in landscape more</Text>}
       </View>
     </View>
   )
@@ -33,7 +35,7 @@ const windowHeight=Dimensions.get("window").height
 
 //In summary: Dimensions API provides access to devices size and using devices width and height and then you can create responsive styles for your app
 /*
-Important: Although this method works but Dimensions API has a drawback (lec-41)
+Important: Although this method works but Dimensions API has a drawback
           ->The dimensions API doesn't dynamically update when the screen size changes
             Eample: change orientation of the device, rotate the device and you will see no changes
           ->Go to app.json and change orientation to "default", then reload the app by pressing R , Now when device rotates the app also rotates
