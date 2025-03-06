@@ -16,10 +16,10 @@ const B_DimAPIsolution = () => {
  
  */
 
-  //listens to changes in device dimensions and updates the states variable
+  //listens to changes in device dimensions and updating the dimensions states variable
   useEffect(() => {
     //listen to dimension changes using the static method and using addEventListener on dimensions API
-    const subscription = Dimensions.addEventListener("change", ({ window }) => { //listening changes and dimension and we execute a callback function
+    const subscription = Dimensions.addEventListener("change", ({ window }) => { //listening changes in dimension and we execute a callback function
       setDimensions({ window });
     });
     //cleanup code
@@ -30,7 +30,7 @@ const B_DimAPIsolution = () => {
   const windowWidth = window.width;
   const windowHeight = window.height;
 
-  //Now add inline styles that dynamically changes based on the device dimensions, so comment condition styles in stylesheet
+  //Now add inline styles that dynamically changes based on the device dimensions, now comment condition styles in stylesheet
 
   return (
     <View style={[styles.container,{backgroundColor:windowWidth>500?"teal":"plum",}]}>
@@ -39,7 +39,8 @@ const B_DimAPIsolution = () => {
         height:windowHeight>600?"60%":"90%"
       }]}>
         <Text style={{fontSize:windowWidth>500?50:24,color:windowWidth>500?"white":"black"}}>Welcome!</Text>
-        {windowWidth>500 && <Text style={styles.text}>You are in landscape mode</Text>}
+        {windowWidth>500 ? <Text style={styles.text}>You are in landscape mode</Text>
+        :<Text style={styles.text}>You are in potrait mode</Text>}
       </View>
     </View>
   );
