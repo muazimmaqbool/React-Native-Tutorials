@@ -8,6 +8,14 @@ const B_DimAPIsolution = () => {
   const [dimensions, setDimensions] = useState({
     window: Dimensions.get("window"),
   });
+  //console.log("dimensions: ",dimensions)
+ /*
+ o/p:dimensions:  {"window": {"fontScale": 1, "height": 791.6363636363636,
+                             "scale": 2.75, "width": 392.72727272727275}
+                  }
+ 
+ */
+
   //listens to changes in device dimensions and updates the states variable
   useEffect(() => {
     //listen to dimension changes using the static method and using addEventListener on dimensions API
