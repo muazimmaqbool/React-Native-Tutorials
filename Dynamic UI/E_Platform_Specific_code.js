@@ -24,18 +24,19 @@ import CustomBtn from "./PSFE Example/CustomButton/CustomBtn";
     2)-> Platform specific file extensions:
         this is used for more complex scenerios, this splits the code in sepereate files for "ios" and  "android"
         with .ios and .android extensions before the main extension.
-        ->React Nativ detects the extension and loads the relevant platform file when required by other components
-        Example: creating a button comp. that varies across the two platforms 
-        ->create new folder inside Dynamic Ui folder for this example
-        >folder "PSFE example" and inside it a subfolder >custom button (inside it create two files: customBtn.ios.js and customBtn.android.js)
+        ->React Native detects the extension and loads the relevant platform file when required by other components
+        Example: creating a button component. that varies across the two platforms 
+        ->create new folder inside Dynamic Ui folder for this example:
+            >folder "PSFE example" and inside it a subfolder >custom button 
+             (inside it create two files: customBtn.ios.js and customBtn.android.js)
             importing them : import CustomBtn from "./PSFE Example/CustomButton/CustomBtn"; 
-          ?Note: here we didn't write customBtn.ios.js or .android.js extension React Native will figure it out while importing
-            now In UI you can see the same button is rendered in different ways on IOS and Android, React Native automatically selects the component based on the executing platform
+        ?Note: here we didn't write customBtn.ios.js or .android.js extension React Native will figure it out while importing
+        now In UI you can see the same button is rendered in different ways on IOS and Android, React Native automatically selects the component based on the executing platform
 
--> In summary: React Native makes it possible to run platform specific code using "Platform" module and "Platform specific extensions"
+->In summary: React Native makes it possible to run platform specific code using "Platform" module and "Platform specific file extensions"
       ->use "Platform.OS or Platform.select" for minor style differences
-      ->for more complex components that need distinct appearances/behaviours across teh two platforms use .ios and .android file extensions is sutaible
-            */
+      ->for more complex components that need distinct appearances/behaviours across the two platforms use .ios and .android file extensions is sutaible
+*/
 
 const E_Platform_Specific_code = () => {
   return (
