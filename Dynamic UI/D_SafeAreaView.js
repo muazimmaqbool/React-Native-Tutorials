@@ -17,7 +17,7 @@ import React from "react";
     
   ->After applying the "SafeAreaView", you can see that our application is now rendered in safe area view which
     avoids the notch at the top and curve/buttons at the bottom
-    
+
   ->but you can see outside the safe area: white color in ios and to fix this
     apply same background to "SafeAreaView" same as the container
 */
@@ -35,10 +35,10 @@ const D_SafeAreaView = () => {
 };
 
 const styles = StyleSheet.create({
-    safeContainer:{
-        flex:1,
-        backgroundColor:"plum",
-    },
+  safeContainer: {
+    flex: 1,
+    backgroundColor: "plum",
+  },
   container: {
     flex: 1,
     backgroundColor: "plum",
