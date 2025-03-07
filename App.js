@@ -216,8 +216,8 @@ const App = () => {
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}
       {/* <B_DimAPIsolution/> */}
-      <C_UseWindowDimensions/>
-      {/* <D_SafeAreaView/> */}
+      {/* <C_UseWindowDimensions/> */}
+      <D_SafeAreaView/>
       {/* <E_Platform_Specific_code/> */}
 
       {/*pockemon example */}
