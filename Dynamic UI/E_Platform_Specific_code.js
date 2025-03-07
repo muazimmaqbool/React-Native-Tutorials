@@ -2,26 +2,26 @@ import { SafeAreaView, StyleSheet, Text, View, Platform } from "react-native";
 import React from "react";
 import CustomBtn from "./PSFE Example/CustomButton/CustomBtn";
 /*
-PLATFORM SPECIFIC CODE:
+  PLATFORM SPECIFIC CODE:
     ->When developing a cross-platform app maximizing code reuse is a priority, but sometimes there are 
-       situation when it becomes necessary to tailor your code to specific platform
+      situation when it becomes necessary to tailor your code to specific platform
+
     ->React-Native offers two approaches for organizing and seperating the platform specific code:
         1)-> Platform module   2)-> platform specific file extensions
 
     
-    ->1)-> "platform" module: detects the platform on which the app is running
-
+    1)-> "platform" module: detects the platform on which the app is running
     ->Example: 
        here in this code the Welocome text is displayed on both ios and android and you can see in IOS
        its displayed within "SafeAreaView" but on android the text is close to top, 
        so if we set Padding top in container , its applied to both ios and android , 
        so we use "platform" Module to apply padding top only on android as it detects the platform on which app is currently running
-       ->paddingTop: Platform.OS === "android" ? 30 : 0, 
-         (the platform.OS is good for small changes but a better option for more comprehensive platform styles is
-            to use Platform.select -> example below in text key inside styles)
+       example: paddingTop: Platform.OS === "android" ? 30 : 0, 
+        (the platform.OS is good for small changes but a better option for more comprehensive platform styles is
+          to use Platform.select -> example below in text key inside styles)
     ->Note: "Platform" module is sutaible for small changes like making small and group of small changes
     
-    ->2)-> Platform specific file extensions:
+    2)-> Platform specific file extensions:
         this is used for more complex scenerios, this splits the code in sepereate files for "ios" and  "android"
         with .ios and .android extensions before the main extension.
         ->React Nativ detects the extension and loads the relevant platform file when required by other components
