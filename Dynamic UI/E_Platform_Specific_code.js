@@ -39,6 +39,9 @@ import CustomBtn from "./PSFE Example/CustomButton/CustomBtn";
 */
 
 const E_Platform_Specific_code = () => {
+  const showPlatform=()=>{
+    alert(Platform.OS==="ios"?"Hello IOS":"Hello Android")
+  }
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
@@ -47,8 +50,8 @@ const E_Platform_Specific_code = () => {
           {/*title and clicked are props accepts by CustomBtn's */}
           <CustomBtn title="press me!" clicked={()=>alert("pressed")}/>
           {/*or try this :*/}
-          <CustomBtn title="try me!" clicked={()=>alert(Platform.OS==="ios"?"hello ios":"hello android")}/>
-
+          {/* <CustomBtn title="try me!" clicked={()=>alert(Platform.OS==="ios"?"hello ios":"hello android")}/> */}
+          <CustomBtn title="try me!" clicked={showPlatform}/>
         </View>
       </View>
     </SafeAreaView>
