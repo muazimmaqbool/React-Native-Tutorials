@@ -224,8 +224,8 @@ const App = () => {
       {/* <Home/> */}
 
       {/*Lists in React Native */}
-      <A_Lists_RN/>
-      {/* <B_Flat_List/> */}
+      {/* <A_Lists_RN/> */}
+      <B_Flat_List/>
       {/* <C_FlatList_2/> */}
       {/* <D_Flat_List_3/> */}
       {/* <E_SectionList/> */}

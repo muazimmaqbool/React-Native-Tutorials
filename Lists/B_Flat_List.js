@@ -13,7 +13,7 @@ import pokemonList from "./TestData.json";
 //first see previous code
 /*
 ->In React Native the recommended way to render list is to use FlatList component:
-FlatList compt. renders only the items which are currently in view, making it high performant for long lists
+  FlatList compt. renders only the items which are currently in view, making it high performant for long lists
 
 FlatList has two mendatory props: data and renderItem
   -> data={arrayList} , pass it the array that you want to render in the list (source of information for flatList)
