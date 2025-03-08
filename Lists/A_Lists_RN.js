@@ -1,7 +1,14 @@
-import { StyleSheet, Text, View,ScrollView,SafeAreaView,StatusBar } from 'react-native'
-import React from 'react'
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  SafeAreaView,
+  StatusBar,
+} from "react-native";
+import React from "react";
 //this is mock data for example of list
-import pokemonList from './TestData.json'
+import pokemonList from "./TestData.json";
 
 //In React "map" method is the common way to render a list
 /*In React Native you use the same approach but their is a better approach to render a list in React Native
@@ -18,48 +25,49 @@ const A_Lists_RN = () => {
     //paddingTop: StatusBar.currentHeight ensures that the content does not overlap with the system status bar by adding padding at the top
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollViewStyle}>
-      {
-        pokemonList.map(pokemon => {
-            console.log("id:",pokemon.id);  //upto 100
-            //here you can see that all items are rendered even if they are not in the viewport i.e visibile
-            //this can lead to performance issues so, to overcome this React Native has a "FlatList" (see in next code)
-            return(
-                <View key={pokemon.id} style={styles.itemStyle}>
-                <Text style={styles.itemText}>{pokemon.type}</Text>
-                <Text style={[styles.itemText,styles.nameColor]}>{pokemon.name}</Text>
-                </View>
-            )
-        })
-      }
+        {pokemonList.map((pokemon) => {
+          //console.log("id:",pokemon.id);  //upto 100
+          //here you can see that all items are rendered even if they are not in the viewport i.e visibile
+          //this can lead to performance issues so, to overcome this React Native has a "FlatList" (see in next code)
+          return (
+            <View key={pokemon.id} style={styles.itemStyle}>
+              <Text>#{pokemon.id}</Text>
+              <Text style={styles.itemText}>{pokemon.type}</Text>
+              <Text style={[styles.itemText, styles.nameColor]}>
+                {pokemon.name}
+              </Text>
+            </View>
+          );
+        })}
       </ScrollView>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default A_Lists_RN
+export default A_Lists_RN;
 
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor:"teal",
-        paddingTop:StatusBar.currentHeight //this will not effect on ios
-        //StatusBar.currentHeight retrieves the height of the status bar on Android devices.
-    },
-    scrollViewStyle:{
-        paddingHorizontal:20,
-    },
-    itemStyle:{
-        backgroundColor:"white",
-        padding:10,
-        borderRadius:10,
-        borderWidth:1,
-        marginBottom:15,
-       // alignItems:"center",
-    },
-    itemText:{
-        fontSize:25,
-    },
-    nameColor:{
-        color:"purple",
-    }
-})
+  container: {
+    flex: 1,
+    backgroundColor: "teal",
+    paddingTop: StatusBar.currentHeight, //this will not effect on ios
+    //StatusBar.currentHeight retrieves the height of the status bar on Android devices.
+  },
+  scrollViewStyle: {
+    paddingHorizontal: 20,
+  },
+  itemStyle: {
+    backgroundColor: "white",
+    padding: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    marginBottom: 15,
+    // alignItems:"center",
+  },
+  itemText: {
+    fontSize: 25,
+  },
+  nameColor: {
+    color: "purple",
+  },
+});
