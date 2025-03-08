@@ -1,11 +1,4 @@
-import {
-  StyleSheet,
-  View,
-  SafeAreaView,
-  Platform,
-  Image,
-  ScrollView,
-} from "react-native";
+import { StyleSheet, SafeAreaView, Platform, ScrollView } from "react-native";
 import React from "react";
 import PokemonCard from "./PokemonCard";
 
@@ -47,7 +40,7 @@ const Home = () => {
   const pikachuData = {
     name: "Pikachu",
     image: {
-      uri: "https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png"
+      uri: "https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png",
     },
     type: "Electric",
     hp: 35,
@@ -55,7 +48,7 @@ const Home = () => {
     weaknesses: ["Ground"],
   };
 
-  //passing the card content to PokemonCard comp. as props using the spread operator and destructer the data their
+  //passing the card content to PokemonCard comp. as props using the spread operator and destructure the data their
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -70,7 +63,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "f5f5f5",
+    backgroundColor: "gray",
     paddingTop: Platform.OS == "android" ? 30 : 0,
   },
 });

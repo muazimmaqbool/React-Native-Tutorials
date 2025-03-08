@@ -218,10 +218,10 @@ const App = () => {
       {/* <B_DimAPIsolution/> */}
       {/* <C_UseWindowDimensions/> */}
       {/* <D_SafeAreaView/> */}
-      <E_Platform_Specific_code/>
+      {/* <E_Platform_Specific_code/> */}
 
       {/*pockemon example */}
-      {/* <Home/> */}
+      <Home/>
 
       {/*Lists in React Native */}
       {/* <A_Lists_RN/> */}
