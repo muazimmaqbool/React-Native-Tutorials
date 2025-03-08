@@ -13,7 +13,9 @@ import pokemonList from './TestData.json'
 
 const A_Lists_RN = () => {
   return (
-    //safeareaview will give some padding from top on ios but for android we will use status bar
+    //SafeAreaView will give some padding from top on ios but for android we will use status bar
+    //StatusBar.currentHeight retrieves the height of the status bar on Android devices.
+    //paddingTop: StatusBar.currentHeight ensures that the content does not overlap with the system status bar by adding padding at the top
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollViewStyle}>
       {
@@ -41,9 +43,10 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor:"teal",
         paddingTop:StatusBar.currentHeight //this will not effect on ios
+        //StatusBar.currentHeight retrieves the height of the status bar on Android devices.
     },
     scrollViewStyle:{
-        paddingHorizontal:25,
+        paddingHorizontal:20,
     },
     itemStyle:{
         backgroundColor:"white",
