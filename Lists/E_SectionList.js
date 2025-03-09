@@ -14,17 +14,15 @@ import groupedPokemonList from "./grouped_testData.json";
 
 //first see previous code
 /*
--> SectionList: A performant component designed for rendering sectioned lists
+->SectionList: A performant component designed for rendering sectioned lists
 ->In our example we will render list of pokemons categoriesed by type:
-    their will be a section for fire type pokemon, water type and so on.
-    -> making other test data set representing list of pokemons by type.
+  there will be a section for fire type pokemon, water type and so on.
+  making other test data set representing list of pokemons by type.
   
-    ->SectionList: have two mendatory props - sections and renderItem
-
--><SectionList  
-  sections={data} : data/source of information for section list
+->SectionList: have two mendatory props - sections and renderItem 
+  -sections={data} : data/source of information for section list
   :returns a jsx for rendering each item in the list
-  renderItem={({item})=>{ //item here refers to each element in the data array(inside grouped_testData.json)
+  -renderItem={({item})=>{ //item here refers to each element in the data array(inside grouped_testData.json)
                            and hence the property being called data is vital
     return(
       ! define here how return jsx will look like
