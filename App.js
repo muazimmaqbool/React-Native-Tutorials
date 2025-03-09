@@ -228,10 +228,10 @@ const App = () => {
       {/* <B_Flat_List/> */}
       {/* <C_FlatList_2/> */}
       {/* <D_Flat_List_3/> */}
-      <E_SectionList/>
+      {/* <E_SectionList/> */}
 
       {/*Inputs and Forms in React Native */}
-      {/* <B_TextInput/> */}
+      <B_TextInput/>
       {/* <C_TextInput_props/> */}
       {/* <D_MultiLine_TextInput/> */}
       {/* <E_Switch/> */}

@@ -10,8 +10,8 @@ import React, { useState } from "react";
 
 /*
 TextInput: component for user input in React Native,
-        it allows users to ennter text and other data into your app.
-        <TextInput />
+           it allows users to ennter text and other data into your app.
+           example: <TextInput />
 */
 
 const B_TextInput = () => {
