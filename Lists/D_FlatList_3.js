@@ -15,7 +15,7 @@ import {
   In this code we will see: two more props of FlatList -> Header , Footer, ListEmptyComponent
     ->List Header: accepts react component and renders it at the top of the list
     ->List Footer: accepts react component and renders it at the bottom of the list
-    -> ListEmptyComponent : used when no item in the list is present
+    ->ListEmptyComponent : used when no item in the list is present
 
     -> ListHeaderComponent={} , ListFooterComponent={} , ListEmptyComponent={}
     */
@@ -25,11 +25,12 @@ import {
       <SafeAreaView style={styles.container}>
         <View style={styles.scrollViewStyle}>
           <FlatList
-            data={pokemonList}
+           data={pokemonList}
             renderItem={({ item }) => {
             //   console.log("id", item.id);
               return (
                 <View key={item.id} style={styles.itemStyle}>
+                  <Text>#{item.id}</Text>
                   <Text style={styles.itemText}>{item.type}</Text>
                   <Text style={[styles.itemText, styles.nameColor]}>
                     {item.name}
@@ -38,7 +39,7 @@ import {
               );
             }}
             keyExtractor={(item, index) => item.id.toString()}
-            ItemSeparatorComponent={<View style={{height:16}}/>}
+            ItemSeparatorComponent={<View style={{height:20}}/>}
             //remove this line :"data={pokemonList}" to see below line 
             ListEmptyComponent={<Text>No Item Available</Text>} 
             ListHeaderComponent={<Text style={styles.HeaderText}>Pokemon List</Text>}
