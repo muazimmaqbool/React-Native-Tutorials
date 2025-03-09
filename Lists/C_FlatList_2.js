@@ -26,7 +26,7 @@ const C_Flat_List_2 = () => {
         <FlatList
           data={pokemonList}
           renderItem={({ item }) => {
-            console.log("id", item.id);
+           // console.log("id", item.id);
             return (
               <View key={item.id} style={styles.itemStyle}>
                 <Text style={styles.itemText}>{item.type}</Text>
@@ -37,7 +37,7 @@ const C_Flat_List_2 = () => {
             );
           }}
           keyExtractor={(item, index) => item.id.toString()}
-          ItemSeparatorComponent={<View style={{height:16}}/>}
+          ItemSeparatorComponent={<View style={{height:20}}/>}
         />
       </View>
     </SafeAreaView>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     borderWidth: 1,
-    //marginBottom: 15,
+    // marginBottom: 15,
   },
   itemText: {
     fontSize: 25,
