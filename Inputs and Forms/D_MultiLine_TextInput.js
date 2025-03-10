@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     paddingTop: StatusBar.currentHeight,
+    padding:20
   },
   input: {
     height: 40,
@@ -54,9 +55,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     padding: 10,
+    textTransform:"capitalize"
   },
   multilineText:{
-    minHeight:100,
+    minHeight:100, //important to add minHeight otherwise it will appear as a simple text field
     textAlignVertical:"top" , 
     //this line is added because multiline prop aligns the text on top of ios and in middle in android so
     //by adding this line text is at top inside both ios and android
