@@ -10,16 +10,16 @@ import {
 import React, { useState } from "react";
 
 /*
-Switch: serves as a valuable tool for integrating toggles into your app's user interface.
+ Switch: serves as a valuable tool for integrating toggles into your app's user interface.
 
-->its particularly well-suited for scenarios where you require users to make binary choices, such as
-    enabling or disabling specific app features (like toggle between dark mode and light mode)
+   ->its particularly well-suited for scenarios where you require users to make binary choices, 
+     such as enabling or disabling specific app features (like toggle between dark mode and light mode)
 */
 
 const E_Switch = () => {
   const [name, setName] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
-  console.log("isDarkMode", isDarkMode);
+  //console.log("isDarkMode", isDarkMode);
   const textColor = {
     color: isDarkMode ? "white" : "black",
   };

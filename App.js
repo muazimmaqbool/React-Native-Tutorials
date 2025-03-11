@@ -233,8 +233,8 @@ const App = () => {
       {/*Inputs and Forms in React Native */}
       {/* <B_TextInput/> */}
       {/* <C_TextInput_props/> */}
-      <D_MultiLine_TextInput/>
-      {/* <E_Switch/> */}
+      {/* <D_MultiLine_TextInput/> */}
+      <E_Switch/>
       {/* <F_LoginForm/> */}
       {/* <G_KeyboardAvoidingView/> */}
       {/* <H_FormValidation/> */}
