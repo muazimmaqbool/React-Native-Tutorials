@@ -1,36 +1,45 @@
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import {
+  Button,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
 import React, { useState } from "react";
 
 const F_LoginForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <View style={styles.container}>
-      <View style={styles.form}>
-        <Text style={styles.label}>Username</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Enter your username"
-          value={username}
-          onChangeText={setUsername}
-        />
-        <Text style={styles.label}>Password</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Enter your password"
-          secureTextEntry //now it becomes input field for password
-          value={password}
-          onChangeText={setPassword}
-        />
-        <Button
-          title="Login"
-          onPress={() => {
-            console.log("username:", username);
-            console.log("password:", password);
-          }}
-        />
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <View style={styles.form}>
+          <Text style={styles.label}>Username</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter your username"
+            value={username}
+            onChangeText={setUsername}
+          />
+          <Text style={styles.label}>Password</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter your password"
+            secureTextEntry //now it becomes input field for password
+            value={password}
+            onChangeText={setPassword}
+          />
+          <Button
+            title="Login"
+            onPress={() => {
+              console.log("username:", username);
+              console.log("password:", password);
+            }}
+          />
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -62,7 +71,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   input: {
-    height: 40,
     borderColor: "black",
     borderWidth: 1,
     marginBottom: 20,
