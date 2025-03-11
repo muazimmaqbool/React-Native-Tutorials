@@ -12,7 +12,7 @@ import React, { useState } from "react";
 
 /*
 the problem is that when we add the image inside View with styles form and then in IOS device when we 
-click on the input fields to enter text the keyboard ovelays the input field and making text input behind
+click on the input fields to enter text the keyboard overlays the input field and making text input behind
  the keyboard and this behavior is not seen android
  and to avoid this in IOS: we have KeyboardAvoidingView
  replace the outer most view/coomponent of the content with this component

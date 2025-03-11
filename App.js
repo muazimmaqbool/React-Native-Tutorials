@@ -235,8 +235,8 @@ const App = () => {
       {/* <C_TextInput_props/> */}
       {/* <D_MultiLine_TextInput/> */}
       {/* <E_Switch/> */}
-      <F_LoginForm/>
-      {/* <G_KeyboardAvoidingView/> */}
+      {/* <F_LoginForm/> */}
+      <G_KeyboardAvoidingView/>
       {/* <H_FormValidation/> */}
       {/* <I_FormSubmission/> */}
 
