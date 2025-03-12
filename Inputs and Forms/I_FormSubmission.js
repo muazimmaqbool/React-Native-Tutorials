@@ -23,14 +23,13 @@ const I_FormSubmission = () => {
     if (!password) errors.password = "Password is required";
 
     setErrors(errors);
-    //when form is valid
-    return Object.keys(errors).length === 0;
+    return Object.keys(errors).length === 0; // means no errors if length === 0
   };
 
   //function used for submission
   const handleSubmit = () => {
     if (validateForm()) {
-      console.log("Submitted", username, password);
+      console.log("Submitted:", username,":", password);
       setUsername("");
       setPassword("");
       setErrors({});
