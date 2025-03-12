@@ -13,7 +13,6 @@ import {
 const H_FormValidation = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    //used to store and show errors
     const [errors, setErrors] = useState({});
 
     //function used for validation of form
@@ -26,6 +25,14 @@ const H_FormValidation = () => {
         //when form is valid
         return Object.keys(errors).length === 0;
     }
+    /*
+    ->Object.keys(errors):
+      - Object.keys(obj) is a built-in JavaScript method that returns an array of all the keys (property names) in the given object.
+         (i.e in this case: usename, password)
+      - If length is 0, it means the errors object has no properties (i.e., no errors)
+      - If there are no errors (errors object is empty), Object.keys(errors).length === 0 evaluates to true, meaning the form is valid.
+      - If there are errors, it evaluates to false, meaning the form is invalid.
+    */
     return (
       <View style={styles.container}>
         <KeyboardAvoidingView

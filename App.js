@@ -236,8 +236,8 @@ const App = () => {
       {/* <D_MultiLine_TextInput/> */}
       {/* <E_Switch/> */}
       {/* <F_LoginForm/> */}
-      <G_KeyboardAvoidingView/>
-      {/* <H_FormValidation/> */}
+      {/* <G_KeyboardAvoidingView/> */}
+      <H_FormValidation/>
       {/* <I_FormSubmission/> */}
 
       {/*API calls /network calls */}
