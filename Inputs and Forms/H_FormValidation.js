@@ -22,8 +22,12 @@ const H_FormValidation = () => {
         if(!password) errors.password="Password is required";
 
         setErrors(errors);
-        //when form is valid
-        return Object.keys(errors).length === 0;
+
+        console.log("Object.keys(errors):",Object.keys(errors))
+        //o/p like this if erros occur: ["username"] or ["password"] or ["username", "password"]
+        //o/p like this if not erros occur: []
+
+        return Object.keys(errors).length === 0;// means no erros if length is 0
     }
     /*
     ->Object.keys(errors):
@@ -32,6 +36,7 @@ const H_FormValidation = () => {
       - If length is 0, it means the errors object has no properties (i.e., no errors)
       - If there are no errors (errors object is empty), Object.keys(errors).length === 0 evaluates to true, meaning the form is valid.
       - If there are errors, it evaluates to false, meaning the form is invalid.
+      - See console result of Object.keys(errors)
     */
     return (
       <View style={styles.container}>
