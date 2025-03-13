@@ -237,11 +237,11 @@ const App = () => {
       {/* <E_Switch/> */}
       {/* <F_LoginForm/> */}
       {/* <G_KeyboardAvoidingView/> */}
-      <H_FormValidation/>
+      {/* <H_FormValidation/> */}
       {/* <I_FormSubmission/> */}
 
       {/*API calls /network calls */}
-      {/* <A_GetRequest/> */}
+      <A_GetRequest/>
       {/* <Aa_LoadingState/> */}
       {/* <B_Pull_to_Refresh/> */}
       {/* <C_Post_Request/> */}

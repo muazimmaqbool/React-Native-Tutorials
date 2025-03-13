@@ -11,11 +11,9 @@ import React, { useEffect, useState } from "react";
 
 /*
 In the folder we will look at API calls etc
-->Here we will use this endpoing to fetch fake data for testing:
+->Here we will use this endpoint to fetch fake data for testing:
 https://jsonplaceholder.typicode.com/posts or https://jsonplaceholder.typicode.com/posts?_limit=10
-
 */
-
 const A_GetRequest = () => {
   const [posts, setPosts] = useState([]);
   const fetchData = async (limit = 10) => {
@@ -36,6 +34,7 @@ const A_GetRequest = () => {
           renderItem={({ item }) => {
             return (
               <View style={styles.card}>
+                <Text>#{item.id}</Text>
                 <Text style={styles.titleText}>{item.title}</Text>
                 <Text style={styles.bodyText}>{item.body}</Text>
               </View>
