@@ -5,30 +5,33 @@ import {
     View,
     FlatList,
     Text,
-    ActivityIndicator
+    ActivityIndicator,
+    Button
   } from "react-native";
   import React, { useEffect, useState } from "react";
   
-  /*
- see previous code first
- here we will see how to implement a loading state while the data is fetched in the background
-here we will use activityIndicator to show loading ui
-  */
+/*
+->See previous code first
+->Here we will see how to implement a loading state while the data is being fetched in the background
+->Here we will use activityIndicator to show loading ui
+*/
   
   const Aa_LoadingState = () => {
     const [posts, setPosts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true)
-    const fetchData = async (limit = 10) => {
+    const [isLoading, setIsLoading] = useState(false)
+    const fetchData = async (limit) => {
+      setIsLoading(true)
       const response = await fetch(
         `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
       );
+      if(!response.ok){
+        setIsLoading(false)
+        throw new Error("Error fetching")
+      }
       const data = await response.json();
       setPosts(data);
       setIsLoading(false)
     };
-    useEffect(() => {
-      fetchData();
-    }, []);
     
     //here API is fast so we don't see loading animation for that long , to see Loading animation for long
     //comment this line in fetchData functuion : setIsLoading(false)
@@ -45,6 +48,7 @@ here we will use activityIndicator to show loading ui
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.listContainer}>
+           <Button title="Get Posts" onPress={()=>fetchData(5)}/>
           <FlatList
             data={posts}
             renderItem={({ item }) => {
@@ -75,7 +79,7 @@ here we will use activityIndicator to show loading ui
     },
     listContainer: {
       flex: 1,
-      paddingHorizontal: 16,
+      padding: 16,
     },
     card: {
       backgroundColor: "white",
