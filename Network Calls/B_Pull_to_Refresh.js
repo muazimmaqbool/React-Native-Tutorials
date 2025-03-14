@@ -9,15 +9,17 @@ import {
   } from "react-native";
   import React, { useEffect, useState } from "react";
   
-  /*
- see previous code first,
- here in this code we will see how to implement the pull to referesh functionality  with Flatlist
+/*
+ ->See previous codes first,
+ ->Here in this code we will see how to implement the pull to referesh functionality with Flatlist
    in React Native
- -> this feature is very useful when you want to reload the data in your app without restarting the app
+ ->This feature is very useful when you want to reload the data in your app without restarting the app
  
- ->here in Flast List two props , refreshing and onRefresh automatically renders a default loading spinner
+ ->Here in Flast List two props , refreshing and onRefresh automatically renders a default loading spinner
    when the list is pulled down
-  */
+
+ ->Also checkout ReferesControl component( H_RefereshControl) in Components Folder
+*/
   
   const B_Pull_to_Refresh = () => {
     const [posts, setPosts] = useState([]);

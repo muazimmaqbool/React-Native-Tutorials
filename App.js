@@ -242,8 +242,8 @@ const App = () => {
 
       {/*API calls /network calls */}
       {/* <A_GetRequest/> */}
-      <Aa_LoadingState/>
-      {/* <B_Pull_to_Refresh/> */}
+      {/* <Aa_LoadingState/> */}
+      <B_Pull_to_Refresh/>
       {/* <C_Post_Request/> */}
       {/* <D_ErrorHandling/> */}
 
