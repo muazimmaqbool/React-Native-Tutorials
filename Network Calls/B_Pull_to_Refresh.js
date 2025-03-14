@@ -24,11 +24,12 @@ import {
   const B_Pull_to_Refresh = () => {
     const [posts, setPosts] = useState([]);
     //for showing loading animation
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     //for pull to refresh
     const [refreshState, setRefreshState] = useState(false)
-    const fetchData = async (limit = 10) => {
-      console.log("limit of posts:",limit)
+    const fetchData = async (limit = 5) => {
+     // console.log("limit of posts:",limit)
+     setIsLoading(true)
       const response = await fetch(
         `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
       );
@@ -43,7 +44,7 @@ import {
     //used to handle pull to refresh
     const handleRefresh=()=>{
         setRefreshState(true);
-        fetchData(30); //this time fetchData will fetch 30 posts
+        fetchData(15); //this time fetchData will fetch 30 posts
         setRefreshState(false);
     }
     
@@ -67,7 +68,7 @@ import {
             renderItem={({ item }) => {
               return (
                 <View style={styles.card}>
-                  <Text style={styles.titleText}>{item.id+"-"+item.title}</Text>
+                  <Text style={styles.titleText}>#{item.id+"-"+item.title}</Text>
                   <Text style={styles.bodyText}>{item.body}</Text>
                 </View>
               );
