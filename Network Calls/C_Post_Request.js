@@ -29,7 +29,7 @@ const C_Post_Request = () => {
   const [postBody, setPostBody] = useState("");
   const [isPosting, setIsPosting] = useState(false);
 
-  const fetchData = async (limit = 10) => {
+  const fetchData = async (limit = 5) => {
     const response = await fetch(
       `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
     );
@@ -41,7 +41,7 @@ const C_Post_Request = () => {
   //used to handle pull to refresh
   const handleRefresh = () => {
     setRefreshState(true);
-    fetchData(30); //this time fetchData will fetch 30 posts
+    fetchData(10); //this time fetchData will fetch 30 posts
     setRefreshState(false);
   };
 
