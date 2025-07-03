@@ -6,7 +6,7 @@ const myImage = require("../assets/pic.jpg");
     ->Enables us to scroll to the screen to see full content when the content is too big
       to be fit inside the screen size by default we can't scroll
     ->ScrollView component wraps the scroll functionality
-    ->scrollView requires a bounded height to function properly
+    ->ScrollView requires a bounded height to function properly
     ->Nest scrollView inside View by this way its bounded by the height of its parent i.e view in this case
 */
 const D_ScrollView = () => {
