@@ -3,7 +3,7 @@ import { Button, Text, View } from "react-native";
 /*
 Button: used to trigger an action
   Note-> button layout is showing differently on ios and android
-         (we can customize it later so that it will be displayed same in both)
+         (we can customize it later so that it will be displayed same in both ios and android)
 Important:
   ->Button props:
     1) title="" : title prop is used to display button text
@@ -15,7 +15,7 @@ Important:
 const E_Button = () => {
   return (
     <View style={{gap:10}}>
-      <Text style={{color:"white",padding:10,textAlign:"center"}}>This is button</Text>
+      <Text style={{color:"black",fontSize:20,padding:10,textAlign:"center"}}>This is button</Text>
       <Button title="Click Me" onPress={() => console.log("You Clicked Me!")} />
       {/*change color */}
       <Button title="I'm Different" color="green" onPress={()=>console.log("My color is green!")}/>
