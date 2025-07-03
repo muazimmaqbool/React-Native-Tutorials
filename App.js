@@ -305,7 +305,7 @@ export default App;
 -> R.N is an open source framework for building native Android and Ios application using React.
 -> R.N is basically an Js based mobile app framework that allows you to build natively-rendered mobile apps for both
    ios and android.
-->React used react-dom for web apps and react-native for mobile apps
+->React uses react-dom for web apps and react-native for mobile apps
 
 Note: checkout more intro and basic topics on note book
 */
