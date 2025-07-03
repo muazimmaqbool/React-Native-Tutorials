@@ -70,8 +70,8 @@ const App = () => {
       <View style={{ flex: 1, backgroundColor: "skyblue", padding: 60 }}>
 
       {/* Core Components: */}
-      <A_View/>
-      {/* <B_Text/> */}
+      {/* <A_View/> */}
+      <B_Text/>
       {/* <C_Image/> */}
       {/* <D_ScrollView/> */}
       {/* <E_Button/> */}

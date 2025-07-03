@@ -15,6 +15,6 @@ export default B_Text;
 Text component:
   ->Used for displaying text
   ->It also supports styling, nesting, touch handling
-  ->Depending on the targeted platform R.N will translate the Text and other component to targetted platform
+  ->Depending on the targeted platform R.N will translate the Text and other component according to the targetted platform
     example: UITextView(ios), TextView(android) and <p>(web)
 */
