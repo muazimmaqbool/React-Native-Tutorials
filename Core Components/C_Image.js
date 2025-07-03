@@ -5,9 +5,9 @@ const myImage = require("../assets/pic.jpg");
 const C_Image = () => {
   return (
     <View>
-      <Image source={myImage} style={{ width: 300, height: 250,borderRadius:10, }} />
-      <Text style={{ color: "white", paddingBlock: "10", textAlign: "center" }}>
-        below image is fetched from online
+      <Image source={myImage} style={{ width: 300, height: 300,borderRadius:10, }} />
+      <Text style={{ color: "black", paddingBlock: "10", textAlign: "center" }}>
+        Below image is fetched online:
       </Text>
       <Image
         source={{ uri: "https://picsum.photos/200" }}
