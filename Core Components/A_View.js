@@ -30,4 +30,5 @@ export default A_View
  ->We can have nested views
  ->It only takes space occupy by its children and when you have no children in the view and you
    want to see it, set a bg color to view and set flex:1 (so it takes full space available in screen)
+   and its done in to its parent view i.e APP.js
 */
