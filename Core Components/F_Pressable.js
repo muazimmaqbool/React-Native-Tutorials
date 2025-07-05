@@ -1,9 +1,10 @@
 import { Button, Image, Pressable, Text, View } from "react-native";
 const myImage = require("../assets/pic.jpg");
 const F_Pressable = () => {
-  //pressable: it is a wrapper component that detects various stages of press interactions on its children
-  //any thing inside pressable becomes clickable or pressable
   /*
+  pressable: it is a wrapper component that detects various stages of press interactions on its children
+             any thing inside pressable becomes clickable or pressable
+  
   ->Pressable supports:
         1) onPress: when clicked
         2) onPressIn: called when press is activated
