@@ -75,8 +75,8 @@ const App = () => {
       {/* <C_Image/> */}
       {/* <D_ScrollView/> */}
       {/* <E_Button/> */}
-      <F_Pressable/>
-      {/* <G_Modal/> */}
+      {/* <F_Pressable/> */}
+      <G_Modal/>
       {/* <H_Statusbar/> */}
       {/* <I_ActivityIndicator/> */}
       {/* <J_Alert/> */}

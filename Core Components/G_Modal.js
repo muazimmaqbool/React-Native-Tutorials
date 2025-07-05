@@ -15,13 +15,12 @@ const G_Modal = () => {
           </View>
         </Modal> */}
 
-      {/*visiblity of the modal can be handled by the state variable */}
       <Button
         title="Open Modal"
         onPress={() => setIsModalOpen(true)}
         color={"midnightblue"}
       />
-      {/*onRequestClose: is called when user clicks on the back button on device otherwise it won't close the modal when 
+      {/*onRequestClose: is called when user clicks on the back button of device otherwise it won't close the modal when 
       back button is called, 
       by adding this: onRequestClose={() => setIsModalOpen(false)} the modal is closed when back button is clicked
       */}
@@ -34,7 +33,7 @@ const G_Modal = () => {
 
         //presentation style works only on ios
         //presentationStyle="fullscreen" //default value ="fullscreen", also can use ="formsheet","pagesheet"
-        //Note using presentationStyle in android crashes the app
+        //Note : using presentationStyle in android crashes the app
       >
         <View
           style={{
