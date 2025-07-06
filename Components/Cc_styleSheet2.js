@@ -7,7 +7,7 @@ const Cc_styleSheet2 = () => {
   return (
     <View>
       <Text style={styles.titleText}>
-        Our styling is done in different file
+       Styling is done in different file
       </Text>
       <View style={styles.nestedView}>
         <Text>Inside Another View</Text>
