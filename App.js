@@ -78,8 +78,8 @@ const App = () => {
       {/* <F_Pressable/> */}
       {/* <G_Modal/> */}
       {/* <H_Statusbar/> */}
-      <I_ActivityIndicator/>
-      {/* <J_Alert/> */}
+      {/* <I_ActivityIndicator/> */}
+      <J_Alert/>
 
       {/* Custom Components :*/}
       {/* <Greet name="Muazim Maqbool" enroll="6655"/>

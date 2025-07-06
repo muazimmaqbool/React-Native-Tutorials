@@ -2,8 +2,8 @@ import React from "react";
 import { Alert, Button, Text, View } from "react-native";
 
 /*Alert: shows/launches an alert dialog with specified title and message
-     ->we can also add buttons to it: only 3 allowed in Android and in ios any number of buttons can be added
-     ->by default Alert has only one button i.e "ok"
+    ->we can also add buttons to it: only 3 allowed in Android and in ios any number of buttons can be added
+    ->by default Alert has only one button i.e "ok"
 
      styntax:
      Alert.alert("title of alert","message of alert",["buttons of alert"])
