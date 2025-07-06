@@ -12,12 +12,12 @@ const Greet = ({ name ,enroll}) => {
 export default Greet;
 
 /*
-Lets first understand what is a custom component
+Lets first understand what is a custom component:
   -> Components are independent and reusable bits of code. 
   We’ve already used some of them in react native for example TextInput,
   TouchableOpacity, Flatlist, etc. Now for example when we use TouchableOpacity most of 
   the time we make changes, like its style, height, width, etc. After making changes in
-   TouchableOpacity now it has become a ‘custom component’
+  TouchableOpacity now it has become a ‘custom component’
 
    call it like this in View after importing it :
     <Greet name="Muazim Maqbool" enroll="6655"/>
