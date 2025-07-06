@@ -8,7 +8,7 @@ import { Button } from "react-native";
 const C_StyleSheet = () => {
   return (
     //view is styled in App.js using inline Styling
-    <View>
+    <View style={styles.container}>
       {/*styled using StyleSheet */}
       <Text style={styles.titleText}>StyleSheet API Example</Text>
       <View style={styles.nestedView}>
@@ -20,6 +20,11 @@ const C_StyleSheet = () => {
 export default C_StyleSheet;
 
 const styles = StyleSheet.create({
+  container:{
+    flex:1,
+    alignItems:"center",
+    justifyContent:"center"
+  },
   titleText: {
     fontSize: 20,
     color: "blue",
@@ -27,6 +32,7 @@ const styles = StyleSheet.create({
     borderColor: "white",
     padding: 10,
     textAlign: "center",
+    borderRadius:20,
   },
   nestedView: {
     backgroundColor: "white",
