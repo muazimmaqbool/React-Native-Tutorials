@@ -17,13 +17,21 @@ const D_MultipleStyles = () => {
         <Text>Lightgreen Box</Text>
       </View>
       <View style={styles.box}>
-        <Text>Only Box Style</Text>
+        <Text style={{color:"white"}}>Only Box Style</Text>
       </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  box: {
+    width: 150,
+    height: 150,
+    padding: 10,
+    margin:10,
+    backgroundColor:"red",
+    alignItems:"center",
+  },
   lightblueBg: {
     backgroundColor: "lightblue",
     // width: 100,
@@ -36,14 +44,7 @@ const styles = StyleSheet.create({
     // height: 100,
     // padding: 10,
   },
-  box: {
-    width: 150,
-    height: 150,
-    padding: 10,
-    margin:10,
-    backgroundColor:"red",
-    alignItems:"center",
-  },
+  
 });
 /*
   ->Note as you can see both the lightblueBg and lightgreenBg has some common styles and we can put them togther
