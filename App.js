@@ -77,8 +77,8 @@ const App = () => {
       {/* <E_Button/> */}
       {/* <F_Pressable/> */}
       {/* <G_Modal/> */}
-      <H_Statusbar/>
-      {/* <I_ActivityIndicator/> */}
+      {/* <H_Statusbar/> */}
+      <I_ActivityIndicator/>
       {/* <J_Alert/> */}
 
       {/* Custom Components :*/}
