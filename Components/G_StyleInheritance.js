@@ -33,11 +33,11 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     //color: "white",
     //-> color:"white" will not apply on text which is inside view on which darkModeText style object is used
-    //so to change color of text apply seperate styling to it
+    //so to change color of text apply seperate styling to text
   },
   //applied to text which is inside View, works fine
   darkModeText: {
-    fontSize:15,
+    fontSize:20,
     color: "white",
   },
   //applied to text which is nested inside another text work fine, it supports both styling of
