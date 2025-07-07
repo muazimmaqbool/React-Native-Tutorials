@@ -25,15 +25,15 @@ const  E_BoxModel = () => {
 };
 const styles = StyleSheet.create({
   box: {
-    //width: '25%',
-    //height: '25%',
+    // width: '25%',
+    // height: '25%',
     //takes 25% of the parents height and width respectively and together the cover 50% of its height and 25% of width
     width: 200,
     height: 200,
     padding: 10, //for all sides
     //paddingHorizontal:10,
     //paddingVertical:20,
-    marginHorizontal: 20,
+    marginHorizontal: 10,
     marginVertical: 30,
     //in R.n Border:"2px solid white" didn't work, we need to specifiy them individually
     borderWidth: 5,
