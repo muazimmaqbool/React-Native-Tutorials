@@ -88,8 +88,8 @@ const App = () => {
       {/* <C_StyleSheet/> */}
       {/* <Cc_styleSheet2/> */}
       {/* <D_MultipleStyles/> */}
-      <E_BoxModel/>
-      {/* <F_Shadows/> */}
+      {/* <E_BoxModel/> */}
+      <F_Shadows/>
       {/* <G_StyleInheritance/> */}
       {/* <H_RefereshControl/> */}
       {/* <I_UseWindowDimensions/> */}
