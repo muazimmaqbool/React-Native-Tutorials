@@ -91,8 +91,8 @@ const App = () => {
       {/* <E_BoxModel/> */}
       {/* <F_Shadows/> */}
       {/* <G_StyleInheritance/> */}
-      <H_RefereshControl/>
-      {/* <I_UseWindowDimensions/> */}
+      {/* <H_RefereshControl/> */}
+      <I_UseWindowDimensions/>
       {/* <J_Vibration/> */}
       {/* <K_Dimensions/> */}
       {/* <L_BackHandler/> */}
