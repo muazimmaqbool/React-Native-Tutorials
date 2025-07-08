@@ -44,7 +44,7 @@ Props accepted by RefreshControl:
         its accepts array of colors (default color is black)
         example: colors={["red","blue"]} or colors={["red"]}
 2) size: only works on android exmaple: size={"large"}
-like this:  <RefreshControl colors={["blue"]} size={"large"} refreshing={isRefresh} onRefresh={handleOnRefresh} />
+   like this:  <RefreshControl colors={["blue"]} size={"large"} refreshing={isRefresh} onRefresh={handleOnRefresh} />
 
 and many more props: check here: https://reactnative.dev/docs/refreshcontrol
 

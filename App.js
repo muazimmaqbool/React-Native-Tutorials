@@ -90,8 +90,8 @@ const App = () => {
       {/* <D_MultipleStyles/> */}
       {/* <E_BoxModel/> */}
       {/* <F_Shadows/> */}
-      <G_StyleInheritance/>
-      {/* <H_RefereshControl/> */}
+      {/* <G_StyleInheritance/> */}
+      <H_RefereshControl/>
       {/* <I_UseWindowDimensions/> */}
       {/* <J_Vibration/> */}
       {/* <K_Dimensions/> */}
