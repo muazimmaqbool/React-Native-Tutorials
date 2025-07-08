@@ -51,7 +51,11 @@ const K_Dimensions = () => {
     </View>
   );
 };
-
+/*
+ Object.entries() is a JavaScript method that returns an array of a given object's own enumerable 
+ string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop 
+ (but without including properties in the prototype chain).
+*/
 export default K_Dimensions;
 
 const styles = StyleSheet.create({
