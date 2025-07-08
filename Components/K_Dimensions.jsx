@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
  ->Although dimensions are available immediately, they may change (e.g due to device rotation, foldable devices etc)
   so any rendering logic or styles that depend on these constants should try to call this function on every render,
-   rather than caching the value (for example, using inline styles rather than setting a value in a StyleSheet).
+  rather than caching the value (for example, using inline styles rather than setting a value from a StyleSheet).
  */
 
 const windowDimensions = Dimensions.get("window");
