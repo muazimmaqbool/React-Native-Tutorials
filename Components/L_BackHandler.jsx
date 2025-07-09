@@ -2,7 +2,7 @@ import { StyleSheet, Text, View ,BackHandler,Alert} from 'react-native'
 import React, { useEffect } from 'react'
 
 /*
--> The Backhandler API detects hardware button presses for back navigation, 
+-> The Backhandler API detects hardware button press for back navigation, 
    lets you register event listeners for the system's back action,
    and lets you control how your application responds. 
    It works only in android.
@@ -54,7 +54,8 @@ const styles = StyleSheet.create({
       title:{
         fontSize: 20,
         fontWeight: '700',
-        color:"yellow"
+        color:"white",
+        letterSpacing:5,
       },
       text: {
         fontSize: 18,
