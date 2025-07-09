@@ -95,8 +95,8 @@ const App = () => {
       {/* <I_UseWindowDimensions/> */}
       {/* <J_Vibration/> */}
       {/* <K_Dimensions/> */}
-      <L_BackHandler/>
-      {/* <M_ToastAndroid/> */}
+      {/* <L_BackHandler/> */}
+      <M_ToastAndroid/>
       {/* <N_Permissions/> */}
       {/* <O_AsyncStorage/> */}
 
