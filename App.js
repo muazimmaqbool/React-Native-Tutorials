@@ -96,8 +96,8 @@ const App = () => {
       {/* <J_Vibration/> */}
       {/* <K_Dimensions/> */}
       {/* <L_BackHandler/> */}
-      <M_ToastAndroid/>
-      {/* <N_Permissions/> */}
+      {/* <M_ToastAndroid/> */}
+      <N_Permissions/>
       {/* <O_AsyncStorage/> */}
 
       {/*closing view of core components and custom components */}

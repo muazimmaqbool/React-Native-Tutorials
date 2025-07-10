@@ -3,15 +3,15 @@ import React from 'react'
 
 /*
 ->PermissionsAndroid:
-PermissionsAndroid provides access to Android M's new permissions model. 
+PermissionsAndroid provides access to Android's new permissions model. 
 The so-called "normal" permissions are granted by default when the application is installed as 
-long as they appear in AndroidManifest.xml. However, "dangerous" permissions require a dialog prompt.
+long as they appear in AndroidManifest.xml. However, "some" permissions require a dialog prompt.
  You should use this module for those permissions.
  
 */
 
 /*
-The checkPermission function checks if the camera permission is already granted.
+The checkPermission function checks if the camera/other permission is already granted.
 The requestForPermission function requests the permission if it's not already granted.
 The handlePermissionRequest function combines these two steps.
 
@@ -21,6 +21,7 @@ const N_Permissions = () => {
 
 
   const checkPermission = async () => {
+    //here it checks for camera permission
     const hasPermission = await PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.CAMERA);
     if (hasPermission) {
       console.log("Camera permission is already granted");
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
       },
       text:{
         fontSize:18,
-        color:"white",
+        color:"black",
         fontWeight:"500"
       }
 })
