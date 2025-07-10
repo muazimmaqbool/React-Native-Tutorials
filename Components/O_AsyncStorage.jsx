@@ -10,7 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
    since it operates globally.
 
 -> Async Storage can only store string data. In order to store object data, you need to serialize it first. For data that can be serialized
-   to JSON, you can use JSON.stringify() when saving the data and JSON.parse() when loading the data.
+   to JSON, you can use JSON.stringify() when saving the data and use JSON.parse() when loading the data.
 
 -> On iOS, AsyncStorage is backed by native code that stores small values in a serialized dictionary and larger values in separate files.
    On Android, AsyncStorage will use either RocksDB or SQLite based on what is available.
@@ -23,8 +23,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 const O_AsyncStorage = () => {
   return (
     <View style={styles.container}>
-      {/* <ExampleOne/> */}
-      <ExampleTwo/>
+      <ExampleOne/>
+      {/* <ExampleTwo/> */}
     </View>
   )
 }
@@ -46,7 +46,7 @@ function ExampleOne(){
   return(
     <View style={{gap:10}}>
       <Text style={styles.title}>Basic Example of Asycn Storage</Text>
-      <Text>{name}</Text>
+      <Text style={styles.savedText}>{name}</Text>
        <Button title="Set Data" onPress={setData}/>
        <Button title="Get Data" onPress={getData}/>
        <Button title="Remove Data" onPress={removeData}/>
@@ -74,7 +74,14 @@ const styles = StyleSheet.create({
   title:{
     fontSize:18,
     fontWeight:"500",
-    color:"white",
+    color:"black",
 
+  },
+  savedText:{
+    fontSize:18,
+    fontWeight:400,
+    color:"black",
+    textAlign:"center",
+    textDecorationLine:"underline"
   }
 })
