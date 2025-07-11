@@ -115,18 +115,22 @@ const App = () => {
         ->uncomment them all together A_FlexBox */}
 
         {/* Used To Explain Flex: */}
+        {/* 
         <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
         <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
         <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
         <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
         <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
-        <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox>
+        <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> 
+        */}
 
-        {/*used for flex-direction*/}
-        {/* Note: the texts BOX-1,2,3 will be received in component via children props */}
-        {/* <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
-      <B_FlexDirection styleprop={{backgroundColor:"green"}}>BOX-2</B_FlexDirection>
-      <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> */}
+        {/* Used To Explain flex-direction:*/}
+        {/* Note: the texts: BOX-1,2,3 will be received in component via children props */}
+        
+        <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
+        <B_FlexDirection styleprop={{backgroundColor:"green"}}>BOX-2</B_FlexDirection>
+        <B_FlexDirection styleprop={{backgroundColor:"orange"}}>BOX-3</B_FlexDirection> 
+       
 
         {/*justify content */}
         {/* <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
@@ -265,13 +269,14 @@ React-Native: the view is already a flex container and its comp. inside it are f
 const styles = StyleSheet.create({
   container: {
     marginTop: 64,
-    borderWidth: 5,
+    borderWidth: 3,
     borderColor: "red",
     //for now the container takes only space which is required by its children, you can see red border wrapping the boxes
     flex: 1, //now red border will be wrapping whole screen
 
     //flexDirection:
-    //flexDirection:"column" //default value no change sets main axis from top to bottom
+    //gap:5,
+    //flexDirection:"column", //default value no change sets main axis from top to bottom
     //flexDirection:"column-reverse", //sets flex items in reverse order i.e bottom to top
     //flexDirection:"row", //sets items form left to right
     //flexDirection:"row-reverse", //sets items from right to left in reverse order

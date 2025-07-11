@@ -4,7 +4,7 @@ import React from "react";
 ->First see previous code and notes
 
 ->Flex directon:establishes the main axis, which determines how the flex items are placed in container
-  ->by default main axis is top to bottom but we can change its direction by changing flex-direction
+  ->by default main axis is top to bottom but we can change its direction by changing flex-direction value
   ->Flex direction values: 
             flexDirection:"column" //default value no change sets main axis from top to bottom
             flexDirection:"column-reverse", //sets flex items in reverse order i.e bottom to top
