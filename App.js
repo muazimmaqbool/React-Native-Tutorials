@@ -67,7 +67,7 @@ const App = () => {
   return (
     <>
       {/*used for core components and custom components */}
-      <View style={{ flex: 1, backgroundColor: "skyblue", padding: 60 }}>
+      {/* <View style={{ flex: 1, backgroundColor: "skyblue", padding: 60 }}> */}
 
       {/* Core Components: */}
       {/* <A_View/> */}
@@ -101,7 +101,7 @@ const App = () => {
       {/* <O_AsyncStorage/> */}
 
       {/*closing view of core components and custom components */}
-      </View>
+      {/* </View> */}
 
       {/*responsive layout/design */}
       <A_responsive/>

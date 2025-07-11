@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     height:hp(100), //hp: height percentage, hp(100) means 100% height of the current device screen
   },
   header:{
-    height:hp(10), //10% height of the current device screen
+    height:hp(15), //15% height of the current device screen
     backgroundColor:"tomato", 
   },
   main:{
