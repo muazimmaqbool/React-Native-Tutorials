@@ -294,7 +294,12 @@ const styles = StyleSheet.create({
 
 
     //alignItems: default value is "stretch" i.e the items will take entire width of cross axis
-    alignItems:"center", //values:stretch,flex-start,flex-end,center
+    //gap:5,
+    // alignItems:"stretch" //default value
+    // alignItems:"center",
+    // alignItems:"flex-start",
+    // alignItems:"flex-end",
+    
 
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
     //height:500, //box will come out of red container
