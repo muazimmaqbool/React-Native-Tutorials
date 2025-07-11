@@ -142,18 +142,20 @@ const App = () => {
         {/* Used to explain: alignItems and alignSelf 
          (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
         {/*applying alignSelf to each item here */}
+        {/* 
         <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",alignSelf:"flex-start"}}>Box-1</D_Align_ITEMSandSELF>
         <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",alignSelf:"center"}}>Box-2</D_Align_ITEMSandSELF>
         <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange",alignSelf:"flex-end"}}>Box-3</D_Align_ITEMSandSELF>
         <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF> 
+        */}
 
         {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelf
               is also flex start, if alignSelf is not mention in children they still take value from their parent*/}
         {/*if alignItems in parent is "center" then both box-5 and box-6 will be in center
       now change value of alignItems inside container i.e on line number 288
       */}
-        {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF> */}
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF>
 
         {/*flexWrap and flexBasis*/}
         {/*flexBasic makes the item more taller than other,
