@@ -283,7 +283,14 @@ const styles = StyleSheet.create({
     //flexDirection:"row-reverse", //sets items from right to left in reverse order
 
     //justifycontent:
-    //justifyContent:"space-around", //values:flex-start, flex-end, center,space-between,space-evenly,space-around
+    //gap:5,
+    // justifyContent:"flex-start", //default value
+    // justifyContent:"flex-end",
+    // justifyContent:"center",
+    // justifyContent:"space-around",
+    // justifyContent:"space-between",
+    // justifyContent:"space-evenly"
+
 
     //alignItems: default value is "stretch" i.e the items will take entire width of cross axis
     //alignItems:"center", //values:stretch,flex-start,flex-end,center
