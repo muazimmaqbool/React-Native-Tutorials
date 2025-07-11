@@ -105,15 +105,14 @@ const App = () => {
 
       {/*responsive layout/design */}
       {/* <A_responsive/> */}
-      <B_respUsingFlex/>
+      {/* <B_respUsingFlex/> */}
 
-      {/* this view used only when working with flexbox */}
-      {/* <View style={styles.container}> */}
+      {/* use this view only when working with flexbox */}
+      <View style={styles.container}>
 
         {/*flexbox and flex property */}
-        {/*we used this component: A_Flexbox multiple times to understand better (from lec-26 at 4:28) 
-        ->uncomment them all together A_FlexBox
-      */}
+        {/* we used this component: A_Flexbox multiple times to understand better  
+        ->uncomment them all together A_FlexBox */}
 
         {/* used for flex */}
         {/* <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
@@ -211,7 +210,7 @@ const App = () => {
         </H_Relative_Absolute_layout> */}
 
       {/*closing View of flexbox */}
-      {/* </View> */}
+      </View>
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
       {/* <DimensionsAPI/> */}
