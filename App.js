@@ -114,13 +114,13 @@ const App = () => {
         {/* we used this component: A_Flexbox multiple times to understand better  
         ->uncomment them all together A_FlexBox */}
 
-        {/* used for flex */}
-        {/* <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
-      <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
-      <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> */}
+        {/* Used To Explain Flex: */}
+        <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
+        <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
+        <A_FlexBox styleprop={{backgroundColor:"orange",}}>BOX-3</A_FlexBox>
+        <A_FlexBox styleprop={{backgroundColor:"pink"}}>BOX-4</A_FlexBox>
+        <A_FlexBox styleprop={{backgroundColor:"green"}}>BOX-5</A_FlexBox>
+        <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox>
 
         {/*used for flex-direction*/}
         {/* Note: the texts BOX-1,2,3 will be received in component via children props */}
