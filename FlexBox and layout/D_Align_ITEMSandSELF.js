@@ -4,7 +4,7 @@ import React from "react";
 AlignItems: it works same as justify-content but in cross axis(left to right)
 Note:if flex direction is row then align items will work on top to bottom
 
-AlignSelf: its is applied individual items,allowing us to control the alignment of each item independently
+AlignSelf: its is applied to individual items, allowing us to control the alignment of each item independently
 
 */
 

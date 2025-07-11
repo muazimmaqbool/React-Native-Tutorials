@@ -114,7 +114,7 @@ const App = () => {
         {/* we used this component: A_Flexbox multiple times to understand better  
         ->uncomment them all together A_FlexBox */}
 
-        {/* Used To Explain Flex: */}
+        {/* Used to explain : Flex */}
         {/* 
         <A_FlexBox styleprop={{backgroundColor:"blue",flex:1}} children={"BOX-1"}/>
         <A_FlexBox styleprop={{backgroundColor:"teal",flex:3}}>BOX-2</A_FlexBox>
@@ -124,7 +124,7 @@ const App = () => {
         <A_FlexBox styleprop={{backgroundColor:"skyblue"}}>BOX-6</A_FlexBox> 
         */}
 
-        {/* Used To Explain flex-direction:*/}
+        {/* Used to explain: flex-direction */}
         {/* Note: the texts: BOX-1,2,3 will be received in component via children props */}
         {/*}
         <B_FlexDirection styleprop={{backgroundColor:"teal"}}>BOX-1</B_FlexDirection>
@@ -133,18 +133,19 @@ const App = () => {
         */}
 
         {/* used To Explain justify content */}
-        
+        {/*
         <C_JustifyContent styleprop={{backgroundColor:"teal"}} >Box1</C_JustifyContent>
         <C_JustifyContent styleprop={{backgroundColor:"green"}} >Box2</C_JustifyContent>
         <C_JustifyContent styleprop={{backgroundColor:"orange"}} >Box3</C_JustifyContent>
+        */}
 
-        {/*alignItems and alignSelf 
-      (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
+        {/* Used to explain: alignItems and alignSelf 
+         (Note, when working on alignItems first remove alignSelf and have only 3 boxes) */}
         {/*applying alignSelf to each item here */}
-        {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",alignSelf:"flex-start"}}>Box-1</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",alignSelf:"center"}}>Box-2</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange",alignSelf:"flex-end"}}>Box-3</D_Align_ITEMSandSELF>
-      <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF>  */}
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"teal",alignSelf:"flex-start"}}>Box-1</D_Align_ITEMSandSELF>
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"green",alignSelf:"center"}}>Box-2</D_Align_ITEMSandSELF>
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"orange",alignSelf:"flex-end"}}>Box-3</D_Align_ITEMSandSELF>
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"blue",alignSelf:"stretch"}}>Box-4</D_Align_ITEMSandSELF> 
 
         {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelf
               is also flex start, if alignSelf is not mention in children they still take value from their parent*/}
@@ -293,7 +294,7 @@ const styles = StyleSheet.create({
 
 
     //alignItems: default value is "stretch" i.e the items will take entire width of cross axis
-    //alignItems:"center", //values:stretch,flex-start,flex-end,center
+    alignItems:"center", //values:stretch,flex-start,flex-end,center
 
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
     //height:500, //box will come out of red container
