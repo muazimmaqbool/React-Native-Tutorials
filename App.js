@@ -104,8 +104,8 @@ const App = () => {
       {/* </View> */}
 
       {/*responsive layout/design */}
-      <A_responsive/>
-      {/* <B_respUsingFlex/> */}
+      {/* <A_responsive/> */}
+      <B_respUsingFlex/>
 
       {/* this view used only when working with flexbox */}
       {/* <View style={styles.container}> */}
