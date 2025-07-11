@@ -98,13 +98,13 @@ const App = () => {
       {/* <L_BackHandler/> */}
       {/* <M_ToastAndroid/> */}
       {/* <N_Permissions/> */}
-      <O_AsyncStorage/>
+      {/* <O_AsyncStorage/> */}
 
       {/*closing view of core components and custom components */}
       </View>
 
       {/*responsive layout/design */}
-      {/* <A_responsive/> */}
+      <A_responsive/>
       {/* <B_respUsingFlex/> */}
 
       {/* this view used only when working with flexbox */}

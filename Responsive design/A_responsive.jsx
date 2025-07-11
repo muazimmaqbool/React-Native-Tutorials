@@ -4,7 +4,7 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 
 /* [react-native-responsive-screen] important
 
--> To make the app responsive across all the devices of different screen sizes to you will using a library called:
+-> To make the app responsive across all the devices of different screen sizes you will using a library called:
    "react-native-responsive-screen" 
    command to install: -> npm i react-native-responsive-screen
    link: https://www.npmjs.com/package/react-native-responsive-screen
@@ -41,10 +41,10 @@ export default A_responsive;
 
 const styles = StyleSheet.create({
   container: {
-    height:hp(10), //hp: height percentage, hp(100) means 100% height of the current device screen
+    height:hp(100), //hp: height percentage, hp(100) means 100% height of the current device screen
   },
   header:{
-    height:hp(15), //15% height of the current device screen
+    height:hp(10), //10% height of the current device screen
     backgroundColor:"tomato", 
   },
   main:{
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     backgroundColor:"skyblue",
   },
   footer:{
-    height:hp(15), //15% height of the current device screen
+    height:hp(20), //20% height of the current device screen
     backgroundColor:"lightgreen"
   }
 });
