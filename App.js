@@ -224,8 +224,8 @@ const App = () => {
       {/* </View> */}
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
-      <DimensionsAPI/>
-      {/* <B_DimAPIsolution/> */}
+      {/* <DimensionsAPI/> */}
+      <B_DimAPIsolution/>
       {/* <C_UseWindowDimensions/> */}
       {/* <D_SafeAreaView/> */}
       {/* <E_Platform_Specific_code/> */}
