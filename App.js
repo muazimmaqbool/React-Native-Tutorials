@@ -152,21 +152,23 @@ const App = () => {
         {/*NOTE: auto is its default value, it takes value form its parent "alignItems" property, if its parent as "alignItems:"flex-start" the auto in alignSelf
               is also flex start, if alignSelf is not mention in children they still take value from their parent*/}
         {/*if alignItems in parent is "center" then both box-5 and box-6 will be in center
-      now change value of alignItems inside container i.e on line number 288
+      now change value of alignItems inside container
       */}
-        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
-        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF>
+        {/* <D_Align_ITEMSandSELF styleprop={{backgroundColor:"pink",alignSelf:"auto"}}>Box-5</D_Align_ITEMSandSELF>
+        <D_Align_ITEMSandSELF styleprop={{backgroundColor:"yellow"}}>Box-6</D_Align_ITEMSandSELF> */}
 
-        {/*flexWrap and flexBasis*/}
-        {/*flexBasic makes the item more taller than other,
-        Look at notes also to understand better (used on Box4)*/}
-        {/* <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
-      <E_FlexWrap styleprop={{backgroundColor:"green"}}>Box2</E_FlexWrap>
-      <E_FlexWrap styleprop={{backgroundColor:"blue"}}>Box3</E_FlexWrap>
-      <E_FlexWrap styleprop={{backgroundColor:"teal",flexBasis:150}}>Box4</E_FlexWrap>
-      <E_FlexWrap styleprop={{backgroundColor:"pink"}}>Box5</E_FlexWrap>
-      <E_FlexWrap styleprop={{backgroundColor:"skyblue"}}>Box6</E_FlexWrap>
-      <E_FlexWrap styleprop={{backgroundColor:"gray"}}>Box7</E_FlexWrap> */}
+        {/*Used to explain: flexWrap and flexBasis*/}
+        {/*flexBasic makes the item more taller than other, Look at notes also to understand better (used on Box4)*/}
+        {/* flex-wrap is explained below */}
+        {/* 
+        <E_FlexWrap styleprop={{backgroundColor:"yellow"}}>Box1</E_FlexWrap>
+        <E_FlexWrap styleprop={{backgroundColor:"green"}}>Box2</E_FlexWrap>
+        <E_FlexWrap styleprop={{backgroundColor:"blue"}}>Box3</E_FlexWrap>
+        <E_FlexWrap styleprop={{backgroundColor:"teal",flexBasis:150}}>Box4</E_FlexWrap>
+        <E_FlexWrap styleprop={{backgroundColor:"pink"}}>Box5</E_FlexWrap>
+        <E_FlexWrap styleprop={{backgroundColor:"skyblue"}}>Box6</E_FlexWrap>
+        <E_FlexWrap styleprop={{backgroundColor:"gray"}}>Box7</E_FlexWrap>
+        */}
 
         {/*FlexShrink:
         ->Note: make container flex-direction to row and alignItems to flexStart and width to 300*/}
@@ -299,13 +301,13 @@ const styles = StyleSheet.create({
     //gap:5,
     // alignItems:"stretch" //default value
     // alignItems:"center",
-    // alignItems:"flex-start",
+    //alignItems:"flex-start",
     // alignItems:"flex-end",
     
 
     //flexWrap: (Note: first comment flex:1 above and set height to 300)
     //height:500, //box will come out of red container
-    // flexWrap:"nowrap" //default value no change
+    //flexWrap:"nowrap" //default value no change
     //flexWrap:"wrap", //content within the container-> works only when needed if you set height to 500 then they will not wrap to next column, they come in single line
     //flexWrap:"wrap-reverse", //opposite of wrap
     //rowGap:20,
