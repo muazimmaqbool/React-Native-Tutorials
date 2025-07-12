@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View ,Dimensions} from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, Dimensions } from "react-native";
+import React from "react";
 
 /*
 ->Dynamic User Interface:
@@ -14,13 +14,13 @@ const DimensionsAPI = () => {
   return (
     <View style={styles.container}>
       <View style={styles.box}>
-      <Text style={styles.text}>Welcome!</Text>
-      {/* will be visible in landscape mode but need to reload app first */}
-      {windowWidth > 500 && <Text>You are view in landscape more</Text>}
+        <Text style={styles.text}>Welcome!</Text>
+        {/* will be visible in landscape mode but need to reload app first */}
+        {windowWidth > 500 && <Text>You are view in landscape more</Text>}
       </View>
     </View>
-  )
-}
+  );
+};
 
 //getting devices width and height
 /*important: Dimensions accepts two arguments screen and window
@@ -29,8 +29,8 @@ const DimensionsAPI = () => {
 ->window: refers to the visible area of the screen occupied by your app's ui (for tasks involving ui elements within your applicantions
           visible area you will want to use window)
 */
-const windowWidth=Dimensions.get("window").width
-const windowHeight=Dimensions.get("window").height
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 //we can now use these device dimensions to dynamically adjust styles based on the device size
 
 //In summary: Dimensions API provides access to devices size and using devices width and height and then you can create responsive styles for your app
@@ -46,27 +46,27 @@ Important: Although this method works but Dimensions API has a drawback
 //console.log("width:",windowWidth," and height:",windowHeight)
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        //backgroundColor:"plum",
-        backgroundColor:windowWidth>500?"teal":"plum",
-        alignItems:"center",
-        justifyContent:"center",
-    },
-    box:{
-        //width:300,
-        width:windowWidth > 500 ? "70%":"90%",
-        //height:300,
-        height:windowHeight > 600 ? "60%":"90%",
-        backgroundColor:"lightblue",
-        alignItems:"center",
-        justifyContent:"center"
-    },
-    text:{
-      //fontSize:24
-        fontSize:windowWidth>500?50:24,
-        color:windowWidth>500?"white":"black"
-    }
-})
+  container: {
+    flex: 1,
+    //backgroundColor:"plum",
+    backgroundColor: windowWidth > 500 ? "teal" : "plum",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  box: {
+    //width:300,
+    width: windowWidth > 500 ? "70%" : "90%",
+    //height:300,
+    height: windowHeight > 600 ? "60%" : "90%",
+    backgroundColor: "lightblue",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    //fontSize:24
+    fontSize: windowWidth > 500 ? 50 : 24,
+    color: windowWidth > 500 ? "white" : "black",
+  },
+});
 
-export default DimensionsAPI
+export default DimensionsAPI;

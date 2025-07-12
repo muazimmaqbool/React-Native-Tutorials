@@ -108,7 +108,7 @@ const App = () => {
       {/* <B_respUsingFlex/> */}
 
       {/* use this view only when working with flexbox */}
-      <View style={styles.container}>
+      {/* <View style={styles.container}> */}
 
         {/*flexbox and flex property */}
         {/* we used this component: A_Flexbox multiple times to understand better  
@@ -191,21 +191,22 @@ const App = () => {
         {/*Used to explain: relative and absolute layout */}
         {/*applied relative to Box1 and Box3, they are both relative by default */}
         {/*Now box5 has position of absolute,now after box-4 we have box-6, where box-5 was initially present */}
-        <H_Relative_Absolute_layout styleprop={{ backgroundColor: "teal", top: 20, left: 80 }}>
+        
+        {/* <H_Relative_Absolute_layout styleprop={{ backgroundColor: "teal", top: 20, left: 80 }}>
           Box-1
         </H_Relative_Absolute_layout>
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "green" }}>
           Box-2
         </H_Relative_Absolute_layout>
 
-        {/*mentioning relative is optional */}
+        {/*mentioning relative is optional 
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "pink",position:"relative",left: 60 }}>
           Box-3
         </H_Relative_Absolute_layout>
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "blue" }}>
           Box-4
         </H_Relative_Absolute_layout>
-        {/*now box5 is positioned using specific coordinated relative to its parent container */}
+        now box5 is positioned using specific coordinated relative to its parent container 
         <H_Relative_Absolute_layout
           styleprop={{
             backgroundColor: "orange",
@@ -217,13 +218,13 @@ const App = () => {
         </H_Relative_Absolute_layout>
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
           Box-6
-        </H_Relative_Absolute_layout>
+        </H_Relative_Absolute_layout> */}
 
       {/*closing View of flexbox */}
-      </View>
+      {/* </View> */}
 
       {/*comment out Above code when working in Dynamic Ui folder, Lists folder, */}
-      {/* <DimensionsAPI/> */}
+      <DimensionsAPI/>
       {/* <B_DimAPIsolution/> */}
       {/* <C_UseWindowDimensions/> */}
       {/* <D_SafeAreaView/> */}
