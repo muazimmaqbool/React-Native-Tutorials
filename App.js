@@ -178,7 +178,7 @@ const App = () => {
 
         {/*Flex Grow :*/}
         {/* <G_FlexGrow styleprop={{backgroundColor:"teal"}}>BOX-1</G_FlexGrow>
-      <G_FlexGrow styleprop={{backgroundColor:"orange"}}>BOX-2</G_FlexGrow> */}
+        <G_FlexGrow styleprop={{backgroundColor:"orange"}}>BOX-2</G_FlexGrow> */}
         {/*no chnage as flexGrow:0 is default value */}
         {/* <G_FlexGrow styleprop={{backgroundColor:"yellow",flexGrow:0}}>BOX-3</G_FlexGrow>  */}
         {/*Box4 takes the all available space as its flexGrow is 1*/}
@@ -188,36 +188,36 @@ const App = () => {
         {/*Box-6 takes 3times the space as box4 and 5 because it has flexGrow of 3 */}
         {/* <G_FlexGrow styleprop={{backgroundColor:"skyblue",flexGrow:3}}>BOX-6</G_FlexGrow> */}
 
-        {/*relative and absolute layout */}
+        {/*Used to explain: relative and absolute layout */}
         {/*applied relative to Box1 and Box3, they are both relative by default */}
         {/*Now box5 has position of absolute,now after box-4 we have box-6, where box-5 was initially present */}
-        {/* <H_Relative_Absolute_layout styleprop={{ backgroundColor: "teal", top: 30, left: 50 }}>
+        <H_Relative_Absolute_layout styleprop={{ backgroundColor: "teal", top: 20, left: 80 }}>
           Box-1
         </H_Relative_Absolute_layout>
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "green" }}>
           Box-2
-        </H_Relative_Absolute_layout> */}
+        </H_Relative_Absolute_layout>
 
         {/*mentioning relative is optional */}
-        {/* <H_Relative_Absolute_layout styleprop={{ backgroundColor: "pink",position:"relative",left: 80 }}>
+        <H_Relative_Absolute_layout styleprop={{ backgroundColor: "pink",position:"relative",left: 60 }}>
           Box-3
         </H_Relative_Absolute_layout>
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "blue" }}>
           Box-4
-        </H_Relative_Absolute_layout> */}
+        </H_Relative_Absolute_layout>
         {/*now box5 is positioned using specific coordinated relative to its parent container */}
-        {/* <H_Relative_Absolute_layout
+        <H_Relative_Absolute_layout
           styleprop={{
             backgroundColor: "orange",
             position: "absolute",
             top: 100,
-            left: 100,
+            left: 150,
           }}>
           Box-5
         </H_Relative_Absolute_layout>
         <H_Relative_Absolute_layout styleprop={{ backgroundColor: "purple" }}>
           Box-6
-        </H_Relative_Absolute_layout> */}
+        </H_Relative_Absolute_layout>
 
       {/*closing View of flexbox */}
       </View>
