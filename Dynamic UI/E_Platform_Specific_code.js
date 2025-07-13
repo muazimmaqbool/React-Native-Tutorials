@@ -12,9 +12,9 @@ import CustomBtn from "./PSFE Example/CustomButton/CustomBtn";
     
     1)-> "platform" module: detects the platform on which the app is running
     ->Example: 
-       here in this code the Welocome text is displayed on both ios and android and you can see in IOS
-       its displayed within "SafeAreaView" but on android the text is close to top, 
-       so if we set Padding top in container , its applied to both ios and android , 
+       Here in this code the Welocome text is displayed on both ios and android and you can see in IOS
+       it's displayed within "SafeAreaView" but on android the text is close to top, 
+       so if we set Padding top in container , but it's applied on both ios and android, 
        so we use "platform" Module to apply padding top only on android as it detects the platform on which app is currently running
        example: paddingTop: Platform.OS === "android" ? 30 : 0, 
         (the platform.OS is good for small changes but a better option for more comprehensive platform styles is

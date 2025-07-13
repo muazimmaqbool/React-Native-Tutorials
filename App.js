@@ -227,8 +227,8 @@ const App = () => {
       {/* <DimensionsAPI/> */}
       {/* <B_DimAPIsolution/> */}
       {/* <C_UseWindowDimensions/> */}
-      <D_SafeAreaView/>
-      {/* <E_Platform_Specific_code/> */}
+      {/* <D_SafeAreaView/> */}
+      <E_Platform_Specific_code/>
 
       {/*pockemon example */}
       {/* <Home/> */}
