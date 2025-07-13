@@ -10,7 +10,7 @@ import React from "react";
     as we have unnecessary space at top in "Android".
 
   ->and to fix we need find out what is the "safe area" for the given device and render our application only
-    within that safe area, that is exactly what the "SafeAreaView" component is for. 
+    within that safe area, that is exactly what the "SafeAreaView" component does. 
 
   ->The purpose of "SafeAreaView" is to render content within the safe area boundries of a device, 
     it applies padding to reflect the physical limitations of the screen such as rounded corners and camera notches
