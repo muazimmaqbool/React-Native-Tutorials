@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, useWindowDimensions } from "react-native";
 import React from "react";
 /*
-  useWindowDimensions hook : is easy way to implement styles/changes when device dimensions change
+  useWindowDimensions hook : it's very easy way to implement styles/changes when device dimensions change
     ->No complex code is needed here
     ->useWindowDimension is recomended approach to achieve responsiveness
     ->its better to use useWindowDimensions over dimensions API
