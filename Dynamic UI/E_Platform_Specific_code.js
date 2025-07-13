@@ -22,7 +22,7 @@ import CustomBtn from "./PSFE Example/CustomButton/CustomBtn";
     ->Note: "Platform" module is sutaible for small changes like making small and group of small changes
     
     2)-> Platform specific file extensions:
-        this is used for more complex scenerios, this splits the code in sepereate files for "ios" and  "android"
+        This is used for more complex scenerios, this splits the code in sepereate files for "ios" and  "android"
         with .ios and .android extensions before the main extension.
         ->React Native detects the extension and loads the relevant platform file when required by other components
         Example: creating a button component. that varies across the two platforms 
@@ -48,10 +48,10 @@ const E_Platform_Specific_code = () => {
         <View style={styles.box}>
           <Text style={styles.text}>Welcome!</Text>
           {/*title and clicked are props accepts by CustomBtn's */}
-          <CustomBtn title="press me!" clicked={()=>alert("pressed")}/>
+          <CustomBtn title="press me!" clicked={()=>alert("You Pressed Me!")}/>
           {/*or try this :*/}
           {/* <CustomBtn title="try me!" clicked={()=>alert(Platform.OS==="ios"?"hello ios":"hello android")}/> */}
-          <CustomBtn title="try me!" clicked={showPlatform}/>
+          <CustomBtn title="Detect Platform" clicked={showPlatform}/>
         </View>
       </View>
     </SafeAreaView>
