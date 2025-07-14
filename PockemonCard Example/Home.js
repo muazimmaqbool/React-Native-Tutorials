@@ -6,7 +6,6 @@ const Home = () => {
   //pokemon card content data
   const charmanderData = {
     name: "Charmander",
-    //image:require("./assets/Charmander.png"), //replace with the actual image path
     image: {
       uri: "https://i.pinimg.com/originals/38/95/e3/3895e3419fa17eddf66fbd96cdaa16bc.png",
     },
@@ -48,7 +47,7 @@ const Home = () => {
     weaknesses: ["Ground"],
   };
 
-  //passing the card content to PokemonCard comp. as props using the spread operator and destructure the data their
+  //passing the card content to PokemonCard component. as props using the spread operator and destructure the data their
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
