@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 30,
     fontWeight: "bold",
+    textTransform:"uppercase"
   },
   hp: {
     fontSize: 22,
