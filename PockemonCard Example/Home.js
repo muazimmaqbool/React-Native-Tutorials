@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "gray",
-    paddingTop: Platform.OS == "android" ? 30 : 0,
+    paddingTop: Platform.OS == "android" ? 40 : 0,
   },
 });
 export default Home;
