@@ -10,12 +10,14 @@ import React from "react";
 //this is mock data for example of list
 import pokemonList from "./TestData.json";
 
-//In React "map" method is the common way to render a list
-/*In React Native you use the same approach but their is a better approach to render a list in React Native
-  but in this code we will use "map" */
+/*
 
-/*Note: Adding key to item is necessary in React to effectantly update the list, it helps react identify
-        which item have chaged/added/removed and it should be unique for each item
+In React "map" method is the common way to render a list
+In React Native you use the same approach but their is a better approach to render a list in React Native
+but in this code we will use "map"
+
+Note: Adding key to item is necessary in React to effectantly update the list, it helps react identify
+      which item have chaged/added/removed and it should be unique for each item
 */
 
 const A_Lists_RN = () => {
