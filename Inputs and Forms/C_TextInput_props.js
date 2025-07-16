@@ -12,8 +12,9 @@ import React, { useState } from "react";
   like, placeholder, secureTextEntry, keyboardType,
 
   ?these two props are by default :
-  1)autoCorrect (which corrects the text) 2)autoCapitalize (which capitalizes the text)
-    to make them off do this : autoCorrect={false} , autoCapitalize="none"
+  1)autoCorrect (which corrects the text)
+  2)autoCapitalize (which capitalizes the text)
+  -> To make them off do this : autoCorrect={false} , autoCapitalize="none"
 
   secureTextEntry: masks the type text (used for entering password)
   keyboardType: allows you to specify the type of the keyboard that appears when the user interacts with the text input
