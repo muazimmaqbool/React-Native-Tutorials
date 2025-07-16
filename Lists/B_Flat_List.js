@@ -48,7 +48,7 @@ const B_Flat_List = () => {
           //horizontal={true}
 
           /*keyExtractor: this prop is a function that takes an item from data Array and returns a unique key for that item.
-         It is used to indentify the unqiue items in the list similar to the key prop using the map method*/
+           It is used to indentify the unqiue items in the list similar to the key prop using the map method*/
           //bydefault it returns:
           //keyExtractor={item.key} //if its not present then:
           //keyExtractor={item.id} //if its not also present then:
