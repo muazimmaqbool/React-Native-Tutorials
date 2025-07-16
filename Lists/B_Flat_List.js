@@ -24,8 +24,8 @@ import pokemonList from "./TestData.json";
 const B_Flat_List = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <Text style={styles.header}>FlatList Component</Text>
       <View style={styles.scrollViewStyle}>
-        <Text>FlatList Component</Text>
         <FlatList
           data={pokemonList}
           renderItem={({ item }) => {
@@ -69,6 +69,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "teal",
     paddingTop: StatusBar.currentHeight,
+    gap:10,
+  },
+  header:{
+    color:"white",
+    fontSize:20,
+    textAlign:"center"
   },
   scrollViewStyle: {
     paddingHorizontal: 25,
