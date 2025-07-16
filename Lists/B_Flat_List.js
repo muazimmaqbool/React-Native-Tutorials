@@ -13,31 +13,19 @@ import pokemonList from "./TestData.json";
 //first see previous code
 /*
 ->In React Native the recommended way to render list is to use FlatList component:
-  FlatList compt. renders only the items which are currently in view, making it high performant for long lists
+  FlatList component renders only the items which are currently in view, making it high performant for long lists
 
-->FlatList has two mendatory props: data and renderItem
-  -> data={arrayList} , pass it the array that you want to render in the list (source of information for flatList)
-  -> renderItem:  its a function that returns the jsx  for rendering each item in the list
-     renderItem={({item})=>{define here how each item is rendered}}
+->FlatList has two mendatory two props: data and renderItem
+  - data={arrayList} , pass it the array that you want to render in the list (source of information for flatList)
+  - renderItem:  its a function that returns the jsx for rendering each item in the list
+                 syntax: renderItem={({item})=>{define here how each item is rendered}}
 */
 
 const B_Flat_List = () => {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <ScrollView style={styles.scrollViewStyle}>
-      {
-        pokemonList.map(pokemon => {
-            //console.log("id:",pokemon.id); //will print all 100 id's
-            return(
-                <View key={pokemon.id} style={styles.itemStyle}>
-                <Text style={styles.itemText}>{pokemon.type}</Text>
-                <Text style={[styles.itemText,styles.nameColor]}>{pokemon.name}</Text>
-                </View>
-            )
-        })
-      }
-      </ScrollView> */}
       <View style={styles.scrollViewStyle}>
+        <Text>FlatList Component</Text>
         <FlatList
           data={pokemonList}
           renderItem={({ item }) => {
