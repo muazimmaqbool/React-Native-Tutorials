@@ -31,7 +31,7 @@ const D_MultiLine_TextInput = () => {
         placeholder="email@example.com"
       />
       <Text  style={styles.text}>Your email is: {email} </Text>
-        {/*multiline text input */}
+        {/* Multiline text input: */}
         <TextInput style={[styles.input,styles.multilineText]} placeholder="your message" multiline/>
     </SafeAreaView>
   );
