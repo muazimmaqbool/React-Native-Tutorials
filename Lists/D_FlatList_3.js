@@ -18,7 +18,7 @@ import {
     ->ListEmptyComponent : used when no item in the list is present
 
     -> ListHeaderComponent={} , ListFooterComponent={} , ListEmptyComponent={}
-    */
+  */
   
   const D_Flat_List_3 = () => {
     return (
@@ -27,7 +27,6 @@ import {
           <FlatList
            data={pokemonList}
             renderItem={({ item }) => {
-            //   console.log("id", item.id);
               return (
                 <View key={item.id} style={styles.itemStyle}>
                   <Text>#{item.id}</Text>
@@ -39,8 +38,8 @@ import {
               );
             }}
             keyExtractor={(item, index) => item.id.toString()}
-            ItemSeparatorComponent={<View style={{height:20}}/>}
-            //remove this line :"data={pokemonList}" to see below line 
+            ItemSeparatorComponent={<View style={{height:25}}/>}
+            //remove this line :"data={pokemonList}" to see below props
             ListEmptyComponent={<Text>No Item Available</Text>} 
             ListHeaderComponent={<Text style={styles.HeaderText}>Pokemon List</Text>}
             ListFooterComponent={<Text style={styles.FooterText}>End Of List</Text>}
@@ -67,6 +66,8 @@ import {
       borderRadius: 10,
       borderWidth: 1,
       //marginBottom: 15,
+      shadowColor:"black",
+    elevation:10,
     },
     itemText: {
       fontSize: 25,
