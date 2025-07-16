@@ -11,6 +11,7 @@ import {
 import React from "react";
 
 import groupedPokemonList from "./grouped_testData.json";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 //first see previous code
 /*
@@ -35,6 +36,7 @@ import groupedPokemonList from "./grouped_testData.json";
 const E_SectionList = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <Text style={styles.header}>Section List</Text>
       <View style={styles.scrollViewStyle}>
         <SectionList
           sections={groupedPokemonList}
@@ -47,10 +49,10 @@ const E_SectionList = () => {
           }}
           //used to define how each section header is rendered
           renderSectionHeader={({ section }) => (
-            <Text style={styles.sectionHeadertext}>{section.type}</Text>
+            <Text style={styles.sectionHeadertext}>{section.type}:</Text>
           )}
-          ItemSeparatorComponent={()=><View style={{height:15}}/>}
-          SectionSeparatorComponent={()=><View style={{height:15}}/>}
+          ItemSeparatorComponent={()=><View style={{height:20}}/>}
+          SectionSeparatorComponent={()=><View style={{height:10}}/>}
           //it accepts many more props see on documentation
         />
       </View>
@@ -65,6 +67,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "white",
     paddingTop: StatusBar.currentHeight,
+    gap:10
+  },
+  header:{
+    color:"black",
+    fontSize:25,
+    textAlign:"center"
   },
   scrollViewStyle: {
     paddingHorizontal: 25,
