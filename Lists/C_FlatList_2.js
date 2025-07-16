@@ -14,8 +14,8 @@ import pokemonList from "./TestData.json";
 /*
 In this code we will see: item Seperator prop of FlatList
 -> itemSeperatorComponent : this prop accepts a react component and renders it between each item in the list
-        but exculding the top and bottom,
-        (here we can now replace the bottom margin we have in our card component)
+                            but exculding the top and bottom of the list,
+   (here we can now replace the bottom margin we have in our itemStyle component)
  
   */
 
@@ -37,7 +37,7 @@ const C_Flat_List_2 = () => {
             );
           }}
           keyExtractor={(item, index) => item.id.toString()}
-          ItemSeparatorComponent={<View style={{height:20}}/>}
+          ItemSeparatorComponent={<View style={{height:20,backgroundColor:"gray"}}/>}
         />
       </View>
     </SafeAreaView>
