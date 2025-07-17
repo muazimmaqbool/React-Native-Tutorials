@@ -12,8 +12,7 @@ const F_LoginForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
         <View style={styles.form}>
           <Text style={styles.label}>Username</Text>
           <TextInput
@@ -31,7 +30,6 @@ const F_LoginForm = () => {
             onChangeText={setPassword}
           />
           <Button
-           
             title="Login"
             onPress={() => {
               console.log("username:", username);
@@ -39,7 +37,6 @@ const F_LoginForm = () => {
             }}
           />
         </View>
-      </View>
     </SafeAreaView>
   );
 };
