@@ -10,9 +10,9 @@ import {
 import React, { useState } from "react";
 
 /*
- Switch: serves as a valuable tool for integrating toggles into your app's user interface.
+ Switch: It serves as a valuable tool for integrating toggles into your app's user interface.
 
-   ->its particularly well-suited for scenarios where you require users to make binary choices, 
+   ->Its particularly well-suited for scenarios where you require users to make binary choices, 
      such as enabling or disabling specific app features (like toggle between dark mode and light mode)
 */
 
@@ -23,20 +23,14 @@ const E_Switch = () => {
   const textColor = {
     color: isDarkMode ? "white" : "black",
   };
+  const bgColor = {
+    backgroundColor: isDarkMode ? "black" : "white",
+  };
   return (
-    <SafeAreaView
-      style={[
-        styles.container,
-        { backgroundColor: isDarkMode ? "black" : "white" },
-      ]}
-    >
-      <StatusBar backgroundColor={isDarkMode ? "teal" : "black" }/>
+    <SafeAreaView style={[styles.container, bgColor]}>
+      <StatusBar backgroundColor={isDarkMode ? "teal" : "black"} />
       <TextInput
-        style={[
-          styles.input,
-          textColor,
-          { borderColor: isDarkMode ? "white" : "black" },
-        ]}
+        style={[styles.input, textColor, bgColor]}
         value={name}
         onChangeText={setName}
         placeholder="your full name"
@@ -71,7 +65,7 @@ const E_Switch = () => {
         <Switch
           value={isDarkMode}
           onValueChange={() => setIsDarkMode((prevValue) => !prevValue)}
-          //trackColor is used to set colors for the track in different states
+          //trackColor is used to set colors for the track of different states
           trackColor={{ false: "#767577", true: "lightblue" }}
           thumbColor="#f4f3f4"
         />
