@@ -29,7 +29,7 @@ const I_FormSubmission = () => {
   //function used for submission
   const handleSubmit = () => {
     if (validateForm()) {
-      console.log("Submitted:", username,":", password);
+      console.log("Submitted data:", username,":", password);
       setUsername("");
       setPassword("");
       setErrors({});
