@@ -54,7 +54,7 @@ import {
             renderItem={({ item }) => {
               return (
                 <View style={styles.card}>
-                  <Text style={styles.titleText}>{item.title}</Text>
+                  <Text style={styles.titleText}>#{item.id} : {item.title}</Text>
                   <Text style={styles.bodyText}>{item.body}</Text>
                 </View>
               );
