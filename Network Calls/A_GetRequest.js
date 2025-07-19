@@ -10,24 +10,22 @@ import {
 import React, { useEffect, useState } from "react";
 
 /*
-In the folder we will look at API calls etc
+In this folder we will look at API calls etc
 ->Here we will use this endpoint to fetch fake data for testing:
 https://jsonplaceholder.typicode.com/posts or https://jsonplaceholder.typicode.com/posts?_limit=10
 */
 const A_GetRequest = () => {
   const [posts, setPosts] = useState([]);
   const fetchData = async (limit = 10) => {
-    const response = await fetch(
-      `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
-    );
-    const data = await response.json();
-    setPosts(data);
+   const response=await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}`)
+   const result=await response.json();
+   setPosts(result)
   };
+  console.log("posts:",posts)
 
-  //now lets display data inside posts in ui using flatList
+  //Now lets display data inside posts in ui using flatList
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="Get Posts" onPress={()=>fetchData()}/>
       <View style={styles.listContainer}>
         <FlatList
           data={posts}
@@ -40,12 +38,13 @@ const A_GetRequest = () => {
               </View>
             );
           }}
-          ItemSeparatorComponent={<View style={{ height: 15 }} />}
+          ItemSeparatorComponent={<View style={{ height: 10 }} />}
           ListEmptyComponent={<Text>No Posts Found</Text>}
           ListHeaderComponent={<Text style={styles.headerText}>List Of Posts</Text>}
           ListFooterComponent={<Text style={styles.footerText}>End of Posts List</Text>}
         />
       </View>
+      <Button title="Get Posts" onPress={()=>fetchData()}/>
     </SafeAreaView>
   );
 };
@@ -57,6 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f5f5f5",
     paddingTop: StatusBar.currentHeight, //this one is for android
+    paddingBottom:StatusBar.currentHeight+20,
   },
   listContainer: {
     flex: 1,
@@ -84,5 +84,5 @@ const styles = StyleSheet.create({
     fontSize:24,
     textAlign:"center",
     marginTop:12,
-  }
+  },
 });
